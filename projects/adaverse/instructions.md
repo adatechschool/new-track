@@ -1,0 +1,168 @@
+# 🌐 Adaverse
+
+**Durée :** à déterminer
+**Type de projet :** à déterminer (X personne)
+**Nom du repo :** `adaverse-[nom_github]`
+
+## 📦 Modalités de rendu
+
+Vous pouvez développer sur la branche `main`, mais le projet devra être livré sur **deux branches distinctes** :
+
+-   `stable` → version **complète avec toutes les fonctionnalités obligatoires**, **sans bonus**.
+-   `bonus` → version enrichie avec les **fonctionnalités bonus**.
+
+> ⚠️ **Important :** Vous devez avoir _poussé_ (`git push`) votre **dernier commit la veille de la soutenance**, afin qu’il soit pris en compte pour l’évaluation.
+
+## 🎯 Objectif du projet
+
+Ce projet consiste à développer une **plateforme de visualisation de projets réalisés par les apprenant·e·s d’Ada**.  
+Chaque projet sera classé par **catégorie**, correspondant à un **projet du programme Ada** (ex. : _Ada Quiz_, _Adaopte_, _Ada Check Events_, etc.).
+
+L’application sera **fullstack**, réalisée avec **Next.js**, **TailwindCSS** et **TypeScript**, et connectée à une base de données hébergée sur **Neon**, via l’ORM **Drizzle**.
+
+Les utilisateur·rice·s pourront **proposer un projet** via la page d’accueil, mais **seul·e le·la développeur·euse** de la plateforme pourra **valider et publier** les projets pour qu’ils apparaissent sur le site.
+
+## 🧱 Stack technique (obligatoire)
+
+| Élément             | Technologie | Lien                            |
+| ------------------- | ----------- | ------------------------------- |
+| Framework fullstack | Next.js     | https://nextjs.org/             |
+| Framework CSS       | TailwindCSS | https://tailwindcss.com/        |
+| ORM                 | Drizzle ORM | https://orm.drizzle.team/       |
+| Base de données     | Neon        | https://neon.com/               |
+| Langage             | TypeScript  | https://www.typescriptlang.org/ |
+
+## ⚙️ Initialisation du projet
+
+TODO : expliquer comment initialiser un projet avec cette stack _(installation, configuration de la DB, lien avec Drizzle, etc.)_
+
+## 🚀 Déploiement
+
+Tu peux utiliser **[Vercel](https://vercel.com/)** la plateforme officielle pour héberger les applications **Next.js**.
+
+Attention, n'oublie pas de spécifier la variable d'environnement pour te connecter à Neon sur Vercel (la même que dans ton fichier `.env`).
+
+> 💡 Pensez à déployer le plus tôt possible, dès qu’une version basique fonctionnelle existe.
+
+## 🧰 Pré-requis techniques
+
+Pour mener à bien ce projet, il est nécessaire de maîtriser :
+
+-   les bases du **terminal**
+-   les bases du **JavaScript**
+-   les bases du **React**
+-   les bases du **SQL**
+-   les bases du **développement backend**
+
+## 🎓 Compétences à acquérir
+
+-   [ ] Je sais ...
+
+## 🧩 Fonctionnalités à développer
+
+> ⚠️ **Réalisez toutes les fonctionnalités obligatoires avant de passer aux bonus.**
+
+### 1. 🗂️ Conception de la base de données
+
+Cette partie se réalise avec **Drizzle ORM** en créant le schéma de la base de données.
+
+#### Tables à concevoir
+
+-   **Table des projets Ada**
+
+    -   Contient la liste des différents **projets du programme Ada**.
+    -   Chaque entrée correspond à un **type de projet officiel** (ex. : Adaopte, Ada Quiz…).
+    -   Elle doit inclure un identifiant unique et un **nom de projet** clair et distinct.
+
+-   **Table des promotions Ada**
+
+    -   Contient l’ensemble des **promotions d’apprenant·e·s**.
+    -   Chaque promo doit avoir un identifiant unique, un **nom** (ex. "Frida") et une **date de début**.
+
+-   **Table des projets étudiantes / étudiants**
+    -   Représente les **projets réalisés par les apprenant·e·s** pour un projet Ada donné.
+    -   Chaque projet doit inclure :
+        -   un **titre** clair,
+        -   une **adresse web personnalisée** (slug) pour générer une URL propre,
+        -   un **lien GitHub**,
+        -   un **lien vers la démo** en ligne,
+        -   une **date de création** (quand le projet est proposé),
+        -   une **date de publication** (vide tant que le projet n’est pas validé),
+        -   un **lien vers la promotion**,
+        -   un **lien vers le projet Ada** concerné.
+
+### 2. 🌱 Création d’une seed de données
+
+Une **seed** permet d’ajouter des données de base dans la base de données.
+
+#### Tâches à réaliser
+
+-   [ ] Créer un script `.sql` pour insérer les **promotions Ada**
+-   [ ] Créer un script `.sql` pour insérer les **projets Ada**
+-   [ ] Créer un script `.sql` permettant de **publier un projet** (en mettant à jour sa date de publication selon son identifiant)
+
+### 3. 💻 Intégration sur le site
+
+#### a. Formulaire de proposition de projet
+
+-   [ ] Ajouter sur la page d’accueil `/` un **bouton "Proposer un projet"** dans le header.
+-   [ ] Le **bouton "Proposer un projet"** ouvre une **popup** contenant un **formulaire** permettant de :
+    -   saisir le titre du projet,
+    -   renseigner les liens GitHub et de démo,
+    -   choisir la promotion concernée,
+    -   choisir le projet Ada associé (via des menus déroulants).
+-   [ ] Attention, si le titre ou les liens de sont pas renseignés, le projet ne doit pas être créé et on doit afficher une erreur
+-   [ ] Lorsqu’un·e utilisateur·rice valide le formulaire :
+    -   le projet est enregistré dans la base de données avec toutes les informations saisies,
+    -   la **date de publication reste vide** tant qu’il n’a pas été validé.
+
+![](./project-dialog.png)
+
+#### b. Page d’accueil `/` : affichage des projets publiés
+
+-   [ ] Afficher sur la page d’accueil la **liste des projets publiés**, regroupés par projet Ada.
+-   [ ] Les projets doivent être récupérés depuis le backend et **triés par date de publication décroissante**.
+-   [ ] **Les projets non publiés (date vide)** ne doivent pas apparaître.
+-   [ ] Chaque carte de projet doit afficher :
+    -   le titre du projet,
+    -   la date de publication,
+    -   la promotion correspondante,
+    -   une image du projet :
+        -   automatiquement récupérée depuis le fichier `thumbnail.png` à la racine du repo GitHub,
+        -   sinon, une **image par défaut** doit être affichée.
+
+![](./home.png)
+
+#### c. Page de détail d’un projet
+
+-   [ ] Cliquer sur un projet redirige vers une **page de détail**.
+-   [ ] Cette page doit afficher :
+    -   le titre du projet,
+    -   la promotion,
+    -   l’image du projet,
+    -   la date de publication,
+    -   le projet Ada associé.
+-   [ ] Si on clique sur le logo, on doit revenir à la page d’accueil.
+
+![](./project-details.png)
+
+## 🚫 Ce que vous ne devez pas faire
+
+-   Aucune gestion de **connexion / inscription**
+-   Pas d’**upload d’images**
+-   Pas de **commentaires**
+-   Pas de **favoris**
+-   Pas d’**interface d’administration**
+
+## 💎 Bonus possibles
+
+-   Faire une vraie gestion d'erreur pour vérifier les liens github et de démo
+-   Récupérer des **informations GitHub** (ex. nombre d’étoiles, commits, contributeur·rice·s…) pour enrichir la page de détails.
+-   Ajouter des **filtres** et des **options de tri** avancées pour la recherche.
+-   Améliorer le **design global** : landing page, animations, transitions fluides.
+-   Améliorer l’**accessibilité** du site.
+-   Ajouter un **dark mode** ou d’autres **paramètres de personnalisation**.
+-   Ajouter des **champs supplémentaires** aux projets pour enrichir les données affichées.
+-   Compléter la table des **projets Ada** avec des informations supplémentaires (stack utilisée, thème, description, etc.).
+-   Compter le nombre de vue par projet
+-   Faire un dashboard pour visualiser les vues
