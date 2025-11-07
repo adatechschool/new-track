@@ -1,8 +1,8 @@
 # 🌐 Adaverse
 
-**Durée :** 1 semaine
-**Type de projet :** seul / pair programming 
-**Nom du repo :** `adaverse-[nom_github]`
+-   **Durée :** 1 semaine
+-   **Type de projet :** seul / pair programming
+-   **Nom du repo :** `adaverse-[nom_github]`
 
 ## 📦 Modalités de rendu
 
@@ -57,17 +57,19 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 ## 🎓 Compétences à acquérir
 
 ### Back / BDD
+
 -   [ ] Je sais créer une base de donnée
 -   [ ] Je sais manipuler cette base de donnée
 -   [ ] Je comprends le fonctionnement d'un ORM (mapping object relationnel)
--   [ ] Je comprends les avantages et les inconvénients que l'ORM apporte 
+-   [ ] Je comprends les avantages et les inconvénients que l'ORM apporte
 -   [ ] J'arrive à implémenter mon ORM dans mon code sans difficulté
 -   [ ] Je sais faire un CRUD de ma donnée avec mon ORM
 -   [ ] Je sais créer un back en NextJS
 -   [ ] Je sais implémenter ma base de donnée dans un back
 -   [ ] Je peux manipuler cette base de donnée dans NextJS
 
-### Front 
+### Front
+
 -   [ ] Je peux créer une page dans NextJS
 -   [ ] Je comprends l'utilité du `"use client"`
 -   [ ] Je comprends comment utiliser un useState / useEffect
@@ -77,8 +79,7 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 -   [ ] Je peux créer une route dynamique : `app/[slug]/page.tsx`
 -   [ ] Je sais comment utiliser `Link` pour naviguer entre les pages côté client
 -   [ ] Je sais récuperer le paramètre avec `params`
--   [ ] Je sais la différence entre une route statique et dynamique 
-
+-   [ ] Je sais la différence entre une route statique et dynamique
 
 ## 🧩 Fonctionnalités à développer
 
@@ -181,10 +182,13 @@ Une **seed** permet d’ajouter des données de base dans la base de données.
 -   Faire une vraie gestion d'erreur pour vérifier les liens github et de démo
 -   Récupérer des **informations GitHub** (ex. nombre d’étoiles, commits, contributeur·rice·s…) pour enrichir la page de détails.
 -   Ajouter des **filtres** et des **options de tri** avancées pour la recherche.
--   Améliorer le **design global** : landing page, animations, transitions fluides.
 -   Améliorer l’**accessibilité** du site.
 -   Ajouter un **dark mode** ou d’autres **paramètres de personnalisation**.
 -   Ajouter des **champs supplémentaires** aux projets pour enrichir les données affichées.
 -   Compléter la table des **projets Ada** avec des informations supplémentaires (stack utilisée, thème, description, etc.).
 -   Compter le nombre de vue par projet
 -   Faire un dashboard pour visualiser les vues
+-   Améliorer le **design global** : landing page, animations, transitions fluides, par exemple en intégrant ce design :
+
+![](./home-figma.png)
+![](./details-figma.png)
