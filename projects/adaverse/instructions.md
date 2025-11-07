@@ -1,7 +1,7 @@
 # 🌐 Adaverse
 
-**Durée :** à déterminer
-**Type de projet :** à déterminer (X personne)
+**Durée :** 1 semaine
+**Type de projet :** seul / pair programming 
 **Nom du repo :** `adaverse-[nom_github]`
 
 ## 📦 Modalités de rendu
@@ -56,7 +56,29 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 ## 🎓 Compétences à acquérir
 
--   [ ] Je sais ...
+### Back / BDD
+-   [ ] Je sais créer une base de donnée
+-   [ ] Je sais manipuler cette base de donnée
+-   [ ] Je comprends le fonctionnement d'un ORM (mapping object relationnel)
+-   [ ] Je comprends les avantages et les inconvénients que l'ORM apporte 
+-   [ ] J'arrive à implémenter mon ORM dans mon code sans difficulté
+-   [ ] Je sais faire un CRUD de ma donnée avec mon ORM
+-   [ ] Je sais créer un back en NextJS
+-   [ ] Je sais implémenter ma base de donnée dans un back
+-   [ ] Je peux manipuler cette base de donnée dans NextJS
+
+### Front 
+-   [ ] Je peux créer une page dans NextJS
+-   [ ] Je comprends l'utilité du `"use client"`
+-   [ ] Je comprends comment utiliser un useState / useEffect
+-   [ ] Je sais récuperer une API
+-   [ ] Je peux importer un composant
+-   [ ] Je comprends le système de route
+-   [ ] Je peux créer une route dynamique : `app/[slug]/page.tsx`
+-   [ ] Je sais comment utiliser `Link` pour naviguer entre les pages côté client
+-   [ ] Je sais récuperer le paramètre avec `params`
+-   [ ] Je sais la différence entre une route statique et dynamique 
+
 
 ## 🧩 Fonctionnalités à développer
 
