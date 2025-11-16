@@ -1,6 +1,6 @@
 # 🌐 Adaverse
 
--   **Durée :** 1 semaine
+-   **Durée :** 2 semaine
 -   **Type de projet :** seul / pair programming
 -   **Nom du repo :** `adaverse-[nom_github]`
 
@@ -11,11 +11,11 @@ Vous pouvez développer sur la branche `main`, mais le projet devra être livré
 -   `stable` → version **complète avec toutes les fonctionnalités obligatoires**, **sans bonus**.
 -   `bonus` → version enrichie avec les **fonctionnalités bonus**.
 
-> ⚠️ **Important :** Vous devez avoir _poussé_ (`git push`) votre **dernier commit la veille de la soutenance**, afin qu’il soit pris en compte pour l’évaluation.
+> ⚠️ **Important :** Vous devez avoir _poussé_ (`git push`) votre **dernier commit la veille de la soutenance à minuit au plus tard**, afin qu’il soit pris en compte pour l’évaluation.
 
 ## 🎯 Objectif du projet
 
-Ce projet consiste à développer une **plateforme de visualisation de projets réalisés par les apprenant·e·s d’Ada**.  
+Ce projet consiste à développer une **plateforme de visualisation de projets réalisés par les apprenant·e·s d’Ada**.
 Chaque projet sera classé par **catégorie**, correspondant à un **projet du programme Ada** (ex. : _Ada Quiz_, _Adaopte_, _Ada Check Events_, etc.).
 
 L’application sera **fullstack**, réalisée avec **Next.js**, **TailwindCSS** et **TypeScript**, et connectée à une base de données hébergée sur **Neon**, via l’ORM **Drizzle**.
@@ -34,7 +34,15 @@ Les utilisateur·rice·s pourront **proposer un projet** via la page d’accueil
 
 ## ⚙️ Initialisation du projet
 
-TODO : expliquer comment initialiser un projet avec cette stack _(installation, configuration de la DB, lien avec Drizzle, etc.)_
+Installe l'ensemble des dépendances en suivant les documentations officielles.
+
+Pour Next.js tu peux regarder cette section : https://nextjs.org/docs/app/getting-started/installation.
+
+> ⚠️ N'oublie pas de choisir tailwind et TypeScript pendant la configuration
+
+Pour Neon, crée un projet, récupère la "connection string" de la base de données et copie la dans ton `.env`.
+
+Enfin, vous pouvez pouvez configurer Drizzle, tu peux suivre la documentation officielle pour Neon à [ce lien](https://orm.drizzle.team/docs/connect-neon). Une fois la connection et le schéma créé, tu es prêt⋅e pour coder !
 
 ## 🚀 Déploiement
 
@@ -58,15 +66,17 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 ### Back / BDD
 
--   [ ] Je sais créer une base de donnée
--   [ ] Je sais manipuler cette base de donnée
+-   [ ] Je sais créer une base de donnée à partir d'un schéma
+-   [ ] Je sais visualiser et modifier des données dans la base de données
 -   [ ] Je comprends le fonctionnement d'un ORM (mapping object relationnel)
 -   [ ] Je comprends les avantages et les inconvénients que l'ORM apporte
 -   [ ] J'arrive à implémenter mon ORM dans mon code sans difficulté
+-   [ ] Je sais récupérer des données venant de plusieurs tables avec l'ORM (foreign keys)
 -   [ ] Je sais faire un CRUD de ma donnée avec mon ORM
--   [ ] Je sais créer un back en NextJS
+-   [ ] Je sais créer des routes api et des composants serveur dans NextJS
 -   [ ] Je sais implémenter ma base de donnée dans un back
 -   [ ] Je peux manipuler cette base de donnée dans NextJS
+-   [ ] Je sais créer et manipuler des forms actions
 
 ### Front
 
