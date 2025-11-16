@@ -76,7 +76,7 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 -   Garantir une mise en page responsive une fois le contenu affiché (ex. adapter la taille du texte ou la disposition sur mobile)
 
-🔹 3. Ajouter une barre de recherche (SearchBar)
+### 🔹 3. Ajouter une barre de recherche (SearchBar)
 
 -   Créer une barre de recherche dans la page d’accueil et déclencher la recherche lors du clic sur le bouton “rechercher”
 
@@ -84,7 +84,7 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 -   Rendre la recherche insensible à la casse en convertissant les textes avec toLowerCase()
 
-🔹 4. Créer une pagination
+### 🔹 4. Créer une pagination
 
 -   Savoir ajouter un addEventListener("click") sur un bouton
 
@@ -98,7 +98,12 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 ## 🚫 Ce que vous ne devez pas faire
 
-TODO: les fonctionnalités à éviter qui sont hors sujet par rapport au projet
-
 -   ❌ Utiliser un framework frontend (type React ou Vue.js)
 -   ❌ Coder votre propre backend/base de données
+
+## 💎 Bonus possibles
+
+-   Intégrer plusieures APIs
+-   Améliorer le design et l'UX générale
+-   Intégrer une map pour visualiser les données
+-   Intégrer une bibliothèque pour afficher des graphes de données
