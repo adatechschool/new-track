@@ -71,29 +71,21 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 **Prévoir un affichage alternatif lorsque certaines données sont absentes (par exemple : afficher “Aucune description disponible” ou une image par défaut).**
 
 -   Créer un bouton permettant d’afficher ou de masquer le contenu de la description
-
 -   Mettre à jour l’affichage du DOM avec un changement visuel : le bouton doit afficher “voir moins” lorsque le contenu est déplié, et “voir plus” lorsqu’il est replié
-
 -   Garantir une mise en page responsive une fois le contenu affiché (ex. adapter la taille du texte ou la disposition sur mobile)
 
 ### 🔹 3. Ajouter une barre de recherche (SearchBar)
 
 -   Créer une barre de recherche dans la page d’accueil et déclencher la recherche lors du clic sur le bouton “rechercher”
-
 -   Filtrer les événements en JavaScript selon le texte saisi : si je tape “bro”, afficher tous les événements dont le titre contient “bro”
-
 -   Rendre la recherche insensible à la casse en convertissant les textes avec toLowerCase()
 
 ### 🔹 4. Créer une pagination
 
 -   Savoir ajouter un addEventListener("click") sur un bouton
-
 -   Savoir modifier le DOM avec innerHTML ou appendChild()
-
 -   Savoir utiliser une variable pour compter combien d’événements sont déjà affichés (ex : let offset = 20;)
-
 -   Savoir faire une boucle pour afficher 20 événements de plus
-
 -   Savoir afficher/masquer un loader avec style.display = "block" / "none"
 
 ## 🚫 Ce que vous ne devez pas faire
