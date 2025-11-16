@@ -77,8 +77,8 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 ### 🔹 3. Ajouter une barre de recherche (SearchBar)
 
 -   Créer une barre de recherche dans la page d’accueil et déclencher la recherche lors du clic sur le bouton “rechercher”
--   Filtrer les événements en JavaScript selon le texte saisi : si je tape “bro”, afficher tous les événements dont le titre contient “bro”
 -   Rendre la recherche insensible à la casse en convertissant les textes avec toLowerCase()
+-   Faire en sorte de d'utiliser le paramètre de requête where pour filterer la recherche et mettre à jour le résultat
 
 ### 🔹 4. Créer une pagination
 
