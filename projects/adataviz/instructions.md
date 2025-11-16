@@ -16,7 +16,9 @@ L'objectif du projet est de créer un site web qui affiche des données à parti
 
 ## ⚙️ Initialisation du projet
 
-TODO: créer le projet avec `pnpm create vite` ?
+- créer le projet avec `pnpm create vite`
+- selectionner le JS vanilla
+- faites les installations avec npm i / npm install
 
 ## 🧰 Pré-requis techniques
 
@@ -28,13 +30,66 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 ## 🎓 Compétences à acquérir
 
--   [ ] Je sais...
+-   [ ] Je sais connecter mon HTML avec mon JS
+-   [ ] Je sais utiliser le CSS
+-   [ ] Je sais quand utiliser grid et flexbox
+-   [ ] Je sais rendre ma page responsive
+-   [ ] Je sais créer une balise HTML via mon JS
+-   [ ] Je sais rajouer des informations dans cette balise
+-   [ ] Je sais afficher les données récuperer par l'API
+-   [ ] Je comprends comment fonctionne une API et peut l'expliquer
+-   [ ] Je sais manipuler un évènement pour l'afficher ou non
+-   [ ] Je sais changer le CSS via mon évènement JS
+-   [ ] Je sais fetch des données
+-   [ ] Je comprends ce qu'est une fonction asynchrone
+
+## 🧪 Compétences avancé 
+-   [ ] Je sais afficher une erreur si mon API ne fonctionne pas 
+-   [ ] Je sais organsier mon code et mes fichiers / dossiers
+-   [ ] Je sais gérer un loader / un chargement 
+
 
 ## 🧩 Fonctionnalités à développer
 
 > ⚠️ **Réalisez toutes les fonctionnalités obligatoires avant de passer aux bonus.**
 
-TODO: Liste exhaustive des fonctionnalités obligatoires à développer
+### 🔹 1. Afficher les données depuis l’API avec un fetch
+- Récupérer les données depuis l’API fournie.
+- Créer une fonction pour récuperer les données de l'API
+- Afficher ces données sur la page
+
+
+### 🔹 2. Ajouter un bouton “voir plus” (“See more”)
+
+**Prévoir un affichage alternatif lorsque certaines données sont absentes (par exemple : afficher “Aucune description disponible” ou une image par défaut).**
+
+- Créer un bouton permettant d’afficher ou de masquer le contenu de la description
+
+- Mettre à jour l’affichage du DOM avec un changement visuel : le bouton doit afficher “voir moins” lorsque le contenu est déplié, et “voir plus” lorsqu’il est replié
+
+- Garantir une mise en page responsive une fois le contenu affiché (ex. adapter la taille du texte ou la disposition sur mobile)
+
+
+🔹 3. Ajouter une barre de recherche (SearchBar)
+
+- Créer une barre de recherche dans la page d’accueil et déclencher la recherche lors du clic sur le bouton “rechercher”
+
+- Filtrer les événements en JavaScript selon le texte saisi : si je tape “bro”, afficher tous les événements dont le titre contient “bro”
+
+- Rendre la recherche insensible à la casse en convertissant les textes avec toLowerCase()
+
+
+🔹 4. Créer une pagination
+
+- Savoir ajouter un addEventListener("click") sur un bouton
+
+- Savoir modifier le DOM avec innerHTML ou appendChild()
+
+- Savoir utiliser une variable pour compter combien d’événements sont déjà affichés (ex : let offset = 20;)
+
+- Savoir faire une boucle pour afficher 20 événements de plus
+
+- Savoir afficher/masquer un loader avec style.display = "block" / "none"
 
 ## 🚫 Ce que vous ne devez pas faire
 
@@ -42,7 +97,3 @@ TODO: les fonctionnalités à éviter qui sont hors sujet par rapport au projet
 
 -   ❌ Utiliser un framework frontend (type React ou Vue.js)
 -   ❌ Coder votre propre backend/base de données
-
-## 💎 Bonus possibles
-
-TODO: l'ensemble des fonctionnalités bonus qui peuvent être développées une fois le projet terminé.
