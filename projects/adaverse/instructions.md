@@ -42,7 +42,7 @@ Pour Next.js tu peux regarder cette section : https://nextjs.org/docs/app/gettin
 
 Pour Neon, crée un projet, récupère la "connection string" de la base de données et copie la dans ton `.env`.
 
-Enfin, vous pouvez pouvez configurer Drizzle, tu peux suivre la documentation officielle pour Neon à [ce lien](https://orm.drizzle.team/docs/connect-neon). Une fois la connection et le schéma créé, tu es prêt⋅e pour coder !
+Enfin, pour Drizzle, tu peux suivre la documentation officielle pour Neon à [ce lien](https://orm.drizzle.team/docs/connect-neon) ou notre petit guide d'installation [ici](../../guides/installer-drizzle.md). Une fois la connection et le schéma créé, tu es prêt⋅e pour coder !
 
 ## 🚀 Déploiement
 
@@ -66,30 +66,34 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 ### Back / BDD
 
+-   [ ] Je sais intégrer et utiliser une ORM avec NextJS
+-   [ ] Je sais connecter mon ORM avec ma base de données
 -   [ ] Je sais créer une base de donnée à partir d'un schéma
 -   [ ] Je sais visualiser et modifier des données dans la base de données
 -   [ ] Je comprends le fonctionnement d'un ORM (mapping object relationnel)
+-   [ ] Je sais modéliser une base de données à partir d'un énoncé
 -   [ ] Je comprends les avantages et les inconvénients que l'ORM apporte
--   [ ] J'arrive à implémenter mon ORM dans mon code sans difficulté
+-   [ ] J'arrive à implémenter mon ORM dans mon code
 -   [ ] Je sais récupérer des données venant de plusieurs tables avec l'ORM (foreign keys)
 -   [ ] Je sais faire un CRUD de ma donnée avec mon ORM
 -   [ ] Je sais créer des routes api et des composants serveur dans NextJS
--   [ ] Je sais implémenter ma base de donnée dans un back
--   [ ] Je peux manipuler cette base de donnée dans NextJS
+-   [ ] Je sais créer et exécuter des migrations
 -   [ ] Je sais créer et manipuler des forms actions
 
 ### Front
 
 -   [ ] Je peux créer une page dans NextJS
 -   [ ] Je comprends l'utilité du `"use client"`
--   [ ] Je comprends comment utiliser un useState / useEffect
--   [ ] Je sais récuperer une API
--   [ ] Je peux importer un composant
--   [ ] Je comprends le système de route
--   [ ] Je peux créer une route dynamique : `app/[slug]/page.tsx`
--   [ ] Je sais comment utiliser `Link` pour naviguer entre les pages côté client
+-   [ ] Je comprends comment et quand utiliser useState et useEffect
+-   [ ] Je sais fetch des routes API depuis une page NextJS
+-   [ ] Je sais découper le code de mon projet en plusieurs fichiers
+-   [ ] Je comprends le système de routes de NextJS
+-   [ ] Je sais créer des routes dynamiques avec des paramètres d'URL
 -   [ ] Je sais récuperer le paramètre avec `params`
--   [ ] Je sais la différence entre une route statique et dynamique
+-   [ ] Je sais comment utiliser `Link` pour naviguer entre les pages côté client
+-   [ ] Je sais faire la différence entre une route statique et dynamique
+-   [ ] Je sais appliquer du style à mes composants avec tailwind
+-   [ ] Je sais créer un dialogue
 
 ## 🧩 Fonctionnalités à développer
 
@@ -154,14 +158,14 @@ Une **seed** permet d’ajouter des données de base dans la base de données.
 #### b. Page d’accueil `/` : affichage des projets publiés
 
 -   [ ] Afficher sur la page d’accueil la **liste des projets publiés**, regroupés par projet Ada.
--   [ ] Les projets doivent être récupérés depuis le backend et **triés par date de publication décroissante**.
+-   [ ] Les projets doivent être récupérés depuis le backend et **triés par date de publication décroissante (le plus récent en premier)**.
 -   [ ] **Les projets non publiés (date vide)** ne doivent pas apparaître.
 -   [ ] Chaque carte de projet doit afficher :
     -   le titre du projet,
     -   la date de publication,
     -   la promotion correspondante,
     -   une image du projet :
-        -   automatiquement récupérée depuis le fichier `thumbnail.png` à la racine du repo GitHub,
+        -   automatiquement récupérée depuis le fichier `thumbnail.png` à la racine du repo GitHub (récupérée automatiquement avec l'url `https://github.com/<user>/<repo>/blob/main/thumbnail.png?raw=true`),
         -   sinon, une **image par défaut** doit être affichée.
 
 ![](./home.png)
@@ -175,6 +179,7 @@ Une **seed** permet d’ajouter des données de base dans la base de données.
     -   l’image du projet,
     -   la date de publication,
     -   le projet Ada associé.
+-   [ ] Elle doit également contenir un lien pour afficher la démo et un autre pour accéder au Github du projet
 -   [ ] Si on clique sur le logo, on doit revenir à la page d’accueil.
 
 ![](./project-details.png)
