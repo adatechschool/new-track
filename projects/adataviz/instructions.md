@@ -16,9 +16,15 @@ L'objectif du projet est de créer un site web qui affiche des données à parti
 
 ## ⚙️ Initialisation du projet
 
-- créer le projet avec `pnpm create vite`
-- selectionner le JS vanilla
-- faites les installations avec npm i / npm install
+1. Ouvre un terminal dans votre dossier de vos projets
+2. Crée le projet avec `pnpm create vite`
+3. Sélectionne 'Vanilla' pour le framework
+4. Sélectionne 'JavaScript' pour le langage
+5. N'installe pas les dépendances automatiquement
+6. Utilise `cd adataviz` pour aller dans le dossier, puis `code .` pour l'ouvrir dans VSCode
+7. Utilise la commande `pnpm install` pour installer les dépendances dans le dossier du projet
+
+Tu peux maintenant utiliser la commande `pnpm dev` à chaque fois que tu veux démarrer le projet, puis tu peux le visualiser sur `http://localhost:5173/`.
 
 ## 🧰 Pré-requis techniques
 
@@ -42,54 +48,53 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 -   [ ] Je sais changer le CSS via mon évènement JS
 -   [ ] Je sais fetch des données
 -   [ ] Je comprends ce qu'est une fonction asynchrone
+-   [ ] Je sais passer des paramètres d'URL dans une requête HTTP
 
-## 🧪 Compétences avancé 
--   [ ] Je sais afficher une erreur si mon API ne fonctionne pas 
+## 🧪 Compétences avancé
+
+-   [ ] Je sais afficher une erreur si mon API ne fonctionne pas
 -   [ ] Je sais organsier mon code et mes fichiers / dossiers
--   [ ] Je sais gérer un loader / un chargement 
-
+-   [ ] Je sais gérer un loader / un chargement
 
 ## 🧩 Fonctionnalités à développer
 
 > ⚠️ **Réalisez toutes les fonctionnalités obligatoires avant de passer aux bonus.**
 
 ### 🔹 1. Afficher les données depuis l’API avec un fetch
-- Récupérer les données depuis l’API fournie.
-- Créer une fonction pour récuperer les données de l'API
-- Afficher ces données sur la page
 
+-   Récupérer les données depuis l’API fournie.
+-   Créer une fonction pour récuperer les données de l'API
+-   Afficher ces données sur la page
 
 ### 🔹 2. Ajouter un bouton “voir plus” (“See more”)
 
 **Prévoir un affichage alternatif lorsque certaines données sont absentes (par exemple : afficher “Aucune description disponible” ou une image par défaut).**
 
-- Créer un bouton permettant d’afficher ou de masquer le contenu de la description
+-   Créer un bouton permettant d’afficher ou de masquer le contenu de la description
 
-- Mettre à jour l’affichage du DOM avec un changement visuel : le bouton doit afficher “voir moins” lorsque le contenu est déplié, et “voir plus” lorsqu’il est replié
+-   Mettre à jour l’affichage du DOM avec un changement visuel : le bouton doit afficher “voir moins” lorsque le contenu est déplié, et “voir plus” lorsqu’il est replié
 
-- Garantir une mise en page responsive une fois le contenu affiché (ex. adapter la taille du texte ou la disposition sur mobile)
-
+-   Garantir une mise en page responsive une fois le contenu affiché (ex. adapter la taille du texte ou la disposition sur mobile)
 
 🔹 3. Ajouter une barre de recherche (SearchBar)
 
-- Créer une barre de recherche dans la page d’accueil et déclencher la recherche lors du clic sur le bouton “rechercher”
+-   Créer une barre de recherche dans la page d’accueil et déclencher la recherche lors du clic sur le bouton “rechercher”
 
-- Filtrer les événements en JavaScript selon le texte saisi : si je tape “bro”, afficher tous les événements dont le titre contient “bro”
+-   Filtrer les événements en JavaScript selon le texte saisi : si je tape “bro”, afficher tous les événements dont le titre contient “bro”
 
-- Rendre la recherche insensible à la casse en convertissant les textes avec toLowerCase()
-
+-   Rendre la recherche insensible à la casse en convertissant les textes avec toLowerCase()
 
 🔹 4. Créer une pagination
 
-- Savoir ajouter un addEventListener("click") sur un bouton
+-   Savoir ajouter un addEventListener("click") sur un bouton
 
-- Savoir modifier le DOM avec innerHTML ou appendChild()
+-   Savoir modifier le DOM avec innerHTML ou appendChild()
 
-- Savoir utiliser une variable pour compter combien d’événements sont déjà affichés (ex : let offset = 20;)
+-   Savoir utiliser une variable pour compter combien d’événements sont déjà affichés (ex : let offset = 20;)
 
-- Savoir faire une boucle pour afficher 20 événements de plus
+-   Savoir faire une boucle pour afficher 20 événements de plus
 
-- Savoir afficher/masquer un loader avec style.display = "block" / "none"
+-   Savoir afficher/masquer un loader avec style.display = "block" / "none"
 
 ## 🚫 Ce que vous ne devez pas faire
 
