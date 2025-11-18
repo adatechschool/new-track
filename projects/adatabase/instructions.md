@@ -97,7 +97,7 @@ Ensuite, tu peux simplement exécuter les requêtes en créant un fichier .sql :
 -   **resources** contient toutes les informations sur une ressource, notamment son titre et le lien vers la ressource (url)
 -   **skills** représente une compétence en particulier qui est abordée par la ressource. Contrairement au thème, une ressource peut concerner plusieurs compétences
 -   **resources_skills** permet de faire le lien entre une ressource et une compétence
--   **resource_type** enum permettant de limiter le type de ressources possible à une liste prédéterminée : `article`, `video`, `exercice`, `documentation` (⚠️ n'existe qu'avec Postgres)
+-   **resource_type** enum permettant de limiter le type de ressources possible à une liste prédéterminée : `guide`, `video`, `exercice`, `projet` (⚠️ n'existe qu'avec Postgres)
 
 > 💾 Une fois que toutes tes requêtes fonctionnent, sauvegarde-les dans un fichier `migration_up.sql`.
 
