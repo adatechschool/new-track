@@ -120,7 +120,7 @@ Cette partie se réalise avec **Drizzle ORM** en créant le schéma de la base d
     -   Représente les **projets réalisés par les apprenant·e·s** pour un projet Ada donné.
     -   Chaque projet doit inclure :
         -   un **titre** clair,
-        -   une **illusatrion** pour avoir un visuel du projet
+        -   une **illustration** pour avoir un visuel du projet
         -   une **adresse web personnalisée** (slug) pour générer une URL propre,
         -   un **lien GitHub**,
         -   un **lien vers la démo** en ligne,
