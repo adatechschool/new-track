@@ -17,6 +17,16 @@ Les fichiers à rendre sont les suivants :
 -   `seed.sql` remplit les tables de la base de données avec des données
 -   `queries.sql` contient les requêtes SELECT pour récupérer certaines données de la base
 
+```sh
+adatabase ➤ tree
+.
+├── docker-compose.yml
+├── migration_down.sql
+├── migration_up.sql
+├── queries.sql
+└── seed.sql
+```
+
 ## 🎯 Objectif du projet
 
 Tu devras créer une petite base de données de gestion de ressources pédagogiques. Tu devras créer 4 scripts SQL : un pour créer la base de données, un pour la nettoyer, un troisième pour remplir les données et enfin un dernier avec des requêtes SELECT pour récupérer des données en fonction de certains filtres.
