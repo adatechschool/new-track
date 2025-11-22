@@ -167,3 +167,36 @@ Voici des exemples de données à insérer (tu peux en ajouter d'autres) :
 -   [ ] Récupérer le nom et l'url de toutes les ressources avec un tableau/liste contenant l'ensemble de leurs skills associés
 -   [ ] Récupérer les 5 ressources les plus récentes avec leur thème
 -   [ ] Récupérer toutes les compétences qui ne sont associées à aucune ressource
+
+## Bonus ++ (Exercice de Conception de de creation d'une base de données)
+
+Tu dois créer une base de données permettant de gérer : 
+-   [ ] des quiz
+-   [ ] des questions
+-   [ ] des réponses possibles
+-   [ ] des thèmes
+-   [ ] des compétences abordées
+
+Tu devras intégrer cette conception dans les fichiers suivants :
+`migration_up.sql` : création de toutes les tables, relations et enums
+`migration_down.sql` : suppression de toutes les tables dans le bon ordre
+`seed.sql` : insertion des données d’exemple
+`queries.sql` : requêtes SQL permettant d’interroger ta base
+
+## Modélisation
+| Entité           | Description                               |
+| ---------------- | ----------------------------------------- |
+| themes           | Catégorie du quiz (Frontend, SQL, etc.)   |
+| skills           | Compétences abordées (React, SQL…)        |
+| quizzes          | les quiz (titre, difficulté…)             | 
+| questions        | Les questions associées à un quiz         |
+| answers          | Les réponses proposées pour une question  |
+| resources	       | Ressources complémentaires                | 
+| resources_skills | N-N entre ressources et skills            |
+| quizzes_skills   | N-N entre quiz et skills                  |
+
+(N = many donc N - N => many to many)
+
+Votre objectif est de réaliser la conception complète de cette base de données
+➡️ en produisant un diagramme UML / ERD
+➡️ en implémentant cette conception dans les fichiers SQL demandés
