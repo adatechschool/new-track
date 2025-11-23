@@ -170,20 +170,4 @@ Voici des exemples de données à insérer (tu peux en ajouter d'autres) :
 
 ## Bonus ++ (Exercice de Conception de de creation d'une base de données)
 
-Tu dois créer une base de données permettant de gérer : 
--   [ ] des quiz
--   [ ] des questions
--   [ ] des réponses possibles
--   [ ] des thèmes
--   [ ] des compétences abordées
--   [ ] des ressources associées
-
-Tu devras intégrer cette conception dans les fichiers suivants :
-`migration_up.sql` : création de toutes les tables, relations et enums
-`migration_down.sql` : suppression de toutes les tables dans le bon ordre
-`seed.sql` : insertion des données d’exemple
-`queries.sql` : requêtes SQL permettant d’interroger ta base
-
-## Modélisation
-
 Nous souhaitons intégrer un module de quiz en complément des tables existantes. Il vous revient de définir et d’établir les relations pertinentes entre les différentes tables, puis d’en proposer une représentation sous forme de diagramme.
