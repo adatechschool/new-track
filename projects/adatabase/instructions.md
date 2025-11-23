@@ -176,6 +176,7 @@ Tu dois créer une base de données permettant de gérer :
 -   [ ] des réponses possibles
 -   [ ] des thèmes
 -   [ ] des compétences abordées
+-   [ ] des ressources associées
 
 Tu devras intégrer cette conception dans les fichiers suivants :
 `migration_up.sql` : création de toutes les tables, relations et enums
@@ -198,5 +199,6 @@ Tu devras intégrer cette conception dans les fichiers suivants :
 (N = many donc N - N => many to many)
 
 Votre objectif est de réaliser la conception complète de cette base de données
-➡️ en produisant un diagramme UML / ERD
-➡️ en implémentant cette conception dans les fichiers SQL demandés
+- [ ] en produisant un diagramme UML / ERD
+- [ ] en implémentant cette conception dans les fichiers SQL demandés
+- [ ] Créer un type PostgreSQL ENUM pour la difficulté d’un quiz : difficulty_enum (‘easy’, ‘medium’, ‘hard’)
