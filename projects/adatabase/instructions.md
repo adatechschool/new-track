@@ -185,20 +185,5 @@ Tu devras intégrer cette conception dans les fichiers suivants :
 `queries.sql` : requêtes SQL permettant d’interroger ta base
 
 ## Modélisation
-| Entité           | Description                               |
-| ---------------- | ----------------------------------------- |
-| themes           | Catégorie du quiz (Frontend, SQL, etc.)   |
-| skills           | Compétences abordées (React, SQL…)        |
-| quizzes          | les quiz (titre, difficulté…)             | 
-| questions        | Les questions associées à un quiz         |
-| answers          | Les réponses proposées pour une question  |
-| resources	       | Ressources complémentaires                | 
-| resources_skills | N-N entre ressources et skills            |
-| quizzes_skills   | N-N entre quiz et skills                  |
 
-(N = many donc N - N => many to many)
-
-Votre objectif est de réaliser la conception complète de cette base de données
-- [ ] en produisant un diagramme UML / ERD
-- [ ] en implémentant cette conception dans les fichiers SQL demandés
-- [ ] Créer un type PostgreSQL ENUM pour la difficulté d’un quiz : difficulty_enum (‘easy’, ‘medium’, ‘hard’)
+Nous souhaitons intégrer un module de quiz en complément des tables existantes. Il vous revient de définir et d’établir les relations pertinentes entre les différentes tables, puis d’en proposer une représentation sous forme de diagramme.
