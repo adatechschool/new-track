@@ -1,4 +1,4 @@
-# ✅ Project
+# ✅ Adataviz
 
 -   **Durée :** 2 semaine
 -   **Type de projet :** seul / pair programming
@@ -12,7 +12,7 @@ Vous pouvez développer en local sur votre ordinateur mais pensez à push régul
 
 ## 🎯 Objectif du projet
 
-L'objectif du projet est de créer un site web qui affiche des données à partir de l'API OpenData de Paris : https://opendata.paris.fr/. Votre site web devra afficher sous forme de liste les données choisies avec des filtres ainsi qu'un système de pagination. Votre site web devra utiliser CSS pour mettre en valeur les données en personnalisant l'apparence du site.
+L'objectif du projet est de créer un site web qui affiche des données à partir d'une des API OpenData de Paris : https://opendata.paris.fr/. Votre site web devra afficher sous forme de liste les données choisies avec des filtres ainsi qu'un système de pagination. Votre site web devra utiliser CSS pour mettre en valeur les données en personnalisant l'apparence du site.
 
 ## ⚙️ Initialisation du projet
 
@@ -71,7 +71,7 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 **Prévoir un affichage alternatif lorsque certaines données sont absentes (par exemple : afficher “Aucune description disponible” ou une image par défaut).**
 
 -   Créer un bouton permettant d’afficher ou de masquer le contenu de la description
--   Mettre à jour l’affichage du DOM avec un changement visuel : le bouton doit afficher “voir moins” lorsque le contenu est déplié, et “voir plus” lorsqu’il est replié
+-   Mettre à jour l’affichage du DOM avec un changement visuel : **bouton** doit afficher “voir moins” lorsque le contenu est **déplié**, et “voir plus” lorsqu’il est **replié**
 -   Garantir une mise en page responsive une fois le contenu affiché (ex. adapter la taille du texte ou la disposition sur mobile)
 
 ### 🔹 3. Ajouter une barre de recherche (SearchBar)
@@ -80,14 +80,6 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 -   Rendre la recherche insensible à la casse en convertissant les textes avec toLowerCase()
 -   Faire en sorte de d'utiliser le paramètre de requête where pour filterer la recherche et mettre à jour le résultat
 
-### 🔹 4. Créer une pagination
-
--   Savoir ajouter un addEventListener("click") sur un bouton
--   Savoir modifier le DOM avec innerHTML ou appendChild()
--   Savoir utiliser une variable pour compter combien d’événements sont déjà affichés (ex : let offset = 20;)
--   Savoir faire une boucle pour afficher 20 événements de plus
--   Savoir afficher/masquer un loader avec style.display = "block" / "none"
-
 ## 🚫 Ce que vous ne devez pas faire
 
 -   ❌ Utiliser un framework frontend (type React ou Vue.js)
@@ -95,7 +87,11 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 ## 💎 Bonus possibles
 
--   Intégrer plusieures APIs
 -   Améliorer le design et l'UX générale
+-   Gérer tous les cas d'erreur possible (vous pouvez contacter votre encadrant.e pour vous aider 😁)
+-   utiliser une variable offset (ex : `let offset = 20`)
+-   au clic sur un bouton **charger plus**, afficher 20 éléments suppélementaire
+-   ajouter un loader pour attendre les données / une fois les données afficher masquer le loader
+-   Intégrer plusieures APIs
 -   Intégrer une map pour visualiser les données
 -   Intégrer une bibliothèque pour afficher des graphes de données
