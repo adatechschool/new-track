@@ -171,7 +171,7 @@ Voici des exemples de données à insérer (tu peux en ajouter d'autres) :
 # Modélisation
 
 Nous aimerions que vous créiez une présentation structurée d’un projet appelé “projet ada”, dans laquelle vous détaillerez les éléments essentiels :
-- un titre,
+- un titre (ex : 'adatabase', 'adarrière', 'adavant', etc),
 - le fait qu’il s’agisse d’un travail individuel ou en équipe,
 
 les liens que ce projet entretient avec d’autres éléments importants (par exemple des ressources, des compétences ou des thèmes).
