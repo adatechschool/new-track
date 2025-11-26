@@ -169,12 +169,29 @@ Voici des exemples de données à insérer (tu peux en ajouter d'autres) :
 -   [ ] Récupérer toutes les compétences qui ne sont associées à aucune ressource
 
 # Modélisation
+### v1 - sans les comment faire 
+Vous allez créer un espace permettant de présenter les projets réalisés par les élèves.
+Votre mission est d'imaginer la manière dont ces projets pourraient être organisés, reliés entre eux et associés aux autres éléments importants de l'écosystème Ada (ex : compétences, thèmes, ressources)
 
-Nous aimerions que vous créiez une présentation structurée d’un projet appelé “projet ada”, dans laquelle vous détaillerez les éléments essentiels :
-- un titre (ex : 'adatabase', 'adarrière', 'adavant', etc),
-- le fait qu’il s’agisse d’un travail individuel ou en équipe,
+Vous devrez donc concevoir un structure cohérente qui permette de décrire un projet, d'indiquer son contexte (travail individuel ou en groupe) et de montrer les liens qu'iel entretient avec d'autres éléments clés.
 
-les liens que ce projet entretient avec d’autres éléments importants (par exemple des ressources, des compétences ou des thèmes).
+Vous êtes libre de la façon dont vous modélisez et organisez ces informations : l'objectif est de proposer une structure claire, logique et exploitable.
 
-Vous êtes totalement libre dans la manière d’organiser et de présenter ces informations.
-La seule condition est que votre travail soit accessible depuis votre GitHub, afin que nous puissions le consulter facilement.
+### v2 - avec plus de détail 
+vous allez concevoir la structure qui permettra de présenter les projets réalisés par les apprenant·e·s.
+Votre objectif est d’imaginer comment organiser les informations, de manière claire et cohérente, afin que l’on puisse retrouver facilement :
+- les projets réalisés,
+- leur contexte (individuel / collectif),
+- les éléments auxquels ils sont liés (compétences, ressources, thèmes…).
+
+Commencez par identifier les informations nécessaires pour décrire un projet.
+(Par exemple : nom du projet, type de travail, date, promotion, etc.)
+
+Listez ensuite les éléments extérieurs avec lesquels un projet doit être relié.
+(Par exemple : un projet peut mobiliser plusieurs compétences, appartenir à un thème, ou être associé à certaines ressources pédagogiques.)
+
+Imaginez enfin comment ces éléments se connectent entre eux.
+Vous pouvez représenter cela sous la forme d’un schéma logique, d’un diagramme, ou de tout autre format clair.
+Il faudra : 
+- Une **modélisation cohérente**, qui montre comment les informations sont structurées.
+- Des choix **clairs** et **justifiés** : pourquoi ces informations ? pourquoi ces liens ?
