@@ -1,8 +1,8 @@
 # ✅ Adataviz
 
--   **Durée :** 2 semaine
--   **Type de projet :** seul / pair programming
--   **Nom du repo :** `adataviz-[nom_github]`
+- **Durée :** 2 semaine
+- **Type de projet :** seul / pair programming
+- **Nom du repo :** `adataviz-[nom_github]`
 
 ## 📦 Modalités de rendu
 
@@ -30,31 +30,31 @@ Tu peux maintenant utiliser la commande `pnpm dev` à chaque fois que tu veux d�
 
 Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
--   les bases du **terminal**
--   les bases de **HTML & CSS**
--   les bases du **JavaScript**
+- les bases du **terminal**
+- les bases de **HTML & CSS**
+- les bases du **JavaScript**
 
 ## 🎓 Compétences à acquérir
 
--   [ ] Je sais connecter mon HTML avec mon JS
--   [ ] Je sais utiliser le CSS
--   [ ] Je sais quand utiliser grid et flexbox
--   [ ] Je sais rendre ma page responsive
--   [ ] Je sais créer une balise HTML via mon JS
--   [ ] Je sais rajouer des informations dans cette balise
--   [ ] Je sais afficher les données récuperer par l'API
--   [ ] Je comprends comment fonctionne une API et peut l'expliquer
--   [ ] Je sais manipuler un évènement pour l'afficher ou non
--   [ ] Je sais changer le CSS via mon évènement JS
--   [ ] Je sais fetch des données
--   [ ] Je comprends ce qu'est une fonction asynchrone
--   [ ] Je sais passer des paramètres d'URL dans une requête HTTP
+- [ ] Je sais connecter mon HTML avec mon JS
+- [ ] Je sais utiliser le CSS
+- [ ] Je sais quand utiliser grid et flexbox
+- [ ] Je sais rendre ma page responsive
+- [ ] Je sais créer une balise HTML via mon JS
+- [ ] Je sais rajouer des informations dans cette balise
+- [ ] Je sais afficher les données récuperer par l'API
+- [ ] Je comprends comment fonctionne une API et peut l'expliquer
+- [ ] Je sais manipuler un évènement pour l'afficher ou non
+- [ ] Je sais changer le CSS via mon évènement JS
+- [ ] Je sais fetch des données
+- [ ] Je comprends ce qu'est une fonction asynchrone
+- [ ] Je sais passer des paramètres d'URL dans une requête HTTP
 
 ## 🧪 Compétences avancé
 
--   [ ] Je sais afficher une erreur si mon API ne fonctionne pas
--   [ ] Je sais organsier mon code et mes fichiers / dossiers
--   [ ] Je sais gérer un loader / un chargement
+- [ ] Je sais afficher une erreur si mon API ne fonctionne pas
+- [ ] Je sais organsier mon code et mes fichiers / dossiers
+- [ ] Je sais gérer un loader / un chargement
 
 ## 🧩 Fonctionnalités à développer
 
@@ -62,36 +62,44 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 ### 🔹 1. Afficher les données depuis l’API avec un fetch
 
--   Récupérer les données depuis l’API fournie.
--   Créer une fonction pour récuperer les données de l'API
--   Afficher ces données sur la page
+- Récupérer les données depuis l’API fournie.
+- Créer une fonction pour récuperer les données de l'API
+- Afficher ces données sur la page
+
+![](./step1.png)
 
 ### 🔹 2. Ajouter un bouton “voir plus” (“See more”)
 
 **Prévoir un affichage alternatif lorsque certaines données sont absentes (par exemple : afficher “Aucune description disponible” ou une image par défaut).**
 
--   Créer un bouton permettant d’afficher ou de masquer le contenu de la description
--   Mettre à jour l’affichage du DOM avec un changement visuel : **bouton** doit afficher “voir moins” lorsque le contenu est **déplié**, et “voir plus” lorsqu’il est **replié**
--   Garantir une mise en page responsive une fois le contenu affiché (ex. adapter la taille du texte ou la disposition sur mobile)
+- Créer un bouton permettant d’afficher ou de masquer le contenu de la description
+- Mettre à jour l’affichage du DOM avec un changement visuel : **bouton** doit afficher “voir moins” lorsque le contenu est **déplié**, et “voir plus” lorsqu’il est **replié**
+- Garantir une mise en page responsive une fois le contenu affiché (ex. adapter la taille du texte ou la disposition sur mobile)
+
+![](./step2.png)
+![](./step2_2.png)
 
 ### 🔹 3. Ajouter une barre de recherche (SearchBar)
 
--   Créer une barre de recherche dans la page d’accueil et déclencher la recherche lors du clic sur le bouton “rechercher”
--   Rendre la recherche insensible à la casse en convertissant les textes avec toLowerCase()
--   Faire en sorte de d'utiliser le paramètre de requête where pour filterer la recherche et mettre à jour le résultat
+- Créer une barre de recherche dans la page d’accueil et déclencher la recherche lors du clic sur le bouton “rechercher”
+- Rendre la recherche insensible à la casse en convertissant les textes avec toLowerCase()
+- Faire en sorte de d'utiliser le paramètre de requête where pour filterer la recherche et mettre à jour le résultat
+
+![](./step3.png)
+![](./step3_2.png)
 
 ## 🚫 Ce que vous ne devez pas faire
 
--   ❌ Utiliser un framework frontend (type React ou Vue.js)
--   ❌ Coder votre propre backend/base de données
+- ❌ Utiliser un framework frontend (type React ou Vue.js)
+- ❌ Coder votre propre backend/base de données
 
 ## 💎 Bonus possibles
 
--   Améliorer le design et l'UX générale
--   Gérer tous les cas d'erreur possible (vous pouvez contacter votre encadrant.e pour vous aider 😁)
--   utiliser une variable offset (ex : `let offset = 20`)
--   au clic sur un bouton **charger plus**, afficher 20 éléments suppélementaire
--   ajouter un loader pour attendre les données / une fois les données afficher masquer le loader
--   Intégrer plusieures APIs
--   Intégrer une map pour visualiser les données
--   Intégrer une bibliothèque pour afficher des graphes de données
+- Améliorer le design et l'UX générale
+- Gérer tous les cas d'erreur possible (vous pouvez contacter votre encadrant.e pour vous aider 😁)
+- utiliser une variable offset (ex : `let offset = 20`)
+- au clic sur un bouton **charger plus**, afficher 20 éléments suppélementaire
+- ajouter un loader pour attendre les données / une fois les données afficher masquer le loader
+- Intégrer plusieures APIs
+- Intégrer une map pour visualiser les données
+- Intégrer une bibliothèque pour afficher des graphes de données
