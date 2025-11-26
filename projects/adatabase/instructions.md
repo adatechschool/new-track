@@ -168,6 +168,13 @@ Voici des exemples de données à insérer (tu peux en ajouter d'autres) :
 -   [ ] Récupérer les 5 ressources les plus récentes avec leur thème
 -   [ ] Récupérer toutes les compétences qui ne sont associées à aucune ressource
 
-## Bonus ++ (Exercice de Conception de de creation d'une base de données)
+# Modélisation
 
-Nous souhaitons intégrer un module de quiz en complément des tables existantes. Il vous revient de définir et d’établir les relations pertinentes entre les différentes tables, puis d’en proposer une représentation sous forme de diagramme.
+Nous aimerions que vous créiez une présentation structurée d’un projet appelé “projet ada”, dans laquelle vous détaillerez les éléments essentiels :
+- un titre,
+- le fait qu’il s’agisse d’un travail individuel ou en équipe,
+
+les liens que ce projet entretient avec d’autres éléments importants (par exemple des ressources, des compétences ou des thèmes).
+
+Vous êtes totalement libre dans la manière d’organiser et de présenter ces informations.
+La seule condition est que votre travail soit accessible depuis votre GitHub, afin que nous puissions le consulter facilement.
