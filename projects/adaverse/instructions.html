@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>instructions.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%F0%9F%8C%90-adaverse">🌐 Adaverse</h1>
+<ul>
+<li><strong>Durée :</strong> 2 semaine</li>
+<li><strong>Type de projet :</strong> seul / pair programming</li>
+<li><strong>Nom du repo :</strong> <code>adaverse-[nom_github]</code></li>
+</ul>
+<h2 id="%F0%9F%93%A6-modalit%C3%A9s-de-rendu">📦 Modalités de rendu</h2>
+<p>Vous pouvez développer sur la branche <code>main</code>, mais le projet devra être livré sur <strong>deux branches distinctes</strong> :</p>
+<ul>
+<li><code>stable</code> → version <strong>complète avec toutes les fonctionnalités obligatoires</strong>, <strong>sans bonus</strong>.</li>
+<li><code>bonus</code> → version enrichie avec les <strong>fonctionnalités bonus</strong>.</li>
+</ul>
+<blockquote>
+<p>⚠️ <strong>Important :</strong> Vous devez avoir <em>poussé</em> (<code>git push</code>) votre <strong>dernier commit la veille de la soutenance à minuit au plus tard</strong>, afin qu’il soit pris en compte pour l’évaluation.</p>
+</blockquote>
+<h2 id="%F0%9F%8E%AF-objectif-du-projet">🎯 Objectif du projet</h2>
+<p>Ce projet consiste à développer une <strong>plateforme de visualisation de projets réalisés par les apprenant·e·s d’Ada</strong>.
+Chaque projet sera classé par <strong>catégorie</strong>, correspondant à un <strong>projet du programme Ada</strong> (ex. : <em>Ada Quiz</em>, <em>Adaopte</em>, <em>Ada Check Events</em>, etc.).</p>
+<p>L’application sera <strong>fullstack</strong>, réalisée avec <strong>Next.js</strong>, <strong>TailwindCSS</strong> et <strong>TypeScript</strong>, et connectée à une base de données hébergée sur <strong>Neon</strong>, via l’ORM <strong>Drizzle</strong>.</p>
+<p>Les utilisateur·rice·s pourront <strong>proposer un projet</strong> via la page d’accueil, mais <strong>seul·e le·la développeur·euse</strong> de la plateforme pourra <strong>valider et publier</strong> les projets pour qu’ils apparaissent sur le site.</p>
+<h2 id="%F0%9F%A7%B1-stack-technique-obligatoire">🧱 Stack technique (obligatoire)</h2>
+<table>
+<thead>
+<tr>
+<th>Élément</th>
+<th>Technologie</th>
+<th>Lien</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Framework fullstack</td>
+<td>Next.js</td>
+<td>https://nextjs.org/</td>
+</tr>
+<tr>
+<td>Framework CSS</td>
+<td>TailwindCSS</td>
+<td>https://tailwindcss.com/</td>
+</tr>
+<tr>
+<td>ORM</td>
+<td>Drizzle ORM</td>
+<td>https://orm.drizzle.team/</td>
+</tr>
+<tr>
+<td>Base de données</td>
+<td>Neon</td>
+<td>https://neon.com/</td>
+</tr>
+<tr>
+<td>Langage</td>
+<td>TypeScript</td>
+<td>https://www.typescriptlang.org/</td>
+</tr>
+</tbody>
+</table>
+<h2 id="%E2%9A%99%EF%B8%8F-initialisation-du-projet">⚙️ Initialisation du projet</h2>
+<p>Installe l'ensemble des dépendances en suivant les documentations officielles.</p>
+<p>Pour Next.js tu peux regarder cette section : https://nextjs.org/docs/app/getting-started/installation.</p>
+<blockquote>
+<p>⚠️ N'oublie pas de choisir tailwind et TypeScript pendant la configuration</p>
+</blockquote>
+<p>Pour Neon, crée un projet, récupère la &quot;connection string&quot; de la base de données et copie la dans ton <code>.env</code>.</p>
+<p>Enfin, pour Drizzle, tu peux suivre la documentation officielle pour Neon à <a href="https://orm.drizzle.team/docs/connect-neon">ce lien</a> ou notre petit guide d'installation <a href="../../guides/installer-drizzle.md">ici</a>. Une fois la connection et le schéma créé, tu es prêt⋅e pour coder !</p>
+<h2 id="%F0%9F%9A%80-d%C3%A9ploiement">🚀 Déploiement</h2>
+<p>Tu peux utiliser <strong><a href="https://vercel.com/">Vercel</a></strong> la plateforme officielle pour héberger les applications <strong>Next.js</strong>.</p>
+<p>Attention, n'oublie pas de spécifier la variable d'environnement pour te connecter à Neon sur Vercel (la même que dans ton fichier <code>.env</code>).</p>
+<blockquote>
+<p>💡 Pensez à déployer le plus tôt possible, dès qu’une version basique fonctionnelle existe.</p>
+</blockquote>
+<h2 id="%F0%9F%A7%B0-pr%C3%A9-requis-techniques">🧰 Pré-requis techniques</h2>
+<p>Pour mener à bien ce projet, il est nécessaire de maîtriser :</p>
+<ul>
+<li>les bases du <strong>terminal</strong></li>
+<li>les bases du <strong>JavaScript</strong></li>
+<li>les bases du <strong>React</strong></li>
+<li>les bases du <strong>SQL</strong></li>
+<li>les bases du <strong>développement backend</strong></li>
+</ul>
+<h2 id="%F0%9F%8E%93-comp%C3%A9tences-%C3%A0-acqu%C3%A9rir">🎓 Compétences à acquérir</h2>
+<h3 id="back--bdd">Back / BDD</h3>
+<ul>
+<li><input type="checkbox" id="checkbox0"><label for="checkbox0">Je sais intégrer et utiliser une ORM avec NextJS</label></li>
+<li><input type="checkbox" id="checkbox1"><label for="checkbox1">Je sais connecter mon ORM avec ma base de données</label></li>
+<li><input type="checkbox" id="checkbox2"><label for="checkbox2">Je sais créer une base de donnée à partir d'un schéma</label></li>
+<li><input type="checkbox" id="checkbox3"><label for="checkbox3">Je sais visualiser et modifier des données dans la base de données</label></li>
+<li><input type="checkbox" id="checkbox4"><label for="checkbox4">Je comprends le fonctionnement d'un ORM (mapping object relationnel)</label></li>
+<li><input type="checkbox" id="checkbox5"><label for="checkbox5">Je sais modéliser une base de données à partir d'un énoncé</label></li>
+<li><input type="checkbox" id="checkbox6"><label for="checkbox6">Je comprends les avantages et les inconvénients que l'ORM apporte</label></li>
+<li><input type="checkbox" id="checkbox7"><label for="checkbox7">J'arrive à implémenter mon ORM dans mon code</label></li>
+<li><input type="checkbox" id="checkbox8"><label for="checkbox8">Je sais récupérer des données venant de plusieurs tables avec l'ORM (foreign keys)</label></li>
+<li><input type="checkbox" id="checkbox9"><label for="checkbox9">Je sais faire un CRUD de ma donnée avec mon ORM</label></li>
+<li><input type="checkbox" id="checkbox10"><label for="checkbox10">Je sais créer des routes api et des composants serveur dans NextJS</label></li>
+<li><input type="checkbox" id="checkbox11"><label for="checkbox11">Je sais créer et exécuter des migrations</label></li>
+<li><input type="checkbox" id="checkbox12"><label for="checkbox12">Je sais créer et manipuler des forms actions</label></li>
+</ul>
+<h3 id="front">Front</h3>
+<ul>
+<li><input type="checkbox" id="checkbox13"><label for="checkbox13">Je peux créer une page dans NextJS</label></li>
+<li><input type="checkbox" id="checkbox14"><label for="checkbox14">Je comprends l'utilité du </label><code>&quot;use client&quot;</code></li>
+<li><input type="checkbox" id="checkbox15"><label for="checkbox15">Je comprends comment et quand utiliser useState et useEffect</label></li>
+<li><input type="checkbox" id="checkbox16"><label for="checkbox16">Je sais fetch des routes API depuis une page NextJS</label></li>
+<li><input type="checkbox" id="checkbox17"><label for="checkbox17">Je sais découper le code de mon projet en plusieurs fichiers</label></li>
+<li><input type="checkbox" id="checkbox18"><label for="checkbox18">Je comprends le système de routes de NextJS</label></li>
+<li><input type="checkbox" id="checkbox19"><label for="checkbox19">Je sais créer des routes dynamiques avec des paramètres d'URL</label></li>
+<li><input type="checkbox" id="checkbox20"><label for="checkbox20">Je sais récuperer le paramètre avec </label><code>params</code></li>
+<li><input type="checkbox" id="checkbox21"><label for="checkbox21">Je sais comment utiliser </label><code>Link</code> pour naviguer entre les pages côté client</li>
+<li><input type="checkbox" id="checkbox22"><label for="checkbox22">Je sais faire la différence entre une route statique et dynamique</label></li>
+<li><input type="checkbox" id="checkbox23"><label for="checkbox23">Je sais appliquer du style à mes composants avec tailwind</label></li>
+<li><input type="checkbox" id="checkbox24"><label for="checkbox24">Je sais créer un dialogue</label></li>
+</ul>
+<h2 id="%F0%9F%A7%A9-fonctionnalit%C3%A9s-%C3%A0-d%C3%A9velopper">🧩 Fonctionnalités à développer</h2>
+<blockquote>
+<p>⚠️ <strong>Réalisez toutes les fonctionnalités obligatoires avant de passer aux bonus.</strong></p>
+</blockquote>
+<h3 id="1-%F0%9F%97%82%EF%B8%8F-conception-de-la-base-de-donn%C3%A9es">1. 🗂️ Conception de la base de données</h3>
+<p>Cette partie se réalise avec <strong>Drizzle ORM</strong> en créant le schéma de la base de données.</p>
+<h4 id="tables-%C3%A0-concevoir">Tables à concevoir</h4>
+<ul>
+<li>
+<p><strong>Table des projets Ada</strong></p>
+<ul>
+<li>Contient la liste des différents <strong>projets du programme Ada</strong>.</li>
+<li>Chaque entrée correspond à un <strong>type de projet officiel</strong> (ex. : Adaopte, Ada Quiz…).</li>
+<li>Elle doit inclure un identifiant unique et un <strong>nom de projet</strong> clair et distinct.</li>
+</ul>
+</li>
+<li>
+<p><strong>Table des promotions Ada</strong></p>
+<ul>
+<li>Contient l’ensemble des <strong>promotions d’apprenant·e·s</strong>.</li>
+<li>Chaque promo doit avoir un identifiant unique, un <strong>nom</strong> (ex. &quot;Frida&quot;) et une <strong>date de début</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Table des projets étudiantes / étudiants</strong></p>
+<ul>
+<li>Représente les <strong>projets réalisés par les apprenant·e·s</strong> pour un projet Ada donné.</li>
+<li>Chaque projet doit inclure :
+<ul>
+<li>un <strong>titre</strong> clair,</li>
+<li>une <strong>illustration</strong> pour avoir un visuel du projet</li>
+<li>une <strong>adresse web personnalisée</strong> (slug) pour générer une URL propre,</li>
+<li>un <strong>lien GitHub</strong>,</li>
+<li>un <strong>lien vers la démo</strong> en ligne,</li>
+<li>une <strong>date de création</strong> (quand le projet est proposé),</li>
+<li>une <strong>date de publication</strong> (vide tant que le projet n’est pas validé),</li>
+<li>un <strong>lien vers la promotion</strong>,</li>
+<li>un <strong>lien vers le projet Ada</strong> concerné.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-%F0%9F%8C%B1-cr%C3%A9ation-dune-seed-de-donn%C3%A9es">2. 🌱 Création d’une seed de données</h3>
+<p>Une <strong>seed</strong> permet d’ajouter des données de base dans la base de données.</p>
+<h4 id="t%C3%A2ches-%C3%A0-r%C3%A9aliser">Tâches à réaliser</h4>
+<ul>
+<li><input type="checkbox" id="checkbox25"><label for="checkbox25">Créer un script </label><code>.sql</code> pour insérer les <strong>promotions Ada</strong></li>
+<li><input type="checkbox" id="checkbox26"><label for="checkbox26">Créer un script </label><code>.sql</code> pour insérer les <strong>projets Ada</strong></li>
+<li><input type="checkbox" id="checkbox27"><label for="checkbox27">Créer un script </label><code>.sql</code> permettant de <strong>publier un projet</strong> (en mettant à jour sa date de publication selon son identifiant)</li>
+</ul>
+<h3 id="3-%F0%9F%92%BB-int%C3%A9gration-sur-le-site">3. 💻 Intégration sur le site</h3>
+<h4 id="a-formulaire-de-proposition-de-projet">a. Formulaire de proposition de projet</h4>
+<ul>
+<li><input type="checkbox" id="checkbox28"><label for="checkbox28">Ajouter sur la page d’accueil </label><code>/</code> un <strong>bouton &quot;Proposer un projet&quot;</strong> dans le header.</li>
+<li><input type="checkbox" id="checkbox29"><label for="checkbox29">Le </label><strong>bouton &quot;Proposer un projet&quot;</strong> ouvre une <strong>popup</strong> contenant un <strong>formulaire</strong> permettant de :
+<ul>
+<li>saisir le titre du projet,</li>
+<li>renseigner les liens GitHub et de démo,</li>
+<li>choisir la promotion concernée,</li>
+<li>choisir le projet Ada associé (via des menus déroulants).</li>
+</ul>
+</li>
+<li><input type="checkbox" id="checkbox30"><label for="checkbox30">Attention, si le titre ou les liens de sont pas renseignés, le projet ne doit pas être créé et on doit afficher une erreur</label></li>
+<li><input type="checkbox" id="checkbox31"><label for="checkbox31">Lorsqu’un·e utilisateur·rice valide le formulaire :</label>
+<ul>
+<li>le projet est enregistré dans la base de données avec toutes les informations saisies,</li>
+<li>la <strong>date de publication reste vide</strong> tant qu’il n’a pas été validé.</li>
+</ul>
+</li>
+</ul>
+<p><img src="./project-dialog.png" alt=""></p>
+<h4 id="b-page-daccueil---affichage-des-projets-publi%C3%A9s">b. Page d’accueil <code>/</code> : affichage des projets publiés</h4>
+<ul>
+<li><input type="checkbox" id="checkbox32"><label for="checkbox32">Afficher sur la page d’accueil la </label><strong>liste des projets publiés</strong>, regroupés par projet Ada.</li>
+<li><input type="checkbox" id="checkbox33"><label for="checkbox33">Les projets doivent être récupérés depuis le backend et </label><strong>triés par date de publication décroissante (le plus récent en premier)</strong>.</li>
+<li><input type="checkbox" id="checkbox34"><label for="checkbox34"></label><strong>Les projets non publiés (date vide)</strong> ne doivent pas apparaître.</li>
+<li><input type="checkbox" id="checkbox35"><label for="checkbox35">Chaque carte de projet doit afficher :</label>
+<ul>
+<li>le titre du projet,</li>
+<li>la date de publication,</li>
+<li>la promotion correspondante,</li>
+<li>une image du projet :
+<ul>
+<li>automatiquement récupérée depuis le fichier <code>thumbnail.png</code> à la racine du repo GitHub (récupérée automatiquement avec l'url <code>https://github.com/&lt;user&gt;/&lt;repo&gt;/blob/main/thumbnail.png?raw=true</code>),</li>
+<li>sinon, une <strong>image par défaut</strong> doit être affichée.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="./home.png" alt=""></p>
+<h4 id="c-page-de-d%C3%A9tail-dun-projet">c. Page de détail d’un projet</h4>
+<ul>
+<li><input type="checkbox" id="checkbox36"><label for="checkbox36">Cliquer sur un projet redirige vers une </label><strong>page de détail</strong>.</li>
+<li><input type="checkbox" id="checkbox37"><label for="checkbox37">Cette page doit afficher :</label>
+<ul>
+<li>le titre du projet,</li>
+<li>la promotion,</li>
+<li>l’image du projet,</li>
+<li>la date de publication,</li>
+<li>le projet Ada associé.</li>
+</ul>
+</li>
+<li><input type="checkbox" id="checkbox38"><label for="checkbox38">Elle doit également contenir un lien pour afficher la démo et un autre pour accéder au Github du projet</label></li>
+<li><input type="checkbox" id="checkbox39"><label for="checkbox39">Si on clique sur le logo, on doit revenir à la page d’accueil.</label></li>
+</ul>
+<p><img src="./project-details.png" alt=""></p>
+<h2 id="%F0%9F%9A%AB-ce-que-vous-ne-devez-pas-faire">🚫 Ce que vous ne devez pas faire</h2>
+<ul>
+<li>Aucune gestion de <strong>connexion / inscription</strong></li>
+<li>Pas d’<strong>upload d’images</strong></li>
+<li>Pas de <strong>commentaires</strong></li>
+<li>Pas de <strong>favoris</strong></li>
+<li>Pas d’<strong>interface d’administration</strong></li>
+</ul>
+<h2 id="%F0%9F%92%8E-bonus-possibles">💎 Bonus possibles</h2>
+<ul>
+<li>Faire une vraie gestion d'erreur pour vérifier les liens github et de démo</li>
+<li>Récupérer des <strong>informations GitHub</strong> (ex. nombre d’étoiles, commits, contributeur·rice·s…) pour enrichir la page de détails.</li>
+<li>Ajouter des <strong>filtres</strong> et des <strong>options de tri</strong> avancées pour la recherche.</li>
+<li>Améliorer l’<strong>accessibilité</strong> du site.</li>
+<li>Ajouter un <strong>dark mode</strong> ou d’autres <strong>paramètres de personnalisation</strong>.</li>
+<li>Ajouter des <strong>champs supplémentaires</strong> aux projets pour enrichir les données affichées.</li>
+<li>Compléter la table des <strong>projets Ada</strong> avec des informations supplémentaires (stack utilisée, thème, description, etc.).</li>
+<li>Compter le nombre de vue par projet</li>
+<li>Faire un dashboard pour visualiser les vues</li>
+<li>Améliorer le <strong>design global</strong> : landing page, animations, transitions fluides, par exemple en intégrant ce design :</li>
+</ul>
+<p><img src="./home-figma.png" alt="">
+<img src="./details-figma.png" alt=""></p>
+
+</body>
+</html>
