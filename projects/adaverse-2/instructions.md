@@ -31,7 +31,10 @@ Ce projet consiste à ajouter un système d'authentification au projet `adaverse
 
 La stack étant la même que dans le projet adaverse, tu peux y reprendre les instructons.
 
-TODO: add lib for auth, maybe better-auth ?
+Pour l'authantification, vous devez installer : 
+```bash
+npm install better-auth
+```
 
 ## 🚀 Déploiement
 
@@ -61,13 +64,54 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 -   [ ] Je sais proteger l'accès à certaines données si l'utilisateur⋅ice est connecté⋅e ou non
 -   [ ] Je sais lier des données à un utilisateurs (commentaires, favoris)
 -   [ ] Je sais gérer plusieurs rôles utilisateurs (user, admin)
+-   [ ] Je sais gérer les commentaires sous mes projets
 
 ## 🧩 Fonctionnalités à développer
 
 > ⚠️ **Réalisez toutes les fonctionnalités obligatoires avant de passer aux bonus.**
 
-TODO
+### 1 . mise en place de l'utilsateur 
+- créer une table `users`, elle contiendra un **email** et un **mot de passe**
+- elle aura aussi un role ("admin" ou "user")
+- **une date de creation**
+- chaque utilisateur peut :
+    - créer un projet
+    - laisser un commentaire
+    - ajouter un projet 
+- créer une table **commentaire** :
+  - avec un **texte**
+  - une référence vers le **projet concerné** et **l'utilisateur**
+
+le role `admin` pourra : 
+  - publier / refuser un projet
+  - voir tous les projets
+  - modifier l'état d'un projet
+  - supprimer ou modifier les commentaires
+
+### 2 . Système d'authentification
+
+Cette partie sera le point de départ de notre projet côté front, nous vous invitons à bien vérifier si la partie **back** est bien stable avant de passer à celle-ci
+
+- créer un formulaire d'inscription (email ou nom d'utilisateur + mot de passe)
+- créer un formulaire de connexion (email ou nom d'utilisateur + mot de passe)
+- gérer les erreurs des formulaires
+- créer un bouton de déconnexion
+- mettre en place la page "admin"
+- pouvoir afficher le nom de l'utilisateur
+- rediriger l'utilisateur vers `/` si l'utilisateur n'a pas le role `admin`
+ 
+3 . Ajout des commentaires 
+⚠️ cela ne s'applique que pour le `users` avec le role 'user' ⚠️
+- possibilité de rajouter un commentaire sur chaque projet
+- possibilité de supprimer un commentaire sur chaque projet
+- possibilité de modifier un commentaire sur chaque projet
+- impossibilité de supprimer / modifier le commentaire d'un autre utilisateur
+- un commentaire ne peut pas être vide
+- les commentaires doivent être trier, du plus récent au plus ancien
 
 ## 💎 Bonus possibles
 
--   TODO
+-   système de recherche de projet avancé (filtre + barre de recherche)
+-   Notation sur un projet (de 1 à 5 étoiles)
+-   modification du profile avec une page dédier
+-   intégration de la bibilothèque zod (https://zod.dev/)
