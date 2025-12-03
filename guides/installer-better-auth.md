@@ -1,5 +1,7 @@
 # Installation de BetterAuth dans un projet NextJS avec Drizzle
 
+> ⚠️ Attention, il existe toujours différentes façon de configurer une bibliothèque. Le but de ce guide est surtout de vous montrer une façon simple afin de vous faire gagner du temps, mais il faut que vous vous l'appropriez : vous pouvez changer le nom des fichiers et/ou l'organisation de vos dossiers par exemple.
+
 1. Installer la lib
 
 ```
