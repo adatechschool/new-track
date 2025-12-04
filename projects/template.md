@@ -8,7 +8,7 @@
 
 TODO: préciser en fonction de l'avancement sur git
 
-> ⚠️ **Important :** Vous devez avoir _poussé_ (`git push`) votre **dernier commit la veille de la soutenance à minuit au plus tard**, afin qu’il soit pris en compte pour l’évaluation.
+> ⚠️ **Important :** Vous devez avoir _poussé_ (`git push`) votre **dernier commit à la date de rendu à minuit au plus tard**, afin qu’il soit pris en compte pour l’évaluation.
 
 ## 🎯 Objectif du projet
 
@@ -25,10 +25,6 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 -   les bases du **terminal**
 -   les bases du **JavaScript**
 
-## 🎓 Compétences à acquérir
-
--   [ ] Je sais...
-
 ## 🧩 Fonctionnalités à développer
 
 > ⚠️ **Réalisez toutes les fonctionnalités obligatoires avant de passer aux bonus.**
@@ -42,3 +38,11 @@ TODO: les fonctionnalités à éviter qui sont hors sujet par rapport au projet
 ## 💎 Bonus possibles
 
 TODO: l'ensemble des fonctionnalités bonus qui peuvent être développées une fois le projet terminé.
+
+## 📦 Modalités d'évaluation
+
+TODO: à copier en fonction de si c'est un projet de groupe ou individuel
+
+## 🎓 Compétences à acquérir
+
+-   [ ] Je sais...

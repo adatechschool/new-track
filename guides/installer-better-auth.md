@@ -1,12 +1,16 @@
 # Installation de BetterAuth dans un projet NextJS avec Drizzle
 
+> ⚠️ Attention, il existe toujours différentes façon de configurer une bibliothèque. Le but de ce guide est surtout de vous montrer une façon simple afin de vous faire gagner du temps, mais il faut que vous vous l'appropriez : vous pouvez changer le nom des fichiers et/ou l'organisation de vos dossiers par exemple.
+
 1. Installer la lib
 
 ```
 pnpm i better-auth
 ```
 
-2. Créer le schéma de base de données avec la commande
+2. Ajouter les variables d'environnement comme précisé dans [leur guide d'installation](https://www.better-auth.com/docs/installation)
+
+3. Créer le schéma de base de données avec la commande
 
 ```
 pnpx @better-auth/cli generate
@@ -14,7 +18,7 @@ pnpx @better-auth/cli generate
 
 > ⚠️ Attention, la commande génère un fichier `./auth-schema.ts`, copie bien son contenu avec le reste de tes schémas drizzle.
 
-3. Créer les tables en db avec drizzle
+4. Créer les tables en db avec drizzle
 
 ```
 pnpm db:push
@@ -22,7 +26,7 @@ pnpm db:push
 
 > 💡 Pour notre projet, on va gérer l'authentification côté serveur.
 
-4. Créer un fichier `auth.ts` qui initialise better-auth comme ci-dessous :
+5. Créer un fichier `auth.ts` qui initialise better-auth comme ci-dessous :
 
 ```ts
 import {betterAuth} from "better-auth";
@@ -43,9 +47,9 @@ export const auth = betterAuth({
 });
 ```
 
-5. Créer des components clients (`"use client"`) pour le formulaire de signin et signup
+6. Créer des components clients (`"use client"`) pour le formulaire de signin et signup
 
-6. Créer des serveurs actions qui utilisent les données du formulaire pour signin, signup et signout les users, comme ci-dessous :
+7. Créer des serveurs actions qui utilisent les données du formulaire pour signin, signup et signout les users, comme ci-dessous :
 
 ```ts
 "use server";
@@ -104,7 +108,7 @@ export const signout = async () => {
 };
 ```
 
-7. Maintenant, tu peux utiliser `auth.api.getSession()` pour récupérer les information de l'utilisateur⋅ice connecté⋅e. Si la fonction retourne `null`, c'est que l'utilisateur⋅ce n'est pas connecté⋅e
+8. Maintenant, tu peux utiliser `auth.api.getSession()` pour récupérer les information de l'utilisateur⋅ice connecté⋅e. Si la fonction retourne `null`, c'est que l'utilisateur⋅ce n'est pas connecté⋅e
 
 ```tsx
 import {auth} from "@/lib/auth";
