@@ -10,23 +10,9 @@ pnpm i better-auth
 
 2. Ajouter les variables d'environnement comme précisé dans [leur guide d'installation](https://www.better-auth.com/docs/installation)
 
-3. Créer le schéma de base de données avec la commande
-
-```
-pnpx @better-auth/cli generate
-```
-
-> ⚠️ Attention, la commande génère un fichier `./auth-schema.ts`, copie bien son contenu avec le reste de tes schémas drizzle.
-
-4. Créer les tables en db avec drizzle
-
-```
-pnpm db:push
-```
-
 > 💡 Pour notre projet, on va gérer l'authentification côté serveur.
 
-5. Créer un fichier `auth.ts` qui initialise better-auth comme ci-dessous :
+3. Créer un fichier `auth.ts` qui initialise better-auth comme ci-dessous :
 
 ```ts
 import {betterAuth} from "better-auth";
@@ -45,6 +31,20 @@ export const auth = betterAuth({
     }),
     plugins: [nextCookies()], // ⚠️ Permet de sauvegarder les cookies better-auth dans l'appli next
 });
+```
+
+4. Créer le schéma de base de données avec la commande
+
+```
+pnpx @better-auth/cli generate
+```
+
+> ⚠️ Attention, la commande génère un fichier `./auth-schema.ts`, copie bien son contenu avec le reste de tes schémas drizzle.
+
+5. Créer les tables en db avec drizzle
+
+```
+pnpm db:push
 ```
 
 6. Créer des components clients (`"use client"`) pour le formulaire de signin et signup
