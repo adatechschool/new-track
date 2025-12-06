@@ -1,0 +1,45 @@
+{
+    "root": "~/ada",
+    "projects": [
+        {
+            "name": "adapage",
+            "required": ["index.html", "index.css", "index.js"]
+        },
+        {
+            "name": "trackada",
+            "required": ["checktrack.js", "track.json"]
+        },
+        {
+            "name": "quizada",
+            "required": ["index.html"]
+        },
+        {
+            "name": "adalgo",
+            "required": ["index.html", "package.json", "node_modules/vitest"]
+        },
+        {
+            "name": "adataviz",
+            "required": ["index.html", "node_modules"]
+        },
+        {
+            "name": "adatabase",
+            "required": ["docker-compose.yml", "migration_up.sql", "migration_down.sql", "seed.sql", "queries.sql"]
+        },
+        {
+            "name": "adapi",
+            "required": ["index.js", "node_modules/express"]
+        },
+        {
+            "name": "adashboard",
+            "required": ["node_modules/react"]
+        },
+        {
+            "name": "adaverse",
+            "required": []
+        },
+        {
+            "name": "adaverse-2",
+            "required": []
+        }
+    ]
+}
