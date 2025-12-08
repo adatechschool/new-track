@@ -1,5 +1,5 @@
 import {expect, test} from "vitest";
-import {toCamelCase, toSnakeCase} from "./2-naming-conventions";
+import {toCamelCase, toSnakeCase} from "./2-namingConventions";
 
 // TODO: test camelcase with one word, with multiple words and when the input is already camelcase
 
