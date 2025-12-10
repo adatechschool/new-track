@@ -1,8 +1,8 @@
 # 🗃️ Adatabase
 
--   **Durée :** 1 semaine
--   **Type de projet :** seul / pair programming
--   **Nom du repo :** `adatabase-[nom_github]`
+- **Durée :** 1 semaine
+- **Type de projet :** seul / pair programming
+- **Nom du repo :** `adatabase-[nom_github]`
 
 ## 📦 Modalités de rendu
 
@@ -12,10 +12,10 @@ L'ensemble des scripts SQL devront être pushé sur la branche `main` du projet 
 
 Les fichiers à rendre sont les suivants :
 
--   `migration_up.sql` contient l'ensemble du SQL pour créer les tables et enums de la base
--   `migration_down.sql` contient le SQL qui permet de supprimer toutes les tables (l'inverse de migration_up)
--   `seed.sql` remplit les tables de la base de données avec des données
--   `queries.sql` contient les requêtes SELECT pour récupérer certaines données de la base
+- `migration_up.sql` contient l'ensemble du SQL pour créer les tables et enums de la base
+- `migration_down.sql` contient le SQL qui permet de supprimer toutes les tables (l'inverse de migration_up)
+- `seed.sql` remplit les tables de la base de données avec des données
+- `queries.sql` contient les requêtes SELECT pour récupérer certaines données de la base
 
 ```sh
 adatabase ➤ tree
@@ -43,20 +43,20 @@ Pour pouvoir utiliser postgres en local, on va créer une instance de base de do
 version: "3.8"
 
 services:
-    postgres:
-        image: postgres:17.5-alpine
-        container_name: adatabase_local
-        environment:
-            POSTGRES_USER: postgres
-            POSTGRES_PASSWORD: postgres
-            POSTGRES_DB: adatabase
-        ports:
-            - "5432:5432"
-        volumes:
-            - postgres_data:/var/lib/postgresql/data
+  postgres:
+    image: postgres:17.5-alpine
+    container_name: adatabase_local
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: adatabase
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
 
 volumes:
-    postgres_data:
+  postgres_data:
 ```
 
 4. Tu peux cliqué directement dans vscode sur **Run services** ou utiliser la commande `docker compose up -d` pour démarrer la base de données
@@ -68,10 +68,10 @@ Une fois l'extension installée, tu peux connecter ta base de données en rempli
 
 ![](./postgres-extension-connection.png)
 
--   Server name : localhost
--   User : postgres
--   Password : postgres
--   Database : adatabase
+- Server name : localhost
+- User : postgres
+- Password : postgres
+- Database : adatabase
 
 Ensuite, tu peux simplement exécuter les requêtes en créant un fichier .sql :
 
@@ -79,33 +79,33 @@ Ensuite, tu peux simplement exécuter les requêtes en créant un fichier .sql :
 
 ## 🎓 Compétences à acquérir
 
--   [ ] Je sais créer des tables SQL avec des contraintes
--   [ ] Je sais utiliser des clés étrangères et des relations entre tables
--   [ ] Je sais insérer des données dans une base de données
--   [ ] Je sais écrire des requêtes SELECT avec différents filtres
--   [ ] Je sais utiliser les jointures SQL
+- [ ] Je sais créer des tables SQL avec des contraintes
+- [ ] Je sais utiliser des clés étrangères et des relations entre tables
+- [ ] Je sais insérer des données dans une base de données
+- [ ] Je sais écrire des requêtes SELECT avec différents filtres
+- [ ] Je sais utiliser les jointures SQL
 
 ## 🧩 Fonctionnalités à développer
 
 > ⚠️ **Réalisez toutes les fonctionnalités obligatoires avant de passer aux bonus.**
 
--   [ ] Crée les tables comme sur le schéma ci-dessous :
+- [ ] Crée les tables comme sur le schéma ci-dessous :
 
 ![](./schema.png)
 
--   **themes** permet de grouper l'ensemble des ressources sur un thème précis (comme 'Frontend' ou 'Base de données' par exemple)
--   **resources** contient toutes les informations sur une ressource, notamment son titre et le lien vers la ressource (url)
--   **skills** représente une compétence en particulier qui est abordée par la ressource. Contrairement au thème, une ressource peut concerner plusieurs compétences
--   **resources_skills** permet de faire le lien entre une ressource et une compétence
--   **resource_type** enum permettant de limiter le type de ressources possible à une liste prédéterminée : `guide`, `video`, `exercice`, `projet` (⚠️ n'existe qu'avec Postgres)
+- **themes** permet de grouper l'ensemble des ressources sur un thème précis (comme 'Frontend' ou 'Base de données' par exemple)
+- **resources** contient toutes les informations sur une ressource, notamment son titre et le lien vers la ressource (url)
+- **skills** représente une compétence en particulier qui est abordée par la ressource. Contrairement au thème, une ressource peut concerner plusieurs compétences
+- **resources_skills** permet de faire le lien entre une ressource et une compétence
+- **resource_type** enum permettant de limiter le type de ressources possible à une liste prédéterminée : `guide`, `video`, `exercice`, `projet` (⚠️ n'existe qu'avec Postgres)
 
 > 💾 Une fois que toutes tes requêtes fonctionnent, sauvegarde-les dans un fichier `migration_up.sql`.
 
--   [ ] Écris un script pour nettoyer la base de données. L'idée c'est de faire l'inverse de `migration_up.sql`, écris le SQL pour supprimer toutes les tables de la base de données.
+- [ ] Écris un script pour nettoyer la base de données. L'idée c'est de faire l'inverse de `migration_up.sql`, écris le SQL pour supprimer toutes les tables de la base de données.
 
 > 💾 Une fois que toutes tes requêtes fonctionnent, sauvegarde-les dans un fichier `migration_down.sql`.
 
--   [ ] Dans cette étape, le but est de remplir la base de données. Pour ce faire, écris le code SQL pour insérer des lignes dans chacune des tables. Fais bien attention à avoir des données dans chaque table.
+- [ ] Dans cette étape, le but est de remplir la base de données. Pour ce faire, écris le code SQL pour insérer des lignes dans chacune des tables. Fais bien attention à avoir des données dans chaque table.
 
 Voici des exemples de données à insérer (tu peux en ajouter d'autres) :
 
@@ -151,25 +151,27 @@ Voici des exemples de données à insérer (tu peux en ajouter d'autres) :
 
 > 💾 Une fois que toutes tes requêtes fonctionnent, sauvegarde-les dans un fichier `seed.sql`.
 
--   [ ] Dernière étape, récupérer les données. Écris les requêtes SQL de sélection suivantes :
-    -   [ ] Récupérer la liste des thèmes
-    -   [ ] Récupérer toutes les ressources triées par date de mise à jour
-    -   [ ] Récupérer uniquement le nom et l'url des ressources de type exercice
-    -   [ ] Récupérer le titre et la description des ressources d'Ada uniquement
-    -   [ ] Récupérer les ressources qui ont la compétence JavaScript associée
-    -   [ ] Récupérer les ressources dont le titre contient le mot "react" (avec ou sans majuscules)
+- [ ] Dernière étape, récupérer les données. Écris les requêtes SQL de sélection suivantes :
+  - [ ] Récupérer la liste des thèmes
+  - [ ] Récupérer toutes les ressources triées par date de mise à jour
+  - [ ] Récupérer uniquement le nom et l'url des ressources de type exercice
+  - [ ] Récupérer le titre et la description des ressources d'Ada uniquement
+  - [ ] Récupérer les ressources qui ont la compétence JavaScript associée
+  - [ ] Récupérer les ressources dont le titre contient le mot "react" (avec ou sans majuscules)
 
 > 💾 Sauvegarde toutes ces requêtes dans un fichier `queries.sql`.
 
 ## 💎 Bonus possibles
 
--   [ ] Récupérer la liste des thèmes avec le nombre de ressources par thème
--   [ ] Récupérer le nom et l'url de toutes les ressources avec un tableau/liste contenant l'ensemble de leurs skills associés
--   [ ] Récupérer les 5 ressources les plus récentes avec leur thème
--   [ ] Récupérer toutes les compétences qui ne sont associées à aucune ressource
+- [ ] Récupérer la liste des thèmes avec le nombre de ressources par thème
+- [ ] Récupérer le nom et l'url de toutes les ressources avec un tableau/liste contenant l'ensemble de leurs skills associés
+- [ ] Récupérer les 5 ressources les plus récentes avec leur thème
+- [ ] Récupérer toutes les compétences qui ne sont associées à aucune ressource
 
 # Modélisation
-### v1 - sans les comment faire 
+
+### v1 - sans les comment faire
+
 Vous allez créer un espace permettant de présenter les projets réalisés par les élèves.
 Votre mission est d'imaginer la manière dont ces projets pourraient être organisés, reliés entre eux et associés aux autres éléments importants de l'écosystème Ada (ex : compétences, thèmes, ressources)
 
@@ -177,9 +179,11 @@ Vous devrez donc concevoir un structure cohérente qui permette de décrire un p
 
 Vous êtes libre de la façon dont vous modélisez et organisez ces informations : l'objectif est de proposer une structure claire, logique et exploitable.
 
-### v2 - avec plus de détail 
+### v2 - avec plus de détail
+
 vous allez concevoir la structure qui permettra de présenter les projets réalisés par les apprenant·e·s.
 Votre objectif est d’imaginer comment organiser les informations, de manière claire et cohérente, afin que l’on puisse retrouver facilement :
+
 - les projets réalisés,
 - leur contexte (individuel / collectif),
 - les éléments auxquels ils sont liés (compétences, ressources, thèmes…).
@@ -192,6 +196,11 @@ Listez ensuite les éléments extérieurs avec lesquels un projet doit être rel
 
 Imaginez enfin comment ces éléments se connectent entre eux.
 Vous pouvez représenter cela sous la forme d’un schéma logique, d’un diagramme, ou de tout autre format clair.
-Il faudra : 
+Il faudra :
+
 - Une **modélisation cohérente**, qui montre comment les informations sont structurées.
 - Des choix **clairs** et **justifiés** : pourquoi ces informations ? pourquoi ces liens ?
+
+## 🎓 Soutenance
+
+X aucune soutenance n'est prévue pour ce projet

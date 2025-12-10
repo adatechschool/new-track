@@ -103,3 +103,40 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 - Intégrer plusieures APIs
 - Intégrer une map pour visualiser les données
 - Intégrer une bibliothèque pour afficher des graphes de données
+
+## ✅ Modalité d'évaluation
+
+L’évaluation se déroulera sous forme de soutenance. L'apprenante devra présenter une partie des fonctionnalités sur lesquelles iel a travaillé.
+
+Chaque personne devra être capable :
+
+- d’expliquer clairement son code à l’oral,
+- de réaliser une démonstration fonctionnelle,
+- de naviguer aisément dans son code durant la présentation.
+
+Cette première partie durera **environ 5 minutes par personne**.
+
+Ensuite, l'apprenante répondra à **une à deux questions techniques**, afin de vérifier ses compétences (basées sur le référentiel _Compétences à acquérir_ ci-dessous).
+Cette phase durera **environ 2 minutes par personne**.
+
+## 🎓 Compétences à acquérir
+
+- [ ] Je sais connecter mon HTML avec mon JS
+- [ ] Je sais utiliser le CSS
+- [ ] Je sais quand utiliser grid et flexbox
+- [ ] Je sais rendre ma page responsive
+- [ ] Je sais créer une balise HTML via mon JS
+- [ ] Je sais rajouer des informations dans cette balise
+- [ ] Je sais afficher les données récuperer par l'API
+- [ ] Je comprends comment fonctionne une API et peut l'expliquer
+- [ ] Je sais manipuler un évènement pour l'afficher ou non
+- [ ] Je sais changer le CSS via mon évènement JS
+- [ ] Je sais fetch des données
+- [ ] Je comprends ce qu'est une fonction asynchrone
+- [ ] Je sais passer des paramètres d'URL dans une requête HTTP
+
+## 🧪 Compétences avancé
+
+- [ ] Je sais afficher une erreur si mon API ne fonctionne pas
+- [ ] Je sais organsier mon code et mes fichiers / dossiers
+- [ ] Je sais gérer un loader / un chargement
