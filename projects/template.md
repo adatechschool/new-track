@@ -1,8 +1,8 @@
 # ✅ Project
 
--   **Durée :** 1 semaine
--   **Type de projet :** seul / pair programming
--   **Nom du repo :** `project-[nom_github]`
+- **Durée :** 1 semaine
+- **Type de projet :** seul / pair programming
+- **Nom du repo :** `project-[nom_github]`
 
 ## 📦 Modalités de rendu
 
@@ -22,8 +22,8 @@ TODO: donner les quelques instructions pour démarrer le projet (installation, f
 
 Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
--   les bases du **terminal**
--   les bases du **JavaScript**
+- les bases du **terminal**
+- les bases du **JavaScript**
 
 ## 🧩 Fonctionnalités à développer
 
@@ -45,4 +45,8 @@ TODO: à copier en fonction de si c'est un projet de groupe ou individuel
 
 ## 🎓 Compétences à acquérir
 
--   [ ] Je sais...
+- [ ] Je sais...
+
+## 🎓 Soutenance
+
+TODO: préciser la date et l'heure de la soutenance du projet

@@ -1,14 +1,15 @@
 # Installation de Drizzle dans un projet NextJS
 
 1. Installer les dépendences :
-pnpm add drizzle-orm
-pnpm add -D drizzle-kit
-pnpm add @neondatabase/serverless
+   pnpm add drizzle-orm
+   pnpm add -D drizzle-kit
+   pnpm add @neondatabase/serverless
 
 2. Créer un fichier pour la connexion au client Neon `./lib/db/drizzle.ts` :
 
 ```ts
-import {drizzle} from "drizzle-orm/neon-http";
+import { drizzle } from "drizzle-orm/neon-http";
+ﬁ;
 
 export const db = drizzle(process.env.DATABASE_URL!);
 ```
@@ -16,12 +17,12 @@ export const db = drizzle(process.env.DATABASE_URL!);
 3. Créer un fichier qui contient de schéma de base de données :
 
 ```ts
-import {pgTable, serial, text} from "drizzle-orm/pg-core";
+import { pgTable, serial, text } from "drizzle-orm/pg-core";
 
 export const users = pgTable("skills", {
-    id: serial("id").primaryKey(),
-    name: text("name").notNull(),
-    description: text("description").notNull().unique(),
+  id: serial("id").primaryKey(),
+  name: text("name").notNull(),
+  description: text("description").notNull().unique(),
 });
 ```
 
