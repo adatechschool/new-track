@@ -58,13 +58,13 @@ export default defineConfig({
 
 6. Lancer le script pour créer la migration à partir du schéma :
 
-```
+```shell
 pnpm run db:generate
 ```
 
 7. Lancer le script pour mettre à jour la DB en exécutant la migration :
 
-```
+```shell
 pnpm run db:push
 ```
 
