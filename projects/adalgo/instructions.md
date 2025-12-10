@@ -18,7 +18,7 @@ Pour cela, vous devrez réaliser plusieurs exercices dans lesquels :
 
 -   certaines fonctions seront déjà écrites : vous devrez créer des tests pour vérifier leur bon fonctionnement ;
 -   certains tests seront déjà fournis : vous devrez alors implémenter les fonctions de manière à ce qu’elles passent ces tests ;
--   parfois, vous devrez écrire à la fois le code des fonctions **et** les tests associés.
+-   parfois, vous devrez écrire à la fois le code des fonctions **et** les tests associés (partiellement ou en totalité).
 
 Toutes les fonctions seront regroupées dans un dossier `src`.
 Un sous-dossier `src/bonus` contiendra les fonctions bonus.
@@ -28,7 +28,7 @@ Les fichiers respecteront tous le format :
 
 Les exercices doivent être réalisés **dans l’ordre**: `1-chocolatine.js`, puis `2-arrayToFrench.js`, etc.
 
-Pour chaque fonction, les instructions seront indiquées directement dans le code sous forme de commentaires. Votre objectif sera donc soit d’implémenter la fonction, soit d’écrire des tests couvrant un maximum de cas d’utilisation potentiels.
+Pour chaque fonction, les instructions seront indiquées directement dans le code sous forme de commentaires en anglais. Votre objectif sera donc soit d’implémenter la fonction, soit d’écrire des tests couvrant un maximum de cas d’utilisation potentiels. Les tests à implémenter seront indiqués avec des commentaires de type `// TODO`.
 
 ## ⚙️ Initialisation du projet
 
