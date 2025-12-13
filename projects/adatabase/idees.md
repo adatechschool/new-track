@@ -1,0 +1,1 @@
+-   peut etre "forcer" un theme pour la partie de base (mais il faut qu'on trouve des meilleurs data maybe). Par contre pour la partie conception peut etre mieux de laisser le theme libre (en citant 3 ou 4 exemples), mais juste imposer quelques contraintes techniques du genre il faut qu'il y ait au moins 5 tables, au moins une relation one-to-many et une many-to-many, etc.
