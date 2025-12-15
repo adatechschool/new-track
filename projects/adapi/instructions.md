@@ -38,7 +38,7 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 ## 🧩 Fonctionnalités à développer
 
 - [ ] Créer une route `GET` pour les **ressources**
-- [ ] Créer une route `GET` pour une **ressource**
+- [ ] Créer une route `GET` pour une **ressources**
 - [ ] Créer une route `POST` pour les **ressources**
 - [ ] Créer une route `PUT` pour les **ressources**
 - [ ] Créer une route `DELETE` pour les **ressources**
