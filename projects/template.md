@@ -2,7 +2,7 @@
 
 - **Durée :** 1 semaine
 - **Type de projet :** seul / pair programming
-- **Nom du repo :** `project-[nom_github]`
+- **Nom du repo :** `[nom_promo]-projet-[nom_github]`
 
 ## 📦 Modalités de rendu
 

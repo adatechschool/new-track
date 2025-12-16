@@ -2,7 +2,7 @@
 
 - **Durée :** 1 semaine
 - **Type de projet :** seul / pair programming
-- **Nom du repo :** `project-[nom_github]`
+- **Nom du repo :** `[nom_promo]-Adapi-[nom_github]`
 
 ## 📦 Modalités de rendu
 
@@ -12,7 +12,7 @@ Vous pouvez développer en local sur votre ordinateur, mais pensez à push régu
 
 ## 🎯 Objectif du projet
 
-Nous allons développer un site web fait en html / css parlant de 5 personnes qui vous inspirent, si vous ne voulez pas présenter ces 5 personnes mais que vous préférez vous concentrer sur le sujet vous pouvez récuperer les personnalitées proposées : \
+Nous allons développer un site web fait en html / css parlant de 5 personnes qui vous inspirent, si vous ne voulez pas présenter ces 5 personnes et vous préférez vous concentrer sur le sujet vous pouvez récuperer les personnalitées proposées : \
 1 - Rosa Parks \
 2 - Jeanne d'Arc \
 3 - Marie Curie \
@@ -59,8 +59,8 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 - [ ] Styliser la page avec CSS pour améliorer l'apparence
 - [ ] Rendre la page responsive pour les mobiles
 
-Pour vous aider, voici des wireframes que vous pouvez suivre :
-![](./wireframe.png)
+Pour vous aider, voici un wireframe que vous pouvez suivre :
+![](./wf1.png)
 
 ## 🚫 Ce que vous ne devez pas faire
 
