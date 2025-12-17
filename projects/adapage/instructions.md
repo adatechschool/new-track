@@ -1,4 +1,4 @@
-# ✅ Project
+# ✅ Adapage
 
 - **Durée :** 1 semaine
 - **Type de projet :** seul / pair programming
