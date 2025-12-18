@@ -38,7 +38,7 @@ L’application devra se connecter à la base de données, récupérer les donn�
 Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 - les bases du **terminal**
-- les bases de **PostgresQL**
+- les bases de **PostgreSQL**
 - les bases de **ExpressJS**
 - les bases de **JavaScript**
 
@@ -48,14 +48,13 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 ### 1. Connexion à la base de données
 
-- [ ] mise en place d'une bdd avec docker / postgresQL :
-  - créer une nouvelle base de données nommée `dashboard` => elle contiendra un nom et une date de création
-  - créer une nouvelle base de données nommée `skills` => elle contiendra le nom d'une compétence et fera le lien avec `dashboard`
-  - créer une nouvelle base de données nommée `tasks` => elle contiendra un nom, une validation et une relation avec les compétences
+- [ ] mise en place de docker / postgreSQL :
+  - créer`dashboard` qui contiendra un nom et une date de création
+  - créer `skills` qui contiendra le nom d'une compétence et fera le lien avec `dashboard`
+  - créer `tasks` qui contiendra un nom, une validation et une relation avec les compétences
 - [ ] Configurer la connexion à la base de données PostgreSQL depuis le backend Express :
   - installer les dépendances nécessaires (pg, dotenv)
   - créer un fichier de configuration pour la connexion à la base de données
-- [ ] Créer des modèles pour les données à récupérer
 
 ### 2. Récupération des données
 
@@ -65,6 +64,9 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
   - une route pour récupérer les tâches associées à une compétence
 - [ ] Tester les routes API avec un outil comme ThunderClient ou Postman
 - [ ] Gérer les erreurs et les cas où aucune donnée n'est trouvée
+- [ ] pouvoir modifier le status des `tasks`
+- [ ] pouvoir créer des `tasks` en fonction des besoins
+- [ ] pouvoir supprimer les `tasks` si besoin
 
 ### 3. Affichage des données dans le frontend React
 
@@ -72,44 +74,44 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
   - un composant pour afficher la liste des dashboards
   - un composant pour afficher les compétences associées à un dashboard
   - un composant pour afficher les tâches associées à une compétence
-- [ ] Utiliser une progress bar pour afficher le pourcentage de tâches validées pour chaque compétence
+- [ ] Utiliser une progress bar via \
+       `<progress/>` => https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/progress \
+       ou
+      https://www.npmjs.com/package/@ramonak/react-progress-bar \
+       pour afficher le pourcentage de tâches validées pour chaque compétence
 - [ ] Styliser les composants avec CSS pour améliorer l'apparence
 
 ## 🚫 Ce que vous ne devez pas faire
 
-utiliser un autre framework frontend que React \
-coder votre propre backend/base de données \
-mettre en place une authentification utilisateur \
+❌ Utiliser un autre framework frontend que React \
+❌ Utiliser un backend autre que Express \
+❌ Utiliser une base de données autre que PostgreSQL \
+❌ Mettre en place une authentification utilisateur \
 
 ## 💎 Bonus possibles
 
 - [ ] Ajouter des graphiques pour visualiser les données (par exemple, un graphique à barres pour le nombre de tâches par compétence)
 - [ ] Ajouter des filtres pour afficher les dashboards en fonction de certains critères (par exemple, par date de création)
 - [ ] Modifier la base de données pour afficher des données plus personnelles (film, série, livre, jeu vidéo, etc.) => vous pouvez dire si ce film remplit un certain nombre de "tâches" alors c'est un bon film !
-- [ ] Ajouter une verification de l'api avec swagger
-
-## 📦 Modalités d'évaluation
-
-❌ Utiliser un autre framework frontend que React
-❌ Coder votre propre backend/base de données
+- [ ] Ajouter une vérification de l'api avec swagger
 
 ## 🎓 Compétences à acquérir
 
 - [ ] Je comprends ce qu'est une base de données relationnelle
 - [ ] Je sais configurer une base de données PostgreSQL avec Docker
 - [ ] Je sais expliquer ce qu'est le CRUD
+- [ ] Je sais expliquer le fonctionnement d'une API RESTful
 - [ ] Je sais configurer une connexion à une base de données PostgreSQL depuis un backend Express
 - [ ] Je sais comment intégrer du React avec un backend Express
 - [ ] Je sais utiliser les useEffect et useState dans React
-- [ ] Je sais ce qu'est un props dans React
+- [ ] Je sais ce qu'est une prop dans React
 - [ ] Je sais ce qu'est un state dans React
-- [ ] Je sais ce qu'est un components dans React
-- [ ] Je sais
-
-- [ ] Je sais créer des routes API pour récupérer des données depuis une base de données
-- [ ] Je sais créer des composants React pour afficher des données récupérées depuis une API
+- [ ] Je sais ce qu'est un component dans React
+- [ ] Je sais utiliser des fetch pour récupérer des données API
+- [ ] Je sais comment fonctionne les fonctions asynchrones
+- [ ] Je sais manipuler du CRUD directement via mon front en utilisant fetch
 - [ ] Je sais utiliser une progress bar pour afficher un pourcentage de progression
 
 ## 🎓 Soutenance
 
-TODO: préciser la date et l'heure de la soutenance du projet
+X aucune soutenance n'est prévue pour ce projet

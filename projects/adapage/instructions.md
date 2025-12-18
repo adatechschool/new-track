@@ -2,7 +2,7 @@
 
 - **Durée :** 1 semaine
 - **Type de projet :** seul / pair programming
-- **Nom du repo :** `[nom_promo]-Adapi-[nom_github]`
+- **Nom du repo :** `[nom_promo]-Adapage-[nom_github]`
 
 ## 📦 Modalités de rendu
 
@@ -12,7 +12,7 @@ Vous pouvez développer en local sur votre ordinateur, mais pensez à push régu
 
 ## 🎯 Objectif du projet
 
-Nous allons développer un site web fait en html / css parlant de 5 personnes qui vous inspirent, si vous ne voulez pas présenter ces 5 personnes et vous préférez vous concentrer sur le sujet vous pouvez récuperer les personnalitées proposées : \
+Nous allons développer un site web fait en html / css parlant d'une personnalité qui vous inspirent (elle peut être fictive ou réelle), si vous n'avez pas envie de la présenté et vous préférez vous concentrer sur le sujet vous pouvez récuperer l'une des personnalitées proposées : \
 1 - Rosa Parks \
 2 - Jeanne d'Arc \
 3 - Marie Curie \
@@ -24,10 +24,20 @@ Votre page devra contenir :
 - Une section de présentation (votre photo et une description de vous)
 - Un menu de navigation
 - Une section par personnalité / femme forte (avec une image et une description)
+- Une frize présentant un moment fort de sa vie
+- Un témoignage / citation célèbre de cette personnalité
+- Un footer
 
 ## ⚙️ Initialisation du projet
 
-aussi simple que pour les autres projets, créez un dossier project-[nom_github], initialisez un git, créez un index.html et un style.css, et commencez à coder !
+#### v.1 - version solo
+
+aussi simple que pour les autres projets, cliquer un dossier project-[nom_github], initialisez un git, créez un index.html et un style.css, et commencez à coder !
+
+#### v.1 - version github classroom
+
+aussi simple que pour les autres projets, cliquez sur le lien github-classroom envoyé par votre format.eur.ice, puis vous n'avez plus qu'à récuperer votre dossier [nom_de_la_promo]-project-[nom_github], faites la commande `git clone`. \
+créez un index.html et un style.css, et commencez à coder !
 
 ## 🧰 Pré-requis techniques
 
@@ -42,29 +52,35 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 # 1.Homepage
 
-- [ ] Créer une page HTML avec une structure de base (doctype, head, body)
-- [ ] Ajouter une image de vous-même
-- [ ] Ajouter une description de vous-même
+- [ ] Créer une page HTML avec une structure de base (head, body, sections, etc.)
+- [ ] Ajouter l'image proposer ou une image de la personnalité choisie
+      ![](./default_img.png)
+- [ ] Ajouter une description de la personnalité choisie
+- [ ] Styliser la page avec CSS pour améliorer l'apparence
 
 # 2.Navigation
 
-- [ ] Ajouter une barre de navigation avec des liens vers les sections des personnalités / femmes fortes
+- [ ] Ajouter une barre de navigation avec des liens vers les sections de la page :
+  - Frise chronologique
+  - Témoignage / citation
 - [ ] Styliser la barre de navigation avec CSS
-- [ ] Rendre la barre de navigation responsive pour les mobiles
 - [ ] Pouvoir naviguer entre chaque section en cliquant sur les liens de la barre de navigation
 
-# 3.Personnalités / femmes fortes
+# 3.Detail des sections
 
-- [ ] Ajouter des sections pour chaque personnalité / femme forte avec une image et une description
-- [ ] Styliser la page avec CSS pour améliorer l'apparence
-- [ ] Rendre la page responsive pour les mobiles
+- [ ] Ajouter les informations dans chaque section :
+  - votre présentation devra avoir une description de la personnalité choisie avec une illustration
+  - votre frise chronologique devra contenir des événements importants de la vie de la personnalité
+  - Ajouter les témoignages ou citations célèbres de la personnalité
+  - Faire un footer regroupant toutes les informations de contact et votre github
 
 Pour vous aider, voici un wireframe que vous pouvez suivre :
-![](./wf1.png)
+![](./wf2.png)
 
 ## 🚫 Ce que vous ne devez pas faire
 
 utiliser des frameworks CSS comme **Bootstrap ou Tailwind CSS** \
+utiliser autre chose que **HTML et CSS** pour faire votre projet \
 utiliser du **JavaScript** pour ce projet
 
 ## 💎 Bonus possibles
