@@ -8,7 +8,6 @@ voici la construction des corrections proposer :
 - Immersion HTML 02 => manipulation des balises plus avancés
 - Immersion HTML 03 => manipulation des images
 - Immersion HTML 04 => responsive
-- Immersion HTML 05 => manipulation du DOM
 
 ---
 

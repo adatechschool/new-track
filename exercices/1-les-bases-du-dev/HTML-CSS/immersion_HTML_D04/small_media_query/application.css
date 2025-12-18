@@ -1,9 +1,0 @@
-h1{
-    color: red;
-}
-
-@media screen and (max-width: 550px) {
-    h1 {
-        color: green;
-    }
-}
