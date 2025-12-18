@@ -1,0 +1,11 @@
+form, .field, [type="submit"] {
+    width: 200px;
+}
+
+label ~ .field {
+    margin-top: 10px;
+}
+
+.field ~ label, [type="submit"] {
+    margin-top: 20px;
+}

@@ -1,0 +1,31 @@
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* .painting {
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;   
+}
+
+a { 
+    margin-top: 5px;
+} */
+
+figure {
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;   
+}
+
+figcaption {
+    margin-top: 5px;    
+}

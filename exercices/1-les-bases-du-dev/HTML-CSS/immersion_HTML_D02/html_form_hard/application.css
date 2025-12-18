@@ -1,0 +1,23 @@
+label {
+    font-weight: bold;
+}
+
+form {
+    width: 500px;
+}
+
+.field, [type="submit"] {
+    width: 484px;
+}
+
+.field + .title, [type="submit"] {
+    margin-top: 20px;
+}
+
+.title + .title {
+    margin-top: 20px;
+}
+
+.title {
+    font-weight: bold;
+}

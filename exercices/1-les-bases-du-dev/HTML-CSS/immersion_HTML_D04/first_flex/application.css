@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.red-square{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}

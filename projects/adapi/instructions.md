@@ -1,4 +1,4 @@
-# ✅ Project
+# ✅ Adapi
 
 - **Durée :** 1 semaine
 - **Type de projet :** seul / pair programming
@@ -37,12 +37,12 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 ## 🧩 Fonctionnalités à développer
 
-- [ ] Créer une route `GET` pour les **ressources**
-- [ ] Créer une route `GET` pour une **ressources**
-- [ ] Créer une route `POST` pour les **ressources**
-- [ ] Créer une route `PUT` pour les **ressources**
-- [ ] Créer une route `DELETE` pour les **ressources**
-- [ ] Créer les même routes pour les **thèmes** / **skills** / **resources_skills**
+- [ ] Créer une route `GET` pour les **skills**
+- [ ] Créer une route `GET` pour une **skills**
+- [ ] Créer une route `POST` pour les **skills**
+- [ ] Créer une route `PUT` pour les **skills**
+- [ ] Créer une route `DELETE` pour les **skills**
+- [ ] Créer les même routes pour les **thèmes** / **ressources** / **resources_skills**
 
 > ⚠️ **Réalisez toutes les fonctionnalités obligatoires avant de passer aux bonus.**
 
@@ -93,10 +93,6 @@ développer une interface front-end (html/css)
 - [ ] Créer les routes associées à la table **projets**
 - [ ] Ajouter une route `GET /skills/:id/resources` pour récupérer toutes les ressources associées à une compétence donnée.
 - [ ] Ajouter une route `GET /themes/:id/resources` pour récupérer toutes les ressources associées à un thème donné.
-
-## 📦 Modalités d'évaluation
-
-TODO: à copier en fonction de si c'est un projet de groupe ou individuel
 
 ## 🎓 Compétences à acquérir
 
