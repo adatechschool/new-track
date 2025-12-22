@@ -14,7 +14,7 @@ TODO: préciser en fonction de l'avancement sur git
 
 Ce projet va te permettre de mettre en pratique ce que tu as appris sur la manipulation du DOM.
 
-Pour cela, tu vas devoir créer une page web avec un quiz interactif. Tu chargeras les questions du quiz à partir d’un fichier JSON, afficheras les questions une après l’autre, puis afficheras le score final à la fin.
+Pour cela, tu vas devoir créer une page web avec un quiz interactif. Les questions du quiz seront chargées à partir d’un fichier JSON. L'utilisateur⋅ice devra répondre aux questions l'une après l'autre, et la page de final affichera le score final obtenu par l'utilisateur⋅ice.
 
 Tu devras également personnaliser le design avec du CSS et, si tu as le temps, faire plein de bonus !
 
@@ -161,16 +161,12 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 ![](./start.png)
 
-Voici une version corrigée et plus naturelle :
-
 -   [ ] L’écran d’accueil doit contenir **au minimum** le titre du quiz (récupéré depuis le JSON) et un bouton **Démarrer** (ne complexifie pas trop cet écran tant que ton quiz n’est pas fonctionnel).
 -   [ ] Lorsqu’on clique sur **Démarrer**, cet écran doit être caché afin d’afficher l’écran représentant la question en cours.
 
 ### 2. L'écran question
 
 ![](./question.png)
-
-Voici une version corrigée, plus claire et cohérente dans le ton :
 
 -   [ ] Le HTML de cet écran doit contenir :
 
@@ -194,8 +190,6 @@ Voici une version corrigée, plus claire et cohérente dans le ton :
 ### 3. L'écran de fin
 
 ![](./end.png)
-
-Parfait 👍 Voici une version corrigée en **gardant exactement la même cohérence et le même style** que les sections précédentes :
 
 -   [ ] Le HTML de cet écran doit contenir :
 
@@ -229,8 +223,6 @@ Parfait 👍 Voici une version corrigée en **gardant exactement la même cohér
 
 Tu peux proposer tes propres améliorations une fois que tu as fini la partie obligatoire, mais voici une liste de suggestions de bonus que tu peux implémenter :
 
-Voici une version corrigée et harmonisée avec le reste du cahier des charges :
-
 -   [ ] Faire un design **super stylé**.
 -   [ ] Ajouter des animations (par exemple pour faire apparaître les réponses une par une ou lors de la validation).
 -   [ ] Ajouter une barre de progression au-dessus du quiz.
@@ -258,8 +250,6 @@ Voici une version corrigée et harmonisée avec le reste du cahier des charges :
 TODO: soutenance + demo ?
 
 ## 🎓 Compétences à acquérir
-
-Voici une version corrigée et cohérente avec le reste du document :
 
 -   [ ] Je sais initialiser un projet avec **Vite**.
 -   [ ] Je sais travailler en groupe avec **Git**.
