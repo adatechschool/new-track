@@ -1,7 +1,7 @@
-# ✅ Project
+# 🤓 AdaQuiz
 
 -   **Durée :** 1 semaine
--   **Type de projet :** seul / pair programming
+-   **Type de projet :** groupe de 3 ou 4
 -   **Nom du repo :** `[nom_promo]-projet-[nom_github]`
 
 ## 📦 Modalités de rendu
