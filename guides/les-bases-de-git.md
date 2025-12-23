@@ -34,8 +34,8 @@ Un repository est le nom qu'on donne à un projet sur Github. Si tu crées un re
 
 Il est possible de créer un repository depuis l'interface de Github mais il existe une façon beaucoup plus efficace en utilisant directement VSCode :
 
-1. créer le dossier de ton projet, par exemple `monpseudo`
-2. ouvre le dans VSCode (`code monpseudo`)
+1. créer le dossier de ton projet, par exemple `mkdir myrepo`
+2. ouvre le dans VSCode (`code myrepo`)
 3. ajoute un fichier README.md
 
 Une fois le dossier et les fichiers de base de ton projet créés, tu peux utiliser `ctrl+⇧+P `ou `⌘+⇧+P` sur mac pour ouvrir la palette de commandes puis taper "Publish to Github". Ensuite, suis simplement les instructions et ton projet sera publié sur Github en quelques clics !
@@ -66,8 +66,6 @@ git commit -am "add README.md"
 
 Enfin pour synchroniser les commits sur Github, tu peux utiliser la commande `git push`.
 
-## Github classroom
+## Log
 
-Pour tes projets ada, tu devras utiliser github classroom pour créer le repository du projet et le partager avec ton groupe.
-
-TODO: explain process
+TODO: jeremie
