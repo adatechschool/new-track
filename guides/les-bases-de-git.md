@@ -65,3 +65,9 @@ git commit -am "add README.md"
 ## Push
 
 Enfin pour synchroniser les commits sur Github, tu peux utiliser la commande `git push`.
+
+## Github classroom
+
+Pour tes projets ada, tu devras utiliser github classroom pour créer le repository du projet et le partager avec ton groupe.
+
+TODO: explain process
