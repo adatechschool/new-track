@@ -18,15 +18,7 @@ React est particulièrement adapté à la création d’applications modernes, i
 
 ## Installation
 
-1. Créer un dépôt GitHub
-
-2. Cloner le dépôt localement à l’aide de la commande :
-
-   ```bash
-   git clone <url-du-repo>
-   ```
-
-3. Initialiser un projet React avec Vite :
+1. Initialiser un projet React avec Vite :
 
    ```bash
    npm create vite -y ./
@@ -37,9 +29,9 @@ React est particulièrement adapté à la création d’applications modernes, i
    - `-y` accepte automatiquement les options par défaut
    - `./` indique que le projet sera créé dans le répertoire courant
 
-4. Sélectionner le modèle **React**
+2. Sélectionner le modèle **React**
 
-5. Installer les dépendances :
+3. Installer les dépendances :
 
    ```bash
    npm install
