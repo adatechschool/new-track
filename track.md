@@ -116,7 +116,7 @@ Objets et JSON.
 
 ### Jour 4
 
-Import / export de modules.
+Import / export de modules, intro aux fonctions node (fs, path, etc.)
 
 -   Présentation du concept (1h)
 -   Exercices à la charge de l’encadrant·e
@@ -150,6 +150,8 @@ Projet en autonomie avec accompagnement.
 
 -   Soutenance Trackada (matin)
 -   Présentation du DOM et des événements
+
+-   [guide] [Soutenance](./guides/soutenance.md)
 
 ### Jour 2, 3
 
@@ -192,6 +194,8 @@ Poursuite du projet Adaquiz.
 
 Préparation à la démo.
 
+-   [guide] [Demo](./guides/demo.md)
+
 ---
 
 ## Semaine 9 – Tests et algorithmique
@@ -200,6 +204,9 @@ Préparation à la démo.
 
 -   Soutenances (matin)
 -   Démos (après‑midi)
+
+-   [guide] [Soutenance](./guides/soutenance.md)
+-   [guide] [Demo](./guides/demo.md)
 
 ### Jour 2
 
