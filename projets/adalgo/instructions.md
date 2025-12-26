@@ -2,7 +2,7 @@
 
 -   **Durée :** 1 semaine
 -   **Type de projet :** seul / pair programming
--   **Nom du repo :** `trackada-[nom_github]`
+-   **Nom du repo :** `adalgo-[nom_github]`
 
 ## 📦 Modalités de rendu
 
@@ -36,11 +36,10 @@ Pour ce projet, nous allons utiliser `npm` ou `pnpm` afin d’installer la bibli
 Après avoir copié le dossier `src` à la racine de votre projet, installez Vitest avec la commande :
 
 ```bash
-npm install vitest # ou
 pnpm install vitest
 ```
 
-(Si cela ne fonctionne pas, lancez d’abord `npm init` ou `pnpm init`.)
+(Si cela ne fonctionne pas, lancez d’abord `pnpm init`.)
 
 Ensuite, ajoutez un script `test` pour exécuter vos tests directement avec `pnpm`.
 Pour cela, ouvrez le fichier `package.json` et ajoutez le script suivant :
@@ -59,8 +58,7 @@ Pour cela, ouvrez le fichier `package.json` et ajoutez le script suivant :
 Vous pouvez maintenant exécuter les tests en lançant :
 
 ```
-pnpm test # ou
-npm run test
+pnpm test
 ```
 
 Comme vous n’avez pas encore réalisé les exercices, vous devriez obtenir des erreurs similaires à celle-ci :

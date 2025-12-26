@@ -1,6 +1,6 @@
 # 🤓 AdaQuiz
 
--   **Durée :** 1 semaine
+-   **Durée :** 2 semaine
 -   **Type de projet :** groupe de 3 ou 4
 -   **Nom du repo :** `[nom_promo]-projet-[nom_github]`
 
@@ -24,9 +24,9 @@ Pour ce projet, bien que nous n’allions pas encore utiliser de framework (comm
 
 Pour ce faire, va dans ton dossier `~/ada` et crée un nouveau projet avec la commande `pnpm create vite`, en choisissant les options suivantes :
 
-```
+```bash
 ◇  Project name:
-│  quizada
+│  adaquiz
 │
 ◇  Select a framework:
 │  Vanilla
@@ -42,7 +42,7 @@ Pour ce faire, va dans ton dossier `~/ada` et crée un nouveau projet avec la co
 └
 ```
 
-Ensuite, tu peux ouvrir le projet dans VS Code avec `code quizada`, puis utiliser la commande `pnpm install` **dans le dossier du projet** pour initialiser les dépendances.
+Ensuite, tu peux ouvrir le projet dans VS Code avec `code adaquiz`, puis utiliser la commande `pnpm install` **dans le dossier du projet** pour initialiser les dépendances.
 
 Enfin, tu pourras utiliser `pnpm dev` **dans le dossier du projet** pour démarrer le serveur du site web, puis cliquer sur le lien affiché dans le terminal pour l’ouvrir dans Chrome.
 
@@ -50,7 +50,7 @@ Enfin, tu pourras utiliser `pnpm dev` **dans le dossier du projet** pour démarr
 
 Jusqu’à maintenant, tu créais chaque fichier de ton projet manuellement. Avec Vite, certains fichiers sont créés automatiquement :
 
-```
+```bash
 .
 ├── index.html # page web html
 ├── node_modules # contient les bibliothèque installées avec pnpm
@@ -143,6 +143,8 @@ document.querySelector("#app > h1").innerText = quiz.title;
 
 Si tu as tout bien fait, tu devrais avoir `"Femmes scientifiques célèbres"` qui s'affiche dans ton navigateur.
 
+![](./starter.png)
+
 > 💡 Pour la suite du projet, tu peux utiliser les fichiers `main.js`, `style.css` et `index.html` mais n'hésite pas à créer d'autres fichiers js et css pour mieux ranger ton code !
 
 ## 🧰 Pré-requis techniques
@@ -179,7 +181,7 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 -   [ ] Faire en sorte que la question et les réponses soient chargées directement depuis le JSON (la première question du tableau).
 -   [ ] Lorsqu’on clique sur l’un des boutons de réponse :
 
-    -   si l’indice du bouton correspond à l’indice de la bonne réponse (`correctIndex`), afficher **« Bonne réponse »** dans la div message ;
+    -   si l’indice du bouton correspond à l’indice de la bonne réponse (`correctIndex`), afficher `Bonne réponse` dans la div message ;
     -   sinon, afficher :
         `Mauvaise réponse, la bonne réponse est ${question.options[question.correctIndex]}`.
 
