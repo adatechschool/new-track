@@ -1,6 +1,6 @@
 # ✅ Adashboard
 
-- **Durée :** 1 semaine
+- **Durée :** 2 semaine
 - **Type de projet :** seul / pair programming
 - **Nom du repo :** `[nom_promo]-adashboard-[nom_github]`
 
@@ -52,9 +52,15 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
   - créer`dashboard` qui contiendra un nom et une date de création
   - créer `skills` qui contiendra le nom d'une compétence et fera le lien avec `dashboard`
   - créer `tasks` qui contiendra un nom, une validation et une relation avec les compétences
+    ![](./bdd.png)
 - [ ] Configurer la connexion à la base de données PostgreSQL depuis le backend Express :
+  - mise en place d'un docker-compose.yml
+  - utilisation d'un fichier `.env`
   - installer les dépendances nécessaires (pg, dotenv)
   - créer un fichier de configuration pour la connexion à la base de données
+    ⚠️ si vous avez le moindre doute sur l'installation de express et docker, vous pouvez vous référer au guide suivant : **introduction-express-postgresql.md**
+    ⚠️
+- [ ] Tester la connexion à la base de données en effectuant une requête simple (par exemple, récupérer la liste des dashboards)
 
 ### 2. Récupération des données
 
@@ -70,16 +76,23 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 ### 3. Affichage des données dans le frontend React
 
+- [ ] Mettre en place la logique pour récupérer les données depuis le backend Express en utilisant `fetch`.
 - [ ] Créer des composants React pour afficher les données récupérées :
   - un composant pour afficher la liste des dashboards
   - un composant pour afficher les compétences associées à un dashboard
   - un composant pour afficher les tâches associées à une compétence
+    ![](./schema-front.png)
 - [ ] Utiliser une progress bar via \
        `<progress/>` => https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/progress \
        ou
       https://www.npmjs.com/package/@ramonak/react-progress-bar \
-       pour afficher le pourcentage de tâches validées pour chaque compétence
-- [ ] Styliser les composants avec CSS pour améliorer l'apparence
+       pour afficher le pourcentage de tâches validées pour chaque tâche
+      ![](./progress-bar.png)
+- [ ] Mettez en place un bouton pour créer des compétences ("je sais ...")
+      ![](./ajout-competence.png)
+- [ ] Rajouter un bouton pour supprimer une compétence
+      ![](./remove-button.png)
+- [ ] Styliser les composants avec un CSS pour améliorer l'apparence
 
 ## 🚫 Ce que vous ne devez pas faire
 
@@ -93,7 +106,7 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 - [ ] Ajouter des graphiques pour visualiser les données (par exemple, un graphique à barres pour le nombre de tâches par compétence)
 - [ ] Ajouter des filtres pour afficher les dashboards en fonction de certains critères (par exemple, par date de création)
 - [ ] Modifier la base de données pour afficher des données plus personnelles (film, série, livre, jeu vidéo, etc.) => vous pouvez dire si ce film remplit un certain nombre de "tâches" alors c'est un bon film !
-- [ ] Ajouter une vérification de l'api avec swagger
+- [ ] Ajouter des animations pour améliorer l'expérience utilisateur
 
 ## 🎓 Compétences à acquérir
 
