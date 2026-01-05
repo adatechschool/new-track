@@ -21,20 +21,19 @@ React est particulièrement adapté à la création d’applications modernes, i
 1. Initialiser un projet React avec Vite :
 
    ```bash
-   npm create vite -y ./
+   pnpm create vite -y
    ```
 
-   - `npm` est le gestionnaire de paquets de JavaScript
+   - `pnpm` est le gestionnaire de paquets de JavaScript
    - `create-vite` est un outil permettant de créer rapidement un projet avec Vite
    - `-y` accepte automatiquement les options par défaut
-   - `./` indique que le projet sera créé dans le répertoire courant
 
 2. Sélectionner le modèle **React**
 
 3. Installer les dépendances :
 
    ```bash
-   npm install
+   pnpm install
    ```
 
 ## Structure d’un projet React
