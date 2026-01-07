@@ -1,6 +1,6 @@
 # ✅ Adashboard
 
-- **Durée :** 2 semaine
+- **Durée :** 1 semaine
 - **Type de projet :** seul / pair programming
 - **Nom du repo :** `[nom_promo]-adashboard-[nom_github]`
 
@@ -12,7 +12,7 @@ TODO: préciser en fonction de l'avancement sur git
 
 ## 🎯 Objectif du projet
 
-Ce projet a pour objectif de développer un tableau de bord (dashboard) en React permettant d’afficher et de visualiser des données provenant d’une base de données PostgreSQL. \
+Ce projet a pour objectif de développer un tableau de bord (dashboard) en React permettant d’afficher et de visualiser des données provenant de votre backend ExpressJS. \
 L’application devra se connecter à la base de données, récupérer les données nécessaires, et les afficher de manière claire et interactive à l’aide de graphiques et de tableaux.
 
 ## 🧱 Stack technique (obligatoire)
@@ -46,40 +46,13 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 > ⚠️ **Réalisez toutes les fonctionnalités obligatoires avant de passer aux bonus.**
 
-### 1. Connexion à la base de données
+nous vous invitons a reprendre le projet adapi pour pouvoir mettre en place votre back rapidement
 
-- [ ] mise en place de docker / postgreSQL :
-  - créer`dashboard` qui contiendra un nom et une date de création
-  - créer `skills` qui contiendra le nom d'une compétence et fera le lien avec `dashboard`
-  - créer `tasks` qui contiendra un nom, une validation et une relation avec les compétences
-    ![](./bdd.png)
-- [ ] Configurer la connexion à la base de données PostgreSQL depuis le backend Express :
-  - mise en place d'un docker-compose.yml
-  - utilisation d'un fichier `.env`
-  - installer les dépendances nécessaires (pg, dotenv)
-  - créer un fichier de configuration pour la connexion à la base de données
-    ⚠️ si vous avez le moindre doute sur l'installation de express et docker, vous pouvez vous référer au guide suivant : **introduction-express-postgresql.md**
-    ⚠️
-- [ ] Tester la connexion à la base de données en effectuant une requête simple (par exemple, récupérer la liste des dashboards)
-
-### 2. Récupération des données
-
-- [ ] Créer des routes API dans Express pour récupérer les données de la base de données :
-  - une route pour récupérer l'ensemble des dashboards
-  - une route pour récupérer les compétences associées à un dashboard
-  - une route pour récupérer les tâches associées à une compétence
-- [ ] Tester les routes API avec un outil comme ThunderClient ou Postman
-- [ ] Gérer les erreurs et les cas où aucune donnée n'est trouvée
-- [ ] pouvoir modifier le status des `tasks`
-- [ ] pouvoir créer des `tasks` en fonction des besoins
-- [ ] pouvoir supprimer les `tasks` si besoin
-
-### 3. Affichage des données dans le frontend React
+## 1. Affichage les données dans notre front
 
 - [ ] Mettre en place la logique pour récupérer les données depuis le backend Express en utilisant `fetch`.
 - [ ] Créer des composants React pour afficher les données récupérées :
-  - un composant pour afficher la liste des dashboards
-  - un composant pour afficher les compétences associées à un dashboard
+  - un composant pour afficher les compétences
   - un composant pour afficher les tâches associées à une compétence
     ![](./schema-front.png)
 - [ ] Utiliser une progress bar via \
@@ -99,7 +72,7 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 ❌ Utiliser un autre framework frontend que React \
 ❌ Utiliser un backend autre que Express \
 ❌ Utiliser une base de données autre que PostgreSQL \
-❌ Mettre en place une authentification utilisateur \
+❌ Mettre en place une authentification utilisateur
 
 ## 💎 Bonus possibles
 
