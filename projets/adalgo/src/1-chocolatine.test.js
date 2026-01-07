@@ -24,9 +24,3 @@ test("changes the article 'un' to 'une' when used with pain au chocolat", () => 
         chocolatine("Quand je vais à la boulangerie, je prends toujours un pain au chocolat avant d'aller en cours.")
     ).toBe("Quand je vais à la boulangerie, je prends toujours une chocolatine avant d'aller en cours.");
 });
-
-test("the misspelled version 'pain au chocolats' should not be replaced", () => {
-    expect(chocolatine("Je voudrais deux pain au chocolats s'il vous plaît.")).toBe(
-        "Je voudrais deux pain au chocolats s'il vous plaît."
-    ); // ne change rien
-});

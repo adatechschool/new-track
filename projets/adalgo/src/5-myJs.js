@@ -22,7 +22,7 @@ export const myIncludes = (array, searchElement) => {};
  * @returns {number}
  * @example
  *      myIndexOf(['un', 'deux', 'trois'], 'trois'); // returns 3
- *      myIndexOf(['un', 'deux', 'trois'], 'trois'); // returns -1
+ *      myIndexOf(['un', 'deux', 'trois'], 'quatre'); // returns -1
  */
 export const myIndexOf = (array, searchElement) => {};
 
