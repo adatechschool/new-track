@@ -12,26 +12,24 @@ TODO: préciser en fonction de l'avancement sur git
 
 ## 🎯 Objectif du projet
 
-Ce projet a pour objectif de développer un tableau de bord (dashboard) en React permettant d’afficher et de visualiser des données provenant de votre backend ExpressJS. \
-L’application devra se connecter à la base de données, récupérer les données nécessaires, et les afficher de manière claire et interactive à l’aide de graphiques et de tableaux.
+Ce projet a pour objectif de développer un tableau de bord (dashboard) en React permettant d’afficher et de visualiser des données provenant de votre backend ExpressJS (le backend vous sera fournis via ce lien : https://github.com/Czecevic/adashboard_back) . \
+L’application devra se connecter à votre base de données, récupérer les données nécessaires, et les afficher de manière claire et interactive.
 
 ## 🧱 Stack technique (obligatoire)
 
-| Élément            | Technologie | Lien                        |
-| ------------------ | ----------- | --------------------------- |
-| framework frontend | React       | https://fr.reactjs.org/     |
-| environnement      | Node.js     | https://nodejs.org/         |
-| framework backend  | Express     | https://expressjs.com/      |
-| Base de données    | PostgreSQL  | https://www.postgresql.org/ |
+| Élément            | Technologie | Lien                    |
+| ------------------ | ----------- | ----------------------- |
+| framework frontend | React       | https://fr.reactjs.org/ |
+| environnement      | Node.js     | https://nodejs.org/     |
 
 ## ⚙️ Initialisation du projet
 
 1. Ouvre un terminal dans votre dossier de vos projets
 2. Crée le projet avec `pnpm create vite`
-3. Sélectionne 'React' pour le framework
-4. Sélectionne 'JavaScript' pour le langage
+3. Sélectionne `React` pour le framework
+4. Sélectionne `JavaScript` pour le langage
 5. Installe les dépendances automatiquement
-6. Utilise `cd adashboard` pour aller dans le dossier, puis `code .` pour l'ouvrir dans VSCode
+6. Utilise `cd <le_nom_de_votre_git>` pour aller dans le dossier, puis `code .` pour l'ouvrir dans VSCode
 
 ## 🧰 Pré-requis techniques
 
@@ -46,26 +44,26 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 > ⚠️ **Réalisez toutes les fonctionnalités obligatoires avant de passer aux bonus.**
 
-nous vous invitons a reprendre le projet adapi pour pouvoir mettre en place votre back rapidement
-
 ## 1. Affichage les données dans notre front
 
-- [ ] Mettre en place la logique pour récupérer les données depuis le backend Express en utilisant `fetch`.
+- [ ] Mettre en place la logique pour récupérer les données depuis le backend Express fournis en utilisant `fetch`.
+- [ ] Afficher les données récuperées par celui-ci en commencant par le nom puis les compétences
+      ![](./fetch-use.png)
 - [ ] Créer des composants React pour afficher les données récupérées :
-  - un composant pour afficher les compétences
-  - un composant pour afficher les tâches associées à une compétence
-    ![](./schema-front.png)
-- [ ] Utiliser une progress bar via \
-       `<progress/>` => https://developer.mozilla.org/fr/docs/Web/HTML/Reference/Elements/progress \
-       ou
-      https://www.npmjs.com/package/@ramonak/react-progress-bar \
-       pour afficher le pourcentage de tâches validées pour chaque tâche
-      ![](./progress-bar.png)
-- [ ] Mettez en place un bouton pour créer des compétences ("je sais ...")
-      ![](./ajout-competence.png)
-- [ ] Rajouter un bouton pour supprimer une compétence
-      ![](./remove-button.png)
-- [ ] Styliser les composants avec un CSS pour améliorer l'apparence
+  - un composant pour afficher le nom des thèmes
+  - un composant pour afficher les compétences liées aux thèmes
+
+## 2. Manipulation des données
+
+- [ ] Mettez en place un bouton pour supprimer des `themes`
+      (pensez à bien relancer votre neon pour récuperer les données supprimées)
+      ![](./remove_button.png)
+- [ ] Faites en sorte de pouvoir modifier le `status` du dis `themes`
+      ![](./status_button.png)
+- [ ] Rajouter un bouton pour créer un `themes`
+      ![](./create_themes.png)
+- [ ] rajouter une partie pourcentage, elle devra augmenter en fonction du nombre de `aquis` dans le `themes`
+      ![](./pourcentage.png)
 
 ## 🚫 Ce que vous ne devez pas faire
 
@@ -76,7 +74,7 @@ nous vous invitons a reprendre le projet adapi pour pouvoir mettre en place votr
 
 ## 💎 Bonus possibles
 
-- [ ] Ajouter des graphiques pour visualiser les données (par exemple, un graphique à barres pour le nombre de tâches par compétence)
+- [ ] Ajouter des graphiques pour visualiser les données et améliorer
 - [ ] Ajouter des filtres pour afficher les dashboards en fonction de certains critères (par exemple, par date de création)
 - [ ] Modifier la base de données pour afficher des données plus personnelles (film, série, livre, jeu vidéo, etc.) => vous pouvez dire si ce film remplit un certain nombre de "tâches" alors c'est un bon film !
 - [ ] Ajouter des animations pour améliorer l'expérience utilisateur
