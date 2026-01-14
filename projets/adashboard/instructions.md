@@ -6,14 +6,15 @@
 
 ## 📦 Modalités de rendu
 
-TODO: préciser en fonction de l'avancement sur git
-
-> ⚠️ **Important :** Vous devez avoir _poussé_ (`git push`) votre **dernier commit à la date de rendu à minuit au plus tard**, afin qu’il soit pris en compte pour l’évaluation.
+L'ensemble de l'exercice devra être _poussé_ (git push) sur la branche main du projet du git.
 
 ## 🎯 Objectif du projet
 
-Ce projet a pour objectif de développer un tableau de bord (dashboard) en React permettant d’afficher et de visualiser des données provenant de votre backend ExpressJS (le backend vous sera fournis via ce lien : https://github.com/Czecevic/adashboard_back) . \
-L’application devra se connecter à votre base de données, récupérer les données nécessaires, et les afficher de manière claire et interactive.
+Ce projet a pour objectif de développer un tableau de bord (dashboard) en React permettant d’afficher et de visualiser des données fictives, qui représenteront par la suite vos compétences.
+Ces données seront fournies par un backend ExpressJS, mis à votre disposition à l’adresse suivante :
+https://github.com/Czecevic/adashboard_back
+
+L’application devra récupérer les données depuis l'API fournie (votre dossier `back`), puis les afficher de manière claire et interactive dans le frontend React.
 
 ## 🧱 Stack technique (obligatoire)
 
@@ -44,10 +45,12 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 > ⚠️ **Réalisez toutes les fonctionnalités obligatoires avant de passer aux bonus.**
 
-## 1. Affichage les données dans notre front
+## 1. Affichage des données dans notre front
 
-- [ ] Mettre en place la logique pour récupérer les données depuis le backend Express fournis en utilisant `fetch`.
-- [ ] Afficher les données récuperées par celui-ci en commencant par le nom puis les compétences
+> **un `themes` contient plusieurs `compétences`, chacune ayant un `status`**
+
+- [ ] Mettre en place la logique pour récupérer les données depuis le backend Express fourni en utilisant `fetch`.
+- [ ] Afficher les données récupérées en commençant par le nom du thème puis ses compétences
       ![](./fetch-use.png)
 - [ ] Créer des composants React pour afficher les données récupérées :
   - un composant pour afficher le nom des thèmes
@@ -56,14 +59,14 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 ## 2. Manipulation des données
 
 - [ ] Mettez en place un bouton pour supprimer des `themes`
-      (pensez à bien relancer votre neon pour récuperer les données supprimées)
-      ![](./remove_button.png)
-- [ ] Faites en sorte de pouvoir modifier le `status` du dis `themes`
-      ![](./status_button.png)
-- [ ] Rajouter un bouton pour créer un `themes`
-      ![](./create_themes.png)
-- [ ] rajouter une partie pourcentage, elle devra augmenter en fonction du nombre de `aquis` dans le `themes`
-      ![](./pourcentage.png)
+      (pensez à bien relancer votre neon pour récupérer les données supprimées)
+      ![](./remove_button_v2.png)
+- [ ] Faites en sorte de pouvoir modifier le `status` des `themes`
+      ![](./status_button_v2.png)
+- [ ] Ajouter un bouton pour créer un `themes`
+      ![](./create_button_v2.png)
+- [ ] Ajouter une partie pourcentage : celle-ci devra évoluer en fonction du nombre de compétences acquises dans un `themes`
+      ![](./pourcentage_v2.png)
 
 ## 🚫 Ce que vous ne devez pas faire
 
@@ -74,25 +77,24 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 ## 💎 Bonus possibles
 
-- [ ] Ajouter des graphiques pour visualiser les données et améliorer
-- [ ] Ajouter des filtres pour afficher les dashboards en fonction de certains critères (par exemple, par date de création)
-- [ ] Modifier la base de données pour afficher des données plus personnelles (film, série, livre, jeu vidéo, etc.) => vous pouvez dire si ce film remplit un certain nombre de "tâches" alors c'est un bon film !
+- [ ] Ajouter des graphiques pour visualiser les données (vous pouvez regarder charts)
+- [ ] Ajouter React Router pour pouvoir gérer la navigation
+- [ ] Ajouter des filtres pour afficher les `themes` en fonction de certains critères (par exemple, tirer par nom de A-Z ou Z-A)
+- [ ] Modifier la base de données pour afficher des données plus personnelles (film, série, livre, jeu vidéo, etc.)
 - [ ] Ajouter des animations pour améliorer l'expérience utilisateur
 
 ## 🎓 Compétences à acquérir
 
 - [ ] Je comprends ce qu'est une base de données relationnelle
-- [ ] Je sais configurer une base de données PostgreSQL avec Docker
 - [ ] Je sais expliquer ce qu'est le CRUD
 - [ ] Je sais expliquer le fonctionnement d'une API RESTful
-- [ ] Je sais configurer une connexion à une base de données PostgreSQL depuis un backend Express
 - [ ] Je sais comment intégrer du React avec un backend Express
+- [ ] Je sais comment fonctionne les fonctions asynchrones
 - [ ] Je sais utiliser les useEffect et useState dans React
 - [ ] Je sais ce qu'est une prop dans React
 - [ ] Je sais ce qu'est un state dans React
 - [ ] Je sais ce qu'est un component dans React
 - [ ] Je sais utiliser des fetch pour récupérer des données API
-- [ ] Je sais comment fonctionne les fonctions asynchrones
 - [ ] Je sais manipuler du CRUD directement via mon front en utilisant fetch
 - [ ] Je sais utiliser une progress bar pour afficher un pourcentage de progression
 

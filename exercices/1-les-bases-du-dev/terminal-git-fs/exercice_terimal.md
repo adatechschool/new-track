@@ -216,5 +216,7 @@ nous aurons alors ce resultat :
 pensez à utiliser la commande suivante :
 
 ```bash
-npm live-server
+npx live-server
 ```
+
+<!-- introduire HTML  -->
