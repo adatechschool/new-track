@@ -1,12 +1,12 @@
 # Exercice
 
-⚠️**Tous les exercices devront être executer via le terminal**⚠️
+⚠️ **Tous les exercices doivent être exécutés via le terminal** ⚠️
 
 ## Exercice 1 – Où es-tu ?
 
-Affiche le chemin complet du dossier dans lequel tu te trouves.
+Affiche le chemin absolu du dossier courant.
 
-tu devrais quelque chose qui ressemble à ceci :
+Exemple attendu :
 
 ```bash
 /Users/ton-nom/ada
@@ -14,11 +14,11 @@ tu devrais quelque chose qui ressemble à ceci :
 
 ---
 
-## Exercice 2 – Regarde autour de toi
+## Exercice 2 – Que contient le dossier ?
 
-nous allons ensuite créer un fichier que nous allons nommé `commande-terminal` que nous allons remplir au fur et à mesure
+Crée un fichier nommé `commande-terminal.md` et vérifie la liste des fichiers du dossier courant.
 
-tu devrais avoir ceci :
+Exemple attendu :
 
 ```bash
 total 0
@@ -29,11 +29,11 @@ drwxr-xr-x  4 karlos  staff  128 25 déc 17:02 ..
 
 ---
 
-## Exercice 3 – Crée ton premier dossier
+## Exercice 3 – Crée des dossiers
 
-Crée deux dossier vide nommé `exercices` et `projets`
+Crée deux dossiers vides appelés `exercices` et `projets` puis liste le contenu du répertoire.
 
-tu devrais avoir ce resultat
+Exemple attendu :
 
 ```bash
 total 0
@@ -48,9 +48,9 @@ drwxr-xr-x  2 karlos  staff   64 25 déc 17:06 projets
 
 ## Exercice 4 – Déplace-toi
 
-Va dans ton dossier `exercices` et recupère le fichier `commande-terminal.md` pour le mettre dans le dossier `exercices`.
+Va dans ton dossier `exercices` et déplace le fichier `commande-terminal.md` dans ce dossier.
 
-si tu affiches le contenu de ton dossier exercices, tu devrais avoir ceci :
+Si tu affiches le contenu de ton dossier `exercices`, tu devrais avoir ceci :
 
 ```bash
 drwxr-xr-x  3 karlos  staff   96 25 déc 17:10 .
@@ -62,9 +62,9 @@ drwxr-xr-x  4 karlos  staff  128 25 déc 17:10 ..
 
 ## Exercice 5 – Créer une copie (fichier)
 
-maintenant que nous savons déplacer notre fichier, on va faire une copie dans le dossier `projets`.
+Maintenant que nous savons déplacer notre fichier, faisons une copie dans le dossier `projets`.
 
-nous aurons alors ceci
+Nous devrions avoir ceci
 
 ```bash
 /Users/karlos/ada/ada/exercices
@@ -84,9 +84,9 @@ drwxr-xr-x  4 karlos  staff  128 25 déc 17:10 ..
 
 ## Exercice 7 – Créer une copie (dossier)
 
-Nous savons copier un fichier maintenant faisons la même chose avec un dossier, nous allons copier le dossier `exercices` pour le mettre dans `projets`
+Nous savons copier un fichier, faisons maintenant la même chose avec un dossier. Copions le dossier `exercices` dans `projets`.
 
-voici le resultat attendu :
+Voici le résultat attendu :
 
 ```bash
 /Users/karlos/ada/ada/projets
@@ -105,7 +105,7 @@ drwxr-xr-x  4 karlos  staff  128 25 déc 17:27 ..
 
 ---
 
-## Exercice 8 - supprimer un fichier
+## Exercice 8 - Supprimer un fichier
 
 Supprimons le fichier `commande-terminal.md` se trouvant dans le dossier `projets`
 
@@ -126,11 +126,11 @@ drwxr-xr-x  4 karlos  staff  128 25 déc 17:27 ..
 
 ---
 
-## Exercice 9 - supprimer un dossier et un fichier
+## Exercice 9 - Supprimer un dossier et un fichier
 
-maintenant que nous avons supprimer le contenu du dossier `exercices` nous allons le supprimer en plus du fichier `commande-terminal.md`
+Maintenant que nous avons supprimé le contenu du dossier `exercices`, nous allons le supprimer ainsi que le fichier `commande-terminal.md`.
 
-nous aurons un resultat similaire à ceci :
+Nous devrions obtenir un résultat similaire à ceci :
 
 ```bash
 # avant suppression
@@ -150,11 +150,11 @@ drwxr-xr-x  4 karlos  staff  128 25 déc 17:27 ..
 
 ---
 
-## Exercice 10 – remplir le fichier
+## Exercice 10 – Remplir le fichier
 
-retournons dans le dossier `exercices` et allons dans le fichier `commande-terminal.md`, il faudra écrire les commandes en restant dans le terminal
+Retourne dans le dossier `exercices` et ouvre le fichier `commande-terminal.md`. Écris les commandes directement dans le terminal.
 
-nous devrions avoir ceci :
+Nous devrions avoir ceci :
 
 ```bash
 # avant intégration
@@ -170,9 +170,9 @@ drwxr-xr-x  4 karlos  staff  128 25 déc 17:10 ..
 -rw-r--r--  1 karlos  staff   21 25 déc 17:45 commande-terminal.md
 ```
 
-## Exercice 11 – renommez-le
+## Exercice 11 – Renommer le fichier
 
-changons le nom, on va maintenant passer de `commande-terminal.md` à `instruction-terminal.md`
+Changeons le nom du fichier, passons de `commande-terminal.md` à `instruction-terminal.md`.
 
 (indice : elle peut vous permettre de vous déplacer)
 
@@ -192,28 +192,28 @@ drwxr-xr-x  4 karlos  staff  128 25 déc 17:10 ..
 -rw-r--r--  1 karlos  staff   21 25 déc 17:45 instruction-terminal.md
 ```
 
-## Exercice 12 – verification
+## Exercice 12 – Vérification
 
-Nous allons verifier le contenu du fichier `instruction-terminal.md`.
+Nous allons vérifier le contenu du fichier `instruction-terminal.md`.
 
 # Bonus
 
-⚠️**Ne faites ces exercices seulement si vous avez finis tous les autres exercices demandé avant et de l'avoir poster sur github**⚠️
+⚠️ **Ne faites ces exercices que si vous avez terminé tous les autres exercices demandés auparavant et que vous les avez postés sur GitHub** ⚠️
 
-## Exercice 13 - cat instruction
+## Exercice 13 - Cat instruction
 
-Nous allons prendre les instruction de `cat` en prenant que la description pour ensuite, les mettre dans un fichier `cat_instrution.txt`.
+Nous allons récupérer les instructions de `cat` en ne prenant que la description pour ensuite les mettre dans un fichier `cat_instruction.txt`.
 
 ---
 
-## Exercice 14 - cat en balise html
+## Exercice 14 - Cat en balise HTML
 
-Maintenant que nous avons les instrcution de `cat`, nous allons faire un second fichier appeler `cat-balise`, elle contiendra les mêmes instructions mais dans un format différent.
+Maintenant que nous avons les instructions de `cat`, nous allons créer un second fichier appelé `cat-balise`, qui contiendra les mêmes instructions mais dans un format différent.
 
-nous aurons alors ce resultat :
+Nous devrions obtenir ce résultat :
 ![](./cat_demo.png)
 
-pensez à utiliser la commande suivante :
+Pensez à utiliser la commande suivante :
 
 ```bash
 npx live-server

@@ -12,7 +12,7 @@ Vous devez rajouter un paragraphe `j'écris ce code sur mon ordi`
 
 maintenant écrivez votre nom / prénom en titre et une description de vous en paragraphe
 
-(Vous pouvez regarder la deuxième partie)
+### Vous pouvez regarder la deuxième partie
 
 ## 4. organisons le tout
 
@@ -27,7 +27,7 @@ description / introduction de notre personne en paragraphe
 
 Utiliser une balise pour ranger le contenu de vos informations
 
-(Vous pouvez passer à la troisième partie)
+### Vous pouvez passer à la troisième partie
 
 ## 6. toujours plus d'information ...
 
