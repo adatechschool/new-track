@@ -9,32 +9,43 @@ Ce document décrit l’ensemble de la **track du Bloc 1**, avec une présentati
 ### Jour 1
 
 **Rentrée – Matin**
-Présentation de la formation et installation des outils (VS Code, terminal).
-**Après-midi** : premières manipulations du terminal.
 
--   [guide] [Les bases du terminal](./guides/les-bases-du-terminal.md)
--   [exercice] [Pratiquer le terminal](./exercices/1-les-bases-du-dev/terminal-git-fs/exercice_terimal.md)
+Présentation de la formation
+
+**Après-midi**
+
+Présentation de la pédagogie et la track de formation.
+Découverte des métiers de la tech.
 
 ### Jour 2
 
-Approfondissement du terminal à travers des exercices progressifs.
+Installation des outils (VS Code, terminal) et premières manipulations du terminal.
 
--   [guide] [Les bases du terminal](./guides/les-bases-du-terminal.md)
--   [exercice] [Pratiquer le terminal](./exercices/1-les-bases-du-dev/terminal-git-fs/exercice_terimal.md)
+- [guide] [Les bases du terminal](./guides/les-bases-du-terminal.md)
+- [exercice] [Pratiquer le terminal](./exercices/1-les-bases-du-dev/terminal-git-fs/exercice_terimal.md)
 
 ### Jour 3
 
-Introduction à Git (matin) et mini‑projet d’initialisation d’un dépôt Git.
+**Matin**
 
--   [guide] [Les bases git et Github](./guides/les-bases-de-git-et-github.md)
+Approfondissement du terminal à travers des exercices progressifs.
+
+**Après-midi**
+
+Initiation aux bases de HTML
+
+- [guide] [Les bases du terminal](./guides/les-bases-du-terminal.md)
+- [exercice] [Pratiquer le terminal](./exercices/1-les-bases-du-dev/terminal-git-fs/exercice_terimal.md)
 
 ### Jour 4
 
-Découverte des métiers de la tech.
+Introduction à Git (matin) et mini‑projet d’initialisation d’un dépôt Git.
+
+- [guide] [Les bases git et Github](./guides/les-bases-de-git-et-github.md)
 
 ### Jour 5
 
-Révision et pratique en autonomie : terminal et Git.
+Révisions, pratique en autonomie et initiation aux bases de CSS.
 
 ---
 
@@ -44,7 +55,7 @@ Révision et pratique en autonomie : terminal et Git.
 
 Apprentissage des bases HTML et CSS à l’aide de guides et d’exercices.
 
--   [exercise] [Exos HTML & CSS](./exercices/1-les-bases-du-dev/HTML-CSS/README.md)
+- [exercise] [Exos HTML & CSS](./exercices/1-les-bases-du-dev/HTML-CSS/README.md)
 
 ### Jour 2
 
@@ -55,7 +66,7 @@ Exercices proposés par l’encadrant·e.
 
 Réalisation d’un premier projet de mise en pratique.
 
--   [projet] [Adapage](./projets/adapage/instructions.md)
+- [projet] [Adapage](./projets/adapage/instructions.md)
 
 ---
 
@@ -65,29 +76,29 @@ Réalisation d’un premier projet de mise en pratique.
 
 Variables et types de valeurs (nombres, chaînes de caractères).
 
--   Présentation du concept (1h)
--   Exercices à la charge de l’encadrant·e
+- Présentation du concept (1h)
+- Exercices à la charge de l’encadrant·e
 
 ### Jour 2
 
 Fonctions, paramètres et utilisation de `console.log`.
 
--   Présentation du concept (1h)
--   Exercices à la charge de l’encadrant·e
+- Présentation du concept (1h)
+- Exercices à la charge de l’encadrant·e
 
 ### Jour 3
 
 Conditions.
 
--   Présentation du concept (1h)
--   Exercices à la charge de l’encadrant·e
+- Présentation du concept (1h)
+- Exercices à la charge de l’encadrant·e
 
 ### Jour 4
 
 Debug avec l’inspecteur et exercices complémentaires.
 
--   Présentation du concept (1h)
--   Exercices à la charge de l’encadrant·e
+- Présentation du concept (1h)
+- Exercices à la charge de l’encadrant·e
 
 ---
 
@@ -97,29 +108,29 @@ Debug avec l’inspecteur et exercices complémentaires.
 
 Les tableaux.
 
--   Présentation du concept (1h)
--   Exercices à la charge de l’encadrant·e
+- Présentation du concept (1h)
+- Exercices à la charge de l’encadrant·e
 
 ### Jour 2
 
 Les boucles.
 
--   Présentation du concept (1h)
--   Exercices à la charge de l’encadrant·e
+- Présentation du concept (1h)
+- Exercices à la charge de l’encadrant·e
 
 ### Jour 3
 
 Objets et JSON.
 
--   Présentation du concept (1h)
--   Exercices à la charge de l’encadrant·e
+- Présentation du concept (1h)
+- Exercices à la charge de l’encadrant·e
 
 ### Jour 4
 
 Import / export de modules, intro aux fonctions node (fs, path, etc.)
 
--   Présentation du concept (1h)
--   Exercices à la charge de l’encadrant·e
+- Présentation du concept (1h)
+- Exercices à la charge de l’encadrant·e
 
 ### Jour 5
 
@@ -133,14 +144,14 @@ Révision et pratique transversale des notions JavaScript.
 
 Lancement du projet Trackada (matin).
 
--   [projet] [Trackada](./projets/trackada/instructions.md)
--   [guide] [Github classroom](./guides/github-classroom.md)
+- [projet] [Trackada](./projets/trackada/instructions.md)
+- [guide] [Github classroom](./guides/github-classroom.md)
 
 ### Jour 2, 3, 4, 5
 
 Projet en autonomie avec accompagnement.
 
--   [projet] [Trackada](./projets/trackada/instructions.md)
+- [projet] [Trackada](./projets/trackada/instructions.md)
 
 ---
 
@@ -148,10 +159,10 @@ Projet en autonomie avec accompagnement.
 
 ### Jour 1
 
--   Soutenance Trackada (matin)
--   Présentation du DOM et des événements
+- Soutenance Trackada (matin)
+- Présentation du DOM et des événements
 
--   [guide] [Soutenance](./guides/soutenance.md)
+- [guide] [Soutenance](./guides/soutenance.md)
 
 ### Jour 2, 3
 
@@ -178,7 +189,7 @@ Après‑midi : lancement du projet collectif.
 
 Développement du projet collectif.
 
--   [projet] [Adaquiz](./projets/adaquiz/instructions.md)
+- [projet] [Adaquiz](./projets/adaquiz/instructions.md)
 
 ---
 
@@ -188,13 +199,13 @@ Développement du projet collectif.
 
 Poursuite du projet Adaquiz.
 
--   [projet] [Adaquiz](./projets/adaquiz/instructions.md)
+- [projet] [Adaquiz](./projets/adaquiz/instructions.md)
 
 ### Jour 4
 
 Préparation à la démo.
 
--   [guide] [Demo](./guides/demo.md)
+- [guide] [Demo](./guides/demo.md)
 
 ---
 
@@ -202,22 +213,22 @@ Préparation à la démo.
 
 ### Jour 1
 
--   Soutenances (matin)
--   Démos (après‑midi)
+- Soutenances (matin)
+- Démos (après‑midi)
 
--   [guide] [Soutenance](./guides/soutenance.md)
--   [guide] [Demo](./guides/demo.md)
+- [guide] [Soutenance](./guides/soutenance.md)
+- [guide] [Demo](./guides/demo.md)
 
 ### Jour 2
 
--   Présentation de Vitest et des tests unitaires (2h)
--   Lancement du projet Adalgo (en autonomie, sans soutenance)
+- Présentation de Vitest et des tests unitaires (2h)
+- Lancement du projet Adalgo (en autonomie, sans soutenance)
 
 ### Jour 3, 4, 5
 
 Réalisation du projet Adalgo.
 
--   [projet] [Adalgo](./projets/adalgo/instructions.md)
+- [projet] [Adalgo](./projets/adalgo/instructions.md)
 
 ---
 
@@ -240,14 +251,14 @@ Poursuite des exercices sur `fetch`, `async/await` et les APIs.
 Matin : Git en groupe avec un exercice.
 Après‑midi : lancement du projet Adataviz.
 
--   [guide] [Git en groupe](./guides/git-en-groupe.md)
--   [projet] [Adataviz](./projets/adataviz/instructions.md)
+- [guide] [Git en groupe](./guides/git-en-groupe.md)
+- [projet] [Adataviz](./projets/adataviz/instructions.md)
 
 ### Jour 2, 3, 4, 5
 
 Projet Adataviz en autonomie.
 
--   [projet] [Adataviz](./projets/adataviz/instructions.md)
+- [projet] [Adataviz](./projets/adataviz/instructions.md)
 
 ---
 
@@ -257,7 +268,7 @@ Projet Adataviz en autonomie.
 
 Projet Adataviz en autonomie.
 
--   [projet] [Adataviz](./projets/adataviz/instructions.md)
+- [projet] [Adataviz](./projets/adataviz/instructions.md)
 
 ### Jour 4
 
@@ -283,8 +294,8 @@ Mise en place de Docker et introduction à SQL.
 
 Les jointures.
 
--   Présentation (1h)
--   Exercices
+- Présentation (1h)
+- Exercices
 
 ### Jour 4
 
@@ -298,7 +309,7 @@ Conception de bases de données.
 
 Lancement du projet Adatabase.
 
--   [projet] [Adatabase](./projets/adatabase/instructions.md)
+- [projet] [Adatabase](./projets/adatabase/instructions.md)
 
 ---
 
@@ -325,7 +336,7 @@ Introduction à l’AI SDK.
 
 Lancement du projet Adapi.
 
--   [projet] [Adapi](./projets/adapi/instructions.md)
+- [projet] [Adapi](./projets/adapi/instructions.md)
 
 ### Jour 2, 3
 
