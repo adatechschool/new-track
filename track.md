@@ -29,13 +29,14 @@ Installation des outils (VS Code, terminal) et premières manipulations du termi
 **Matin**
 
 Approfondissement du terminal à travers des exercices progressifs.
+11h - 12h : intervention de Chloé
 
 **Après-midi**
 
 Initiation aux bases de HTML
 
-- [guide] [Les bases du terminal](./guides/les-bases-du-terminal.md)
-- [exercice] [Pratiquer le terminal](./exercices/1-les-bases-du-dev/terminal-git-fs/exercice_terimal.md)
+- [guide] [Les bases du HTML](./guides/introduction-html.md)
+- [exercice] [Pratiquer le HTML](./exercices/1-les-bases-du-dev/HTML-CSS/exercice_html.md)
 
 ### Jour 4
 
@@ -45,7 +46,8 @@ Introduction à Git (matin) et mini‑projet d’initialisation d’un dépôt G
 
 ### Jour 5
 
-Révisions, pratique en autonomie et initiation aux bases de CSS.
+Révisions, pratique en autonomie et initiation aux bases de CSS.\
+Kahoot HTML / CSS
 
 ---
 
