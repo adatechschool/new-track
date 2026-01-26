@@ -206,7 +206,33 @@ Nous allons récupérer les instructions de `cat` en ne prenant que la descripti
 
 ---
 
-## Exercice 14 - Cat en balise HTML
+Parfait, c’est très clair 👍
+Voici une **formulation propre, simple et cohérente** avec ton exemple :
+
+---
+
+## Exercice 14 – Copy
+
+Nous allons copier le dossier `exercice` afin de créer un dossier `exercice_copy`, puis déplacer ce nouveau dossier avant de le supprimer.
+
+```bash
+# avant modification
+total 0
+drwxr-xr-x@ 3 zeceviccharles  staff   96 25 déc 19:26 .
+drwxr-xr-x@ 7 zeceviccharles  staff  224 25 déc 19:22 ..
+drwxr-xr-x@ 2 zeceviccharles  staff   64 25 déc 19:22 exercice
+
+# après modification
+total 0
+drwxr-xr-x@ 4 zeceviccharles  staff  128 25 déc 19:27 .
+drwxr-xr-x@ 7 zeceviccharles  staff  224 25 déc 19:22 ..
+drwxr-xr-x@ 2 zeceviccharles  staff   64 25 déc 19:22 exercice
+drwxr-xr-x@ 2 zeceviccharles  staff   64 25 déc 19:27 exercice_copy
+```
+
+---
+
+## Exercice 15 - Cat en balise HTML
 
 Maintenant que nous avons les instructions de `cat`, nous allons créer un second fichier appelé `cat-balise`, qui contiendra les mêmes instructions mais dans un format différent.
 
@@ -218,5 +244,3 @@ Pensez à utiliser la commande suivante :
 ```bash
 npx live-server
 ```
-
-## Exercice 15 -
