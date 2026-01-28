@@ -28,7 +28,7 @@ Installation des outils (VS Code, terminal) et premières manipulations du termi
 
 **Matin**
 
-Approfondissement du terminal à travers des exercices progressifs.
+Approfondissement du terminal à travers des exercices progressifs. \
 Introduction à Git (matin) et mini‑projet d’initialisation d’un dépôt Git.
 
 - [guide] [Les bases git et Github](./guides/les-bases-de-git-et-github.md)
