@@ -29,6 +29,10 @@ Installation des outils (VS Code, terminal) et premières manipulations du termi
 **Matin**
 
 Approfondissement du terminal à travers des exercices progressifs.
+Introduction à Git (matin) et mini‑projet d’initialisation d’un dépôt Git.
+
+- [guide] [Les bases git et Github](./guides/les-bases-de-git-et-github.md)
+
 11h - 12h : intervention de Chloé
 
 **Après-midi**
@@ -40,9 +44,7 @@ Initiation aux bases de HTML
 
 ### Jour 4
 
-Introduction à Git (matin) et mini‑projet d’initialisation d’un dépôt Git.
-
-- [guide] [Les bases git et Github](./guides/les-bases-de-git-et-github.md)
+Approfondissement des bases du HTML à travers des exercices progressifs.
 
 ### Jour 5
 
