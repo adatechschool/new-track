@@ -4,16 +4,21 @@
 
 - **cd** : se déplacer dans l'arborescence (changer de dossier).
 - **ls** : afficher la liste des fichiers et dossiers du répertoire courant.
+- **ls -l** : afficher la liste des fichiers et dossiers du répertoire courant avec les droits.
+- **ls -a** : afficher la liste des fichiers et dossiers du répertoire courant avec les fichiers cachés.
+- **ls -l** : afficher la liste des fichiers et dossiers du répertoire courant avec les droits et les fichiers cachés.
 - **mkdir** : créer un nouveau dossier.
 - **touch** : créer un fichier vide ou mettre à jour sa date de modification.
 - **pwd** : afficher le chemin absolu du répertoire courant.
 - **man** : afficher la page de manuel d'une commande (expliquer son usage).
-- **rm -r** : supprimer récursivement un dossier et tout son contenu.
+- **rm** : supprimer récursivement un fichier et tout son contenu.
+- **rm -r** : supprimer récursivement un dossier ou un fichier et tout son contenu.
 
 ## Les bonus
 
 - **mv** : déplacer ou renommer un fichier ou dossier.
-- **cp** : copier un fichier ou dossier.
+- **cp** : copier un fichier.
+- **cp -r** : copier un fichier ou dossier.
 
 Les commandes du terminal sont des instructions tapées pour effectuer rapidement des opérations sur le système de fichiers et les programmes. Parmi les commandes courantes utiles : cd, ls, mkdir, chmod, pwd, mv, rm, man, grep, echo. Utilisez l'autocomplétion (Tab) et l'historique des commandes (flèches haut/bas) pour gagner du temps et améliorer votre productivité.
 
