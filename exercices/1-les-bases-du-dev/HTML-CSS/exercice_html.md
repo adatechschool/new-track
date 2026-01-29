@@ -10,7 +10,7 @@ Vous devez rajouter un paragraphe `j'écris ce code sur mon ordi`
 
 ## 3. Petite présentation
 
-maintenant écrivez votre nom / prénom en titre \ 
+maintenant écrivez votre nom / prénom en titre \
 une description de vous en paragraphe
 
 ### Vous pouvez regarder la deuxième partie
