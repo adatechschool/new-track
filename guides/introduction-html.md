@@ -2,51 +2,118 @@
 
 ## Qu'est-ce que le HTML ?
 
-Le HTML (_HyperText Markup Language_) est un langage de balisage utilisé pour structurer le contenu d'une page web. Il travaille souvent avec le CSS pour le style et le JavaScript pour le comportement.
+Le HTML (*HyperText Markup Language*) est un **langage de balisage** utilisé pour structurer le contenu d'une page web. Il décrit la **structure** (titres, paragraphes, images, liens…), mais **pas le style** ni le comportement.
+
+👉 Il est généralement utilisé avec :
+
+* **CSS** : pour le style (couleurs, tailles, mise en page)
+* **JavaScript** : pour les interactions et le dynamisme
+
+---
+
+## Structure minimale d'une page HTML
+
+Une vraie page HTML suit toujours cette structure de base :
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ma page</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+  </body>
+</html>
+```
+
+### Rôle des principales balises
+
+* `<!DOCTYPE html>` : indique que l'on utilise HTML5
+* `<html>` : racine du document
+* `<head>` : informations **non visibles** (titre, métadonnées, CSS)
+* `<body>` : contenu **visible** de la page
+
+---
 
 ## Premiers pas
 
 1. Dans votre dossier `ada`, créez un dossier `intro_HTML` puis le fichier de base :
+
    ```bash
    mkdir -p ada/intro_HTML
    cd ada/intro_HTML
    touch index.html
    ```
-2. Ouvrez `index.html` dans VSCode et ajoutez ceci :
+2. Ouvrez `index.html` dans VSCode et ajoutez :
+
    ```html
    <h1>Hello</h1>
    ```
-3. Pour voir le rendu rapidement, lancez un serveur local : `npx live-server`.
+3. Pour voir le rendu, lancez un serveur local :
+
+   ```bash
+   npx live-server
+   ```
+
+⚠️ **Important** : la commande doit être lancée **dans le dossier où se trouve `index.html`**.
+
+---
 
 ### Décomposition d'une balise
 
-- `<` : ouvre la balise.
-- `h1` : nom de la balise (ici un titre).
-- `>` : ferme l'ouverture.
-- `Hello` : contenu affiché.
-- `</h1>` : balise de fermeture.
+```html
+<h1>Hello</h1>
+```
 
-Ces éléments forment la structure de base d'une balise HTML.
+* `<` : ouvre la balise
+* `h1` : nom de la balise
+* `>` : fin de l'ouverture
+* `Hello` : contenu
+* `</h1>` : balise de fermeture
+
+---
 
 ## Les commentaires
 
-Les commentaires servent à documenter votre code sans l'afficher dans le navigateur.
+Les commentaires permettent d'expliquer le code sans l'afficher :
 
 ```html
 <!-- Ceci est un commentaire -->
 ```
 
-Raccourci dans VSCode : Cmd + / (Mac).
+Raccourci VSCode :
 
-# Partie 2 — Aller plus loin avec les balises
+* Mac : `Cmd + /`
+* Windows : `Ctrl + /`
 
-Il existe de nombreuses balises (h1, p, div, span, img, a, ul, li, input, ...). Vous n'avez pas besoin de toutes les connaître par cœur ; voici une ressource vous donnant toutes les commandes : https://www.codeshttp.com/toutes-les-balises-html-liste-complete-avec-syntaxe.html
+---
 
-## La balise <div>
+# Partie 2 — Les balises HTML
 
-`<div>` est une balise générique utile pour regrouper et organiser le contenu :
+## Balises courantes
 
-Sans div :
+Vous rencontrerez très souvent :
+
+* Titres : `h1` → `h6`
+* Texte : `p`, `span`
+* Conteneurs : `div`, `section`, `article`
+* Listes : `ul`, `ol`, `li`
+* Liens : `a`
+* Images : `img`
+
+📚 Liste complète :
+[https://www.codeshttp.com/toutes-les-balises-html-liste-complete-avec-syntaxe.html](https://www.codeshttp.com/toutes-les-balises-html-liste-complete-avec-syntaxe.html)
+
+---
+
+## La balise `<div>`
+
+`<div>` est une balise **générique de regroupement**.
+
+Sans `div` :
 
 ```html
 <h1>Test 1</h1>
@@ -55,91 +122,175 @@ Sans div :
 <p>Texte 2</p>
 ```
 
-Avec div :
+Avec `div` :
 
 ```html
 <div>
   <h1>Test 1</h1>
   <p>Texte 1</p>
+</div>
+<div>
   <h1>Test 2</h1>
   <p>Texte 2</p>
 </div>
 ```
 
-`<div>` facilite la mise en page, l'accessibilité et le SEO quand on structure correctement le contenu.
+👉 `div` sert surtout à la **mise en page** avec le CSS.
 
-# Partie 3 — Liens et images
+---
 
-Les images et les liens sont courants sur les sites web ; HTML les gère simplement.
+## Balises sémantiques (bonne pratique)
+
+HTML propose des balises plus explicites que `div` :
+
+* `header` : en-tête
+* `main` : contenu principal
+* `section` : section thématique
+* `article` : contenu autonome
+* `footer` : pied de page
+
+```html
+<header>Header</header>
+<main>
+  <section>
+    <article>Article</article>
+  </section>
+</main>
+<footer>Footer</footer>
+```
+
+Cela permet **d'améliorer l'accessibilité et le SEO**.
+
+---
+
+# Partie 3 — Liens, images et chemins
 
 ## Afficher une image
 
 ```html
-<img src="https://exemple.com/image.jpg" alt="Description de l'image" />
+<img src="./assets/images/logo.png" alt="Logo du site" />
 ```
 
-- `src` : chemin ou URL de l'image.
-- `alt` : texte alternatif, important pour l'accessibilité et le référencement.
-- `<img />` est une balise auto-fermante (pas de `</img>`).
+* `src` : chemin vers l'image
+* `alt` : description textuelle (obligatoire en bonne pratique)
+* `img` est **auto-fermante**
 
-## Rendre une image cliquable
+---
 
-Entourez l'image d'une balise `<a>` :
+## Chemins relatifs (très important)
+
+Arborescence :
+
+```
+site/
+├─ index.html
+├─ pages/
+│  └─ about.html
+└─ assets/
+   └─ images/
+      └─ logo.png
+```
+
+Depuis `index.html` :
 
 ```html
-<a href="https://fr.wikipedia.org/wiki/Jurassic_Park_(s%C3%A9rie_de_films)">
-  <img src="https://exemple.com/logo.jpg" alt="Logo Jurassic Park" />
-</a>
+<img src="./assets/images/logo.png">
 ```
 
-Cliquer sur l'image ouvre la destination indiquée par `href`.
-
-## Décomposer une URL
-
-Exemple : `https://fr.wikipedia.org/wiki/Jurassic_Park_(s%C3%A9rie_de_films)`
-
-- `https` : protocole (sécurisé).
-- `fr.wikipedia.org` : nom de domaine.
-- `/wiki/...` : chemin vers la ressource.
-
-## Liens internes et ancres
-
-Lien vers une autre page :
+Depuis `about.html` :
 
 ```html
-<a href="contact.html">Contact</a>
+<img src="../assets/images/logo.png">
 ```
 
-Lien vers une section de la même page :
+Rappel :
+
+* `./` → dossier courant
+* `../` → dossier parent
+
+---
+
+## Liens
+
+Lien externe :
 
 ```html
-<a href="#section-films">Voir les films</a>
-...
-<h2 id="section-films">Les films</h2>
+<a href="https://example.com">Site externe</a>
 ```
 
-# Partie 4 — Introduction au CSS
-
-Le CSS (Cascading Style Sheets) permet de styliser le HTML : couleurs, tailles, dispositions, etc.
-
-Exemple minimal sans CSS :
+Lien interne :
 
 ```html
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Hello</h1>
-  </body>
-</html>
+<a href="./pages/about.html">À propos</a>
 ```
 
-Pour ajouter du CSS, on peut :
+Lien vers une ancre :
 
-- lier un fichier : `<link rel="stylesheet" href="styles.css" />`
-- écrire dans une balise `<style>` dans le `<head>`
-- utiliser des styles en ligne (à éviter pour la maintenance)
+```html
+<a href="#films">Voir les films</a>
+<h2 id="films">Les films</h2>
+```
+
+---
+
+# Partie 4 — Chercher par soi-même
+
+Il est **impossible de connaître toutes les balises par cœur**.
+
+👉 Compétence clé du développeur web :
+
+* savoir **chercher**
+* lire la documentation
+* tester par soi-même
+
+À explorer :
+
+* `input`
+* `form`
+* `button`
+* `label`
+
+Ressources utiles :
+
+* MDN Web Docs
+* W3Schools
+
+---
+
+# Partie 5 — Introduction au CSS
+
+Le CSS permet de **styliser** le HTML.
+
+## Lier un fichier CSS
+
+```html
+<link rel="stylesheet" href="./assets/css/style.css" />
+```
+
+## Exemple CSS
+
+```css
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: blue;
+}
+```
+
+## Sélecteurs de base
+
+* `h1` → toutes les balises h1
+* `.classe` → class="classe"
+* `#id` → id="id"
+
+```html
+<p class="texte">Hello</p>
+```
+
+```css
+.texte {
+  color: red;
+}
+```
