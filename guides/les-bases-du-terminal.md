@@ -6,7 +6,7 @@
 - **ls** : afficher la liste des fichiers et dossiers du répertoire courant.
 - **ls -l** : afficher la liste des fichiers et dossiers du répertoire courant avec les droits.
 - **ls -a** : afficher la liste des fichiers et dossiers du répertoire courant avec les fichiers cachés.
-- **ls -l** : afficher la liste des fichiers et dossiers du répertoire courant avec les droits et les fichiers cachés.
+- **ls -la** : afficher la liste des fichiers et dossiers du répertoire courant avec les droits et les fichiers cachés.
 - **mkdir** : créer un nouveau dossier.
 - **touch** : créer un fichier vide ou mettre à jour sa date de modification.
 - **pwd** : afficher le chemin absolu du répertoire courant.
