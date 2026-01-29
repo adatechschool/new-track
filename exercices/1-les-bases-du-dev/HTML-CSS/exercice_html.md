@@ -10,7 +10,8 @@ Vous devez rajouter un paragraphe `j'écris ce code sur mon ordi`
 
 ## 3. Petite présentation
 
-maintenant écrivez votre nom / prénom en titre et une description de vous en paragraphe
+maintenant écrivez votre nom / prénom en titre \ 
+une description de vous en paragraphe
 
 ### Vous pouvez regarder la deuxième partie
 
@@ -18,9 +19,9 @@ maintenant écrivez votre nom / prénom en titre et une description de vous en p
 
 Nous allons changer les titre utiliser en de plus petit titre,
 nous voudrons donc : \
-Nom / prenom en titre
-age en sous-titre
-ville en sous-tire
+Nom / prenom en titre \
+age en sous-titre \
+ville en sous-tire \
 description / introduction de notre personne en paragraphe
 
 ## 5. suite de l'organisation
