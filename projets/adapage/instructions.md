@@ -53,12 +53,13 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 > ⚠️ **Réalisez toutes les fonctionnalités obligatoires avant de passer aux bonus.**
 
-### 1.Homepage section
+# 1.Homepage section
 
 - [ ] Créer une page HTML avec une structure de base (head, body, sections, etc.)
 - [ ] Ajouter l'image proposer ou une image de la personnalité choisie
 - [ ] Ajouter une description de la personnalité choisie
 - [ ] Styliser la page avec CSS pour améliorer l'apparence
+      ![](./wireframes_part1.png)
 
 # 2.Navigation
 
@@ -67,6 +68,7 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
   - Témoignage / citation
 - [ ] Styliser la barre de navigation avec CSS
 - [ ] Pouvoir naviguer entre chaque section en cliquant sur les liens de la barre de navigation
+      ![](./wireframes_part2.png)
 
 # 3.Detail des sections
 
@@ -75,9 +77,7 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
   - votre frise chronologique devra contenir des événements importants de la vie de la personnalité
   - Ajouter les témoignages ou citations célèbres de la personnalité
   - Faire un footer regroupant toutes les informations de contact et votre github
-
-Pour vous aider, voici un wireframe que vous pouvez suivre :
-![](./wireframes_part1.png)
+    ![](./wireframes_part3.png)
 
 ## 🚫 Ce que vous ne devez pas faire
 
@@ -122,4 +122,4 @@ Cette phase durera **environ 2 minutes par personne**.
 
 ## 🎓 Soutenance
 
-La soutenance du projet aura lieu le [date et heure à préciser].
+La soutenance du projet aura lieu le 10 février. Des créneaux vous seront proposés afin que vous puissiez choisir celui qui vous convient le mieux.
