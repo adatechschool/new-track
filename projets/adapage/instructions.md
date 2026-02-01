@@ -26,7 +26,7 @@ Nous allons développer un site web fait en html / css parlant d'une personnalit
 Votre page devra contenir :
 
 - Une section de présentation (avec photo et description de la personne)
-- Une section avec 6 cartes :
+- Une section avec 4 cartes :
   - nationnalité
   - metier/activité
   - signe astro
@@ -57,7 +57,6 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 - [ ] Créer une page HTML avec une structure de base (head, body, sections, etc.)
 - [ ] Ajouter l'image proposer ou une image de la personnalité choisie
-      ![](./default_img.png)
 - [ ] Ajouter une description de la personnalité choisie
 - [ ] Styliser la page avec CSS pour améliorer l'apparence
 
@@ -78,7 +77,7 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
   - Faire un footer regroupant toutes les informations de contact et votre github
 
 Pour vous aider, voici un wireframe que vous pouvez suivre :
-![](./wf2.png)
+![](./wireframes_part1.png)
 
 ## 🚫 Ce que vous ne devez pas faire
 

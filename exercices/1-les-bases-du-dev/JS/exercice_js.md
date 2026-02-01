@@ -58,3 +58,5 @@ Afficher la somme des deux ages
 ```bash
 Charles à 30 ans et Marie aussi ce qui fait 60 ans pour les deux
 ```
+
+## Exercice 7
