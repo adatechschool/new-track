@@ -66,6 +66,7 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 - [ ] Ajouter une barre de navigation avec des liens vers les sections de la page :
   - Frise chronologique
   - Témoignage / citation
+  - spécialisation
 - [ ] Styliser la barre de navigation avec CSS
 - [ ] Pouvoir naviguer entre chaque section en cliquant sur les liens de la barre de navigation
       ![](./wireframes_part2.png)
