@@ -92,6 +92,7 @@ utiliser du **JavaScript** pour ce projet
 - [ ] Ajouter un footer avec des liens vers vos réseaux sociaux
 - [ ] Utiliser des polices personnalisées avec Google Fonts
 - [ ] Ajouter un mode sombre / clair avec CSS
+- [ ] Mettre en place du responsive
 - [ ] Intégrer une vidéo youtube ou alors une carte google maps
 
 ## 📦 Modalité d'évaluation
