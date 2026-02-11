@@ -1,4 +1,4 @@
-Voici une **reformulation complète, corrigée et harmonisée** de tes exercices, avec un ton **pédagogique, clair et professionnel**, tout en restant accessible à des débutant·es 👇
+
 
 ---
 
