@@ -129,6 +129,7 @@ Créer une fonction **`helloNumberMixed`** qui affiche une suite de nombres posi
 
 ```bash
 0
+-0
 1
 -1
 2
@@ -195,10 +196,10 @@ Hello world
 Hello world
 Hello world
 Hello world
-Hello world
-Hello world
-Hello world
-Hello world
+World Hello ??
+World Hello ??
+World Hello ??
+World Hello ??
 Fin
 ```
 
