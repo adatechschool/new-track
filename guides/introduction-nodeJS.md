@@ -1,6 +1,3 @@
-Parfait, merci pour la confiance 🙂
-Voici **le document complet corrigé**, avec **la même structure**, **le même ton**, et juste ce qu’il faut de corrections pour que ce soit clean, clair et pro — sans perdre ta vibe de formateur.
-
 # Partie 1 — Introduction à JavaScript & Node.js
 
 ## Qu’est-ce que JavaScript ?
