@@ -377,3 +377,148 @@ Projet collectif fullstack.
 ### Jour 4
 
 Soutenances (matin) et démo (après‑midi).
+
+---
+
+# Track - Bloc 2
+
+## Semaine 19 - Introduction React
+
+### Jour 1
+
+- Présentation de React et de ses concepts de base (composants, props, state).
+- Mise en place de l'environnement de développement.
+
+### Jour 2
+
+- Création de votre première application React.
+- Découverte de JSX et des composants fonctionnels.
+
+### Jour 3
+
+- Gestion de l'état avec les hooks (useState, useEffect).
+- Introduction aux props et à la communication entre composants.
+
+### Jour 4
+
+- Approfondissement des hooks (useState, useEffect).
+- Gestion des effets de bord avec useEffect.
+- Pour les plus avancés : introduction à useContext, useMemo et useCallback.
+
+## Semaine 20 - Introduction à React (suite)
+
+### Jour 1, 2, 3, 4
+
+reproduction d'une application React simple en utilisant les concepts vus précédemment (composants, props, state, hooks).
+
+## Semaine 21 - Projet React
+
+### Jour 1
+
+Lancement du projet Adashboard.
+
+- [projet] [Adashboard](./projets/adashboard/instructions.md)
+
+### Jour 2, 3, 4
+
+Développement du projet Adashboard.
+
+## Semaine 22 - Projet React (suite)
+
+### Jour 1, 2, 3
+
+Poursuite du développement du projet Adashboard.
+
+### Jour 4
+
+Préparation de la démo.
+
+### Jour 5
+
+Finalisation du projet Adashboard et déploiement.
+
+## Semaine 23 - Introduction NextJS
+
+### Jour 1
+
+Soutenance Adashboard et lancement de NextJS.
+
+### Jour 2, 3, 4
+
+Découverte des fonctionnalités de NextJS (pages, routing, API routes).
+
+## Semaine 24 - Introduction à NextJS avec Drizzle
+
+### Jour 1
+
+- mise en place de Drizzle dans un projet NextJS.
+- Configuration de Drizzle pour interagir avec une blockchain.
+
+### Jour 2, 3, 4
+
+- Approfondissement de l'utilisation de Drizzle avec NextJS.
+- Intégration de Drizzle dans NextJS côté client et côté serveur.
+- Gestion des états et des transactions avec Drizzle.
+
+## Semaine 25 - Adaverse
+
+### Jour 1
+
+- Lancement du projet Adaverse.
+- [projet] [Adaverse](./projets/adaverse/instructions.md)
+
+### Jour 2, 3, 4
+
+- Développement du projet Adaverse.
+
+## Semaine 26 - Adaverse (suite)
+
+### Jour 1, 2, 3, 4
+
+- Poursuite du développement du projet Adaverse.
+
+## Semaine 27 - Introduction à BetterAuth
+
+### Jour 1
+
+Soutenance Adaverse et introduction à BetterAuth.
+
+### Jour 2,3,4
+
+- Mise en place de BetterAuth dans un projet.
+- Configuration de BetterAuth pour l'authentification des utilisateurs.
+- Intégration de BetterAuth avec NextJS.
+
+## Semaine 28 - Adaverse 2
+
+### Jour 1
+
+- Lancement de la deuxième version du projet Adaverse.
+- [projet] [Adaverse 2](./projets/adaverse-2/instructions.md)
+
+### Jour 2, 3, 4
+
+- Développement de la deuxième version du projet Adaverse.
+
+## Semaine 29 - Finalisation
+
+### Jour 1, 2, 3, 4
+
+- Finalisation de la deuxième version du projet Adaverse.
+
+## Semaine 30 - Projet perso
+
+### Jour 1
+
+Soutenance Adaverse 2 et mise en place du projet personnel.
+
+### Jour 2, 3, 4, 5
+
+- Développement du projet personnel.
+
+## Semaine 31 - 32 - 33
+
+### Jour 1, 2, 3, 4
+
+- Mise en place du projet personnel.
+- Développement du projet personnel.
