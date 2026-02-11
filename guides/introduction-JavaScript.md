@@ -211,6 +211,10 @@ En clair :
 
 Il est bien sûr possible de combiner **boucles et conditions** :
 
+Voici une reformulation plus fluide, plus claire, tout en gardant ton ton pédagogique 👇
+
+---
+
 ```js
 for (let i = 0; i <= 5; i++) {
   if (i === 5) {
@@ -220,6 +224,78 @@ for (let i = 0; i <= 5; i++) {
   }
 }
 ```
+
+Comme on peut le voir dans cet exemple, **les boucles et les conditions peuvent être combinées** pour créer des logiques un peu plus poussées.
+
+Ici, la boucle `for` répète une action plusieurs fois, et la condition `if` vient vérifier une situation précise à chaque passage dans la boucle.
+
+Dans notre condition :
+
+```js
+if (i === 5)
+```
+
+nous utilisons `===` pour vérifier si `i` est strictement égal à `5`.
+
+Le `===` est ce qu’on appelle un **opérateur de comparaison stricte**.
+Il compare **la valeur ET le type**.
+
+Par exemple :
+
+```js
+5 === "5"; // false
+```
+
+Parce que l’un est un nombre et l’autre une chaîne de caractères.
+
+Mais ce n’est pas le seul opérateur de comparaison. Il en existe plusieurs :
+
+- `==` → égalité simple (compare seulement la valeur, pas le type)
+- `!=` → différent (comparaison simple)
+- `!==` → différent strict (valeur + type)
+- `>` → supérieur
+- `<` → inférieur
+- `>=` → supérieur ou égal
+- `<=` → inférieur ou égal
+
+## Les opérateurs logiques
+
+Dans une condition, on peut aussi combiner plusieurs tests grâce aux **opérateurs logiques** :
+
+- `&&` → ET (les deux conditions doivent être vraies)
+- `||` → OU (au moins une des deux conditions doit être vraie)
+- `!` → NON (inverse la valeur)
+
+Exemple :
+
+```js
+if (age >= 18 && age < 30) {
+  console.log("Jeune adulte");
+}
+```
+
+## Petit bonus utile : le modulo `%`
+
+L’opérateur `%` (modulo) permet d’obtenir le **reste d’une division**.
+
+```js
+console.log(5 % 2); // 1
+console.log(10 % 3); // 1
+console.log(8 % 4); // 0
+```
+
+C’est très pratique pour savoir si un nombre est **pair ou impair** :
+
+```js
+if (i % 2 === 0) {
+  console.log("Nombre pair");
+} else {
+  console.log("Nombre impair");
+}
+```
+
+👉 Si le reste est `0`, le nombre est pair.
+Sinon, il est impair.
 
 # Partie 6 — Les tableaux (arrays)
 
