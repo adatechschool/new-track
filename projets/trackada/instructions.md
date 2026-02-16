@@ -24,20 +24,20 @@ Enfin, il devra s’assurer que le repository git du projet a été correctement
 
 ## ⚙️ Initialisation du projet
 
-Pour ce projet, on va simplement récupérer le fichier `track.json` fourni et créer un fichier `checktrack.js` à l’intérieur du repository git `trackada`.
+Pour ce projet, on va simplement récupérer le fichier `track.json` fourni et créer un fichier `checktrack.mjs` à l’intérieur du repository git `trackada`.
 
 ```bash
 ~/ada/trackage ls
-checktrack.js   instructions.md track.json
+checktrack.mjs   instructions.md track.json
 ```
 
 Pour tester votre script, vous pouvez utiliser la commande suivante à la racine du projet :
 
 ```
-node checktrack.js
+node checktrack.mjs
 ```
 
-Pour ce projet, il n’est pas nécessaire d’installer de librairie. On va directement utiliser des fonctions disponibles dans Node.js. Pour ce faire, il suffit de les importer dans le fichier `checktrack.js`.
+Pour ce projet, il n’est pas nécessaire d’installer de librairie. On va directement utiliser des fonctions disponibles dans Node.js. Pour ce faire, il suffit de les importer dans le fichier `checktrack.mjs`.
 
 Par exemple :
 
