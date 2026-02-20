@@ -249,7 +249,7 @@ Tu peux proposer tes propres améliorations une fois que tu as fini la partie ob
 
 ## 📦 Modalités d'évaluation
 
-TODO: soutenance + demo ?
+
 
 ## 🎓 Compétences à acquérir
 
@@ -265,4 +265,4 @@ TODO: soutenance + demo ?
 
 ## 🎓 Soutenance
 
-TODO: préciser la date et l'heure de la soutenance du projet
+La soutenance aura lieu le lundi 9 mars 
