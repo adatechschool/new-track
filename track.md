@@ -140,49 +140,7 @@ Import / export de modules, intro aux fonctions node (fs, path, etc.)
 
 Révision et pratique transversale des notions JavaScript.
 
----
-
-## Semaine 5 – Projet Trackada
-
-### Jour 1
-
-Lancement du projet Trackada (matin).
-
-- [projet] [Trackada](./projets/trackada/instructions.md)
-- [guide] [Github classroom](./guides/github-classroom.md)
-
-### Jour 2, 3, 4, 5
-
-Projet en autonomie avec accompagnement.
-
-- [projet] [Trackada](./projets/trackada/instructions.md)
-
----
-
-## Semaine 6 – DOM et événements
-
-### Jour 1
-
-- Soutenance Trackada (matin)
-- Présentation du DOM et des événements
-
-- [guide] [Soutenance](./guides/soutenance.md)
-
-### Jour 2, 3
-
-Exercices et pratique autour du DOM et des événements.
-
-### Jour 4
-
-Présentation de Vite et mise en pratique.
-
-### Jour 5
-
-Mini‑exercice en autonomie pour pratiquer le DOM.
-
----
-
-## Semaine 7 – Projet collectif (Adaquiz)
+## Semaine 5 – Projet collectif (Adaquiz)
 
 ### Jour 1
 
@@ -197,7 +155,7 @@ Développement du projet collectif.
 
 ---
 
-## Semaine 8 – Projet Adaquiz (suite)
+## Semaine 6 – Projet Adaquiz (suite)
 
 ### Jour 1, 2, 3
 
@@ -213,7 +171,7 @@ Préparation à la démo.
 
 ---
 
-## Semaine 9 – Tests et algorithmique
+## Semaine 7 – Tests et algorithmique
 
 ### Jour 1
 
@@ -236,7 +194,7 @@ Réalisation du projet Adalgo.
 
 ---
 
-## Semaine 10 – Asynchrone et APIs
+## Semaine 8 – Asynchrone et APIs
 
 ### Jour 1
 
@@ -248,7 +206,7 @@ Poursuite des exercices sur `fetch`, `async/await` et les APIs.
 
 ---
 
-## Semaine 11 – Projet Adataviz
+## Semaine 9 – Projet Adataviz
 
 ### Jour 1
 
@@ -266,7 +224,7 @@ Projet Adataviz en autonomie.
 
 ---
 
-## Semaine 12 – Projet Adataviz (suite)
+## Semaine 10 – Projet Adataviz (suite)
 
 ### Jour 1, 2, 3
 
@@ -284,7 +242,7 @@ Finalisation du projet Adataviz et déploiement.
 
 ---
 
-## Semaine 13 – Base de données
+## Semaine 11 – Base de données
 
 ### Jour 1
 
@@ -307,7 +265,7 @@ Conception de bases de données.
 
 ---
 
-## Semaine 14 – Projet Adatabase
+## Semaine 12 – Projet Adatabase
 
 ### Jour 1
 
@@ -317,7 +275,7 @@ Lancement du projet Adatabase.
 
 ---
 
-## Semaine 15 – Backend et IA
+## Semaine 13 – Backend et IA
 
 ### Jour 1
 
@@ -334,7 +292,7 @@ Introduction à l’AI SDK.
 
 ---
 
-## Semaine 16 – Projet Adapi
+## Semaine 14 – Projet Adapi
 
 ### Jour 1
 
@@ -356,7 +314,7 @@ Projet Adapi.
 
 ---
 
-## Semaine 17 – Projet collectif fullstack
+## Semaine 15 – Projet collectif fullstack
 
 ### Jour 1
 
@@ -368,7 +326,7 @@ Projet collectif fullstack.
 
 ---
 
-## Semaine 18 – Finalisation
+## Semaine 16 – Finalisation
 
 ### Jour 1, 2, 3
 
@@ -382,7 +340,7 @@ Soutenances (matin) et démo (après‑midi).
 
 # Track - Bloc 2
 
-## Semaine 19 - Introduction React
+## Semaine 17 - Introduction React
 
 ### Jour 1
 
@@ -405,13 +363,13 @@ Soutenances (matin) et démo (après‑midi).
 - Gestion des effets de bord avec useEffect.
 - Pour les plus avancés : introduction à useContext, useMemo et useCallback.
 
-## Semaine 20 - Introduction à React (suite)
+## Semaine 18 - Introduction à React (suite)
 
 ### Jour 1, 2, 3, 4
 
 reproduction d'une application React simple en utilisant les concepts vus précédemment (composants, props, state, hooks).
 
-## Semaine 21 - Projet React
+## Semaine 19 - Projet React
 
 ### Jour 1
 
@@ -423,7 +381,7 @@ Lancement du projet Adashboard.
 
 Développement du projet Adashboard.
 
-## Semaine 22 - Projet React (suite)
+## Semaine 20 - Projet React (suite)
 
 ### Jour 1, 2, 3
 
@@ -437,7 +395,7 @@ Préparation de la démo.
 
 Finalisation du projet Adashboard et déploiement.
 
-## Semaine 23 - Introduction NextJS
+## Semaine 21 - Introduction NextJS
 
 ### Jour 1
 
@@ -447,7 +405,7 @@ Soutenance Adashboard et lancement de NextJS.
 
 Découverte des fonctionnalités de NextJS (pages, routing, API routes).
 
-## Semaine 24 - Introduction à NextJS avec Drizzle
+## Semaine 22 - Introduction à NextJS avec Drizzle
 
 ### Jour 1
 
@@ -460,7 +418,7 @@ Découverte des fonctionnalités de NextJS (pages, routing, API routes).
 - Intégration de Drizzle dans NextJS côté client et côté serveur.
 - Gestion des états et des transactions avec Drizzle.
 
-## Semaine 25 - Adaverse
+## Semaine 23 - Adaverse
 
 ### Jour 1
 
@@ -471,13 +429,13 @@ Découverte des fonctionnalités de NextJS (pages, routing, API routes).
 
 - Développement du projet Adaverse.
 
-## Semaine 26 - Adaverse (suite)
+## Semaine 24 - Adaverse (suite)
 
 ### Jour 1, 2, 3, 4
 
 - Poursuite du développement du projet Adaverse.
 
-## Semaine 27 - Introduction à BetterAuth
+## Semaine 25 - Introduction à BetterAuth
 
 ### Jour 1
 
@@ -489,7 +447,7 @@ Soutenance Adaverse et introduction à BetterAuth.
 - Configuration de BetterAuth pour l'authentification des utilisateurs.
 - Intégration de BetterAuth avec NextJS.
 
-## Semaine 28 - Adaverse 2
+## Semaine 26 - Adaverse 2
 
 ### Jour 1
 
@@ -500,13 +458,13 @@ Soutenance Adaverse et introduction à BetterAuth.
 
 - Développement de la deuxième version du projet Adaverse.
 
-## Semaine 29 - Finalisation
+## Semaine 27 - Finalisation
 
 ### Jour 1, 2, 3, 4
 
 - Finalisation de la deuxième version du projet Adaverse.
 
-## Semaine 30 - Projet perso
+## Semaine 28 - Projet perso
 
 ### Jour 1
 
@@ -516,7 +474,7 @@ Soutenance Adaverse 2 et mise en place du projet personnel.
 
 - Développement du projet personnel.
 
-## Semaine 31 - 32 - 33
+## Semaine 29 - 30 - 31
 
 ### Jour 1, 2, 3, 4
 
