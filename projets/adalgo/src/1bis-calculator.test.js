@@ -1,15 +1,29 @@
-import { test, expect } from "vitest";
-import { calculator } from "./1bis-calculator";
+describe("calculator", () => {
+  test("adds two numbers", () => {
+    expect(calculator(2, 3, "+")).toBe(5);
+  });
 
-test("Check if the simple function works", () => {
-  expect(calculator(2, 3, "+")).toBe(5);
-  expect(calculator(10, 3, "-")).toBe(7);
-  expect(calculator(-7, 3, "*")).toBe(-21);
-  expect(calculator(3, 3, "/")).toBe(1);
-});
+  test("subtracts two numbers", () => {
+    expect(calculator(5, 2, "-")).toBe(3);
+  });
 
-test("Check if one argument is empty", () => {
-  expect(calculator(_, 10, "+").toBe("is empty"));
-  expect(calculator(10, _, "+").toBe("is empty"));
-  expect(calculator(10, 10, "_").toBe("no operators"));
+  test("multiplies two numbers", () => {
+    expect(calculator(4, 3, "*")).toBe(12);
+  });
+
+  test("divides two numbers", () => {
+    expect(calculator(10, 2, "/")).toBe(5);
+  });
+
+  test("returns error for invalid operator", () => {
+    expect(calculator(2, 3, "%")).toBe("no operators");
+  });
+
+  test("returns error if x is not a number", () => {
+    expect(calculator("a", 3, "+")).toBe("is empty");
+  });
+
+  test("returns error if y is not a number", () => {
+    expect(calculator(3, "b", "+")).toBe("is empty");
+  });
 });
