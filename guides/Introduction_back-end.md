@@ -49,7 +49,11 @@ Vous créez une API capable de recevoir des requêtes et de renvoyer des répons
 
 Une API ne remplace pas le back-end.
 Elle est l’interface d’entrée du back-end.
-L'API est une couche du back-end, Elle expose des points d'entrée vers les "règles" de ton application (la logique métier / business logic). Vous pouvez voir cela comme le client qui passe sa commande au serveur (API), le serveur transmet la demande à la cuisine (logique métier), qui prépare le plat en utilisant la réserve (base de données).
+L'API est une couche du back-end, Elle expose des points d'entrée vers les "règles" de ton application (la logique métier / business logic), on peut dire qu'elle créer une interface entre le client et le serveur.
+En parlant de interface, le user interface (UI) est la partie de l'application avec laquelle l'utilisateur interagit directement.
+C'est ce que l'utilisateur voit et avec quoi il interagit dans le navigateur.
+On peut le comparer au menu d'un restaurant.
+Vous pouvez voir cela comme le client qui passe sa commande au serveur (API), le serveur transmet la demande à la cuisine (logique métier), qui prépare le plat en utilisant la réserve (base de données).
 
 ### step 2
 
@@ -78,6 +82,11 @@ Attention je vous demande toujours pas de coder
 
 une fois que vous avez finalisé cette partie vous pouvez passer à la mise en œuvre de ces routes dans votre serveur.
 l'objectif c'est de faire un simple back-end capable de gérer ces requêtes.
+
+### step 5
+
+mettre en place les sécurités liées à votre API.
+checker les espaces / les erreurs de syntaxe dans vos requêtes.
 
 ## Conclusion
 
