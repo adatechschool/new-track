@@ -130,17 +130,6 @@ Voici des exemples de données à insérer (tu peux en ajouter d'autres) :
 
 # Modélisation
 
-### v1 - sans les comment faire
-
-Vous allez créer un espace permettant de présenter les projets réalisés par les élèves.
-Votre mission est d'imaginer la manière dont ces projets pourraient être organisés, reliés entre eux et associés aux autres éléments importants de l'écosystème Ada (ex : compétences, thèmes, ressources)
-
-Vous devrez donc concevoir un structure cohérente qui permette de décrire un projet, d'indiquer son contexte (travail individuel ou en groupe) et de montrer les liens qu'iel entretient avec d'autres éléments clés.
-
-Vous êtes libre de la façon dont vous modélisez et organisez ces informations : l'objectif est de proposer une structure claire, logique et exploitable.
-
-### v2 - avec plus de détail
-
 vous allez concevoir la structure qui permettra de présenter les projets réalisés par les apprenant·e·s.
 Votre objectif est d’imaginer comment organiser les informations, de manière claire et cohérente, afin que l’on puisse retrouver facilement :
 
