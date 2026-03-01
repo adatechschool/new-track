@@ -140,8 +140,6 @@ Import / export de modules, intro aux fonctions node (fs, path, etc.)
 
 Révision et pratique transversale des notions JavaScript.
 
----
-
 ## Semaine 5 – Projet collectif (Adaquiz)
 
 ### Jour 1
