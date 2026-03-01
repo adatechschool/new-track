@@ -16,3 +16,5 @@
 
  This: passwd_validator("fwjifewJ#")
  Will return: False (because there's no decimal numbers) */
+
+export const passwd_validator = () => {};
