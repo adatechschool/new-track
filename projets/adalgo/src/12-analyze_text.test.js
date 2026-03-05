@@ -1,1 +1,1 @@
-// TODO : test code analyze_text.js
+// TODO : test analyze_text.js
