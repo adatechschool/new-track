@@ -185,18 +185,7 @@ Exemples :
 
 ## ✅ Modalités d’évaluation
 
-L’évaluation se déroulera sous forme de soutenance. L'apprenant·e devra présenter une partie des fonctionnalités sur lesquelles iel a travaillé.
-
-Chaque personne devra être capable :
-
--   d’expliquer clairement son code à l’oral,
--   de réaliser une démonstration fonctionnelle,
--   de naviguer aisément dans son code durant la présentation.
-
-Cette première partie durera **environ 5 minutes par personne**.
-
-Ensuite, l'apprenant·e répondra à **une à deux questions techniques**, afin de vérifier ses compétences (basées sur le référentiel _Compétences à acquérir_ ci-dessous).
-Cette phase durera **environ 2 minutes par personne**.
+Aucune évaluation sera demandé
 
 ## 🎓 Compétences à acquérir
 
