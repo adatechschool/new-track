@@ -1,23 +1,43 @@
+import {describe, it, test, expect} from 'vitest'
+
 describe("filterLetter", () => {
-  const letterCallback = jest.fn((e) => `${e} is a letter`);
-  const notLetterCallback = jest.fn((e) => `${e} is NOT a letter`);
+  it("calls first callback when argument is a letter", () => {
+    const result = filterLetter(
+      "a",
+      (e) => `${e} is a letter`,
+      (e) => `${e} is NOT a letter`,
+    );
 
-  beforeEach(() => {
-    jest.clearAllMocks();
+    expect(result).toBe("a is a letter");
   });
 
-  test("calls letter callback if argument is not a number", () => {
-    filterLetter("a", letterCallback, notLetterCallback);
-    expect(letterCallback).toHaveBeenCalledWith("a");
+  it("calls second callback when argument is a number", () => {
+    const result = filterLetter(
+      "8",
+      (e) => `${e} is a letter`,
+      (e) => `${e} is NOT a letter`,
+    );
+
+    expect(result).toBe("8 is NOT a letter");
   });
 
-  test("calls notLetter callback if argument is a number", () => {
-    filterLetter("8", letterCallback, notLetterCallback);
-    expect(notLetterCallback).toHaveBeenCalledWith("8");
+  it("handles numeric string correctly", () => {
+    const result = filterLetter(
+      "123",
+      (e) => `${e} is a letter`,
+      (e) => `${e} is NOT a letter`,
+    );
+
+    expect(result).toBe("123 is NOT a letter");
   });
 
-  test("calls letter callback for special characters", () => {
-    filterLetter("@", letterCallback, notLetterCallback);
-    expect(letterCallback).toHaveBeenCalledWith("@");
+  it("handles special characters as letters (non numeric)", () => {
+    const result = filterLetter(
+      "@",
+      (e) => `${e} is a letter`,
+      (e) => `${e} is NOT a letter`,
+    );
+
+    expect(result).toBe("@ is a letter");
   });
 });
