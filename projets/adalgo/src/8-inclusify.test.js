@@ -1,4 +1,3 @@
-import {inclusify} from "./4-inclusify";
 import {expect, test} from "vitest";
 
 test("il/elle are properly replaced", () => {
