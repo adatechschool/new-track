@@ -1,4 +1,5 @@
 import {expect, test} from "vitest";
+import { inclusify } from './8-inclusify'
 
 test("il/elle are properly replaced", () => {
     expect(inclusify("Aujourd'hui elle a push le code sur github")).toBe("Aujourd'hui iel a push le code sur github");
