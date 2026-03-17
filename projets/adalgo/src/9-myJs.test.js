@@ -1,5 +1,5 @@
 import {suite, test, expect} from "vitest";
-import {myIncludes, myJoin, myObjectKeys, myObjectEntries} from "./5-myJs";
+import {myIncludes, myJoin, myObjectKeys, myObjectEntries} from "./9-myJs";
 
 suite("myJs", () => {
     test("myIncludes", () => {
