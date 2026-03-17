@@ -1,3 +1,5 @@
+import { test, expect, describe, it } from "vitest";
+
 describe("calculator", () => {
   test("adds two numbers", () => {
     expect(calculator(2, 3, "+")).toBe(5);
