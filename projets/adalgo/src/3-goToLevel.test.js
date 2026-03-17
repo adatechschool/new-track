@@ -1,3 +1,5 @@
+import { test, expect, describe, it } from "vitest";
+
 describe("goToLevel", () => {
   test("goes up correctly", () => {
     expect(goToLevel(0, 5)).toBe(5);
