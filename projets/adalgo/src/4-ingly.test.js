@@ -1,3 +1,5 @@
+import { test, expect, describe} from "vitest";
+
 describe("ingly", () => {
   test("adds ing if word does not end with ing", () => {
     expect(ingly("play")).toBe("playing");
