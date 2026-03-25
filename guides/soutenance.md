@@ -2,7 +2,7 @@
 
 La soutenance permet d’évaluer la **maîtrise technique individuelle** et la **compréhension globale du projet**, à travers une présentation orale structurée et une démonstration fonctionnelle.
 
-La soutenance dure **20 minutes** et se déroule en deux temps.
+La soutenance dure **15 minutes** et se déroule en deux temps.
 
 ---
 
