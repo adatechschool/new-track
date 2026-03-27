@@ -186,10 +186,10 @@ Chaque personne devra être capable :
 -   de réaliser une démonstration fonctionnelle,
 -   de naviguer aisément dans son code durant la présentation.
 
-Cette première partie durera **environ 5 minutes par personne**.
+Cette première partie durera **environ 10 minutes**.
 
-Ensuite, l'apprenante répondra à **une à deux questions techniques**, afin de vérifier ses compétences (basées sur le référentiel _Compétences à acquérir_ ci-dessous).
-Cette phase durera **environ 2 minutes par personne**.
+Ensuite, l'apprenante répondra à **des questions techniques**, afin de vérifier ses compétences (basées sur le référentiel _Compétences à acquérir_ ci-dessous).
+Cette phase durera **environ 5 minutes**.
 
 ## 🎓 Compétences à acquérir
 
