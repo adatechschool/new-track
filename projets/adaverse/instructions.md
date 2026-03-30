@@ -4,6 +4,8 @@
 -   **Type de projet :** seul / pair programming
 -   **Nom du repo :** `adaverse-[nom_github]`
 
+[Lien Github Classroom](https://classroom.github.com/a/zZZEmCAB)
+
 ## 📦 Modalités de rendu
 
 Vous pouvez développer sur la branche `main`, mais le projet devra être livré sur **deux branches distinctes** :
