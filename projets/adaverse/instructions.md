@@ -88,13 +88,13 @@ Cette partie se réalise avec **Drizzle ORM** en créant le schéma de la base d
     -   Chaque projet doit inclure :
         -   un **titre** clair,
         -   une **illustration** pour avoir un visuel du projet
-        -   une **adresse web personnalisée** (slug) pour générer une URL propre,
+        -   un **slug** pour accéder à la ressource via une URL propre,
         -   un **lien GitHub**,
         -   un **lien vers la démo** en ligne,
         -   une **date de création** (quand le projet est proposé),
         -   une **date de publication** (vide tant que le projet n’est pas validé),
-        -   un **lien vers la promotion**,
-        -   un **lien vers le projet Ada** concerné.
+        -   une **référence vers la promotion**,
+        -   une **référence vers le projet Ada** concerné.
 
 ### 2. 🌱 Création d’une seed de données
 
