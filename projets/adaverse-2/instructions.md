@@ -19,6 +19,16 @@ Puisqu'il s'agit d'un travail en équipe, vous devrez adopter un **workflow Git 
 
 Ce projet consiste à ajouter un système d'authentification au projet `adaverse`. Les utilisateur⋅ices non connecté⋅es pourront continuer à voir les projets sur le site, mais il faudra se connecter pour en proposer un nouveau. Les données des formulaires seront validées avec Zod. Une suite de tests automatisés sera mise en place et exécutée en CI sur chaque Pull Request. Enfin, les utilisateur⋅ices pourront avoir un rôle admin pour publier et dépublier des projets.
 
+## 🤖 Sur l'utilisation de l'IA
+
+Ce projet est avant tout un support d'apprentissage. À ce titre, **un projet inachevé mais compris vaut bien plus qu'un projet terminé mais opaque**. Le code que vous livrez n'a pas de valeur en lui-même — sa valeur est entièrement pédagogique : elle vient de ce que vous avez appris en le construisant.
+
+Plus vous passez de temps à chercher, à tâtonner, à comprendre pourquoi quelque chose ne fonctionne pas, plus vous ancrez durablement les concepts. Les obstacles font partie de l'apprentissage — ils ne sont pas des accidents à contourner.
+
+**Notre recommandation : évitez l'IA autant que possible.** Lorsque vous êtes bloqué·e, commencez par chercher la réponse par vous-même : documentation officielle, Google, Stack Overflow, vos pairs... Ces réflexes sont essentiels dans le métier.
+
+Si, après avoir cherché sérieusement, vous êtes toujours bloqué·e, vous pouvez vous appuyer sur un outil comme ChatGPT ou Claude — mais pas pour obtenir une solution toute faite. **Questionnez-le jusqu'à comprendre** : pourquoi le problème se produit, ce que fait la solution proposée, et comment éviter de retomber dans le même piège. Si vous n'êtes pas capable d'expliquer ce que vous avez intégré dans votre code, c'est qu'il ne vous appartient pas encore.
+
 ## 🧱 Stack technique (obligatoire)
 
 | Élément             | Technologie | Lien                                                               |
