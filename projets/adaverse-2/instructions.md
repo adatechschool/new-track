@@ -11,11 +11,13 @@ Vous pouvez développer sur la branche `main`, mais le projet devra être livré
 -   `stable` → version **complète avec toutes les fonctionnalités obligatoires**, **sans bonus**.
 -   `bonus` → version enrichie avec les **fonctionnalités bonus**.
 
-> ⚠️ **Important :** Vous devez avoir _poussé_ (`git push`) votre **dernier commit à minuit au plus tard à la date de rendu transmise**, afin qu’il soit pris en compte pour l’évaluation.
+Puisqu'il s'agit d'un travail en équipe, vous devrez adopter un **workflow Git structuré** : développez chaque fonctionnalité sur une **branche dédiée**, ouvrez des **Pull Requests** pour intégrer vos changements, et assurez-vous qu'**une autre personne de l'équipe** effectue une review avec des commentaires avant chaque merge.
+
+> ⚠️ **Important :** Vous devez avoir _poussé_ (`git push`) votre **dernier commit à minuit au plus tard à la date de rendu transmise**, afin qu'il soit pris en compte pour l'évaluation.
 
 ## 🎯 Objectif du projet
 
-Ce projet consiste à ajouter un système d'authentification au projet `adaverse`. Les utilisateur⋅ices non connecté⋅es pourront continuer à voir les projets sur le site, mais il faudra se connecter pour proposer un nouveau projet. Il sera également possible d'ajouter des projets en favoris et de laisser des commentaires sur les projets lorsqu'on est connecté⋅e. Enfin, les utilisateur⋅ices pourront avoir un rôle admin. Dans ce cas, iels pourront publier et dépublier les projets du site.
+Ce projet consiste à ajouter un système d'authentification au projet `adaverse`. Les utilisateur⋅ices non connecté⋅es pourront continuer à voir les projets sur le site, mais il faudra se connecter pour en proposer un nouveau. Les données des formulaires seront validées avec Zod. Une suite de tests automatisés sera mise en place et exécutée en CI sur chaque Pull Request. Enfin, les utilisateur⋅ices pourront avoir un rôle admin pour publier et dépublier des projets.
 
 ## 🧱 Stack technique (obligatoire)
 
@@ -38,7 +40,7 @@ Tu peux utiliser **[Vercel](https://vercel.com/)**, la plateforme officielle pou
 
 Attention, n'oublie pas de spécifier la variable d'environnement pour te connecter à Neon sur Vercel (la même que dans ton fichier `.env`).
 
-> 💡 Pensez à déployer le plus tôt possible, dès qu’une version basique fonctionnelle existe.
+> 💡 Pensez à déployer le plus tôt possible, dès qu'une version basique fonctionnelle existe.
 
 ## 🧰 Pré-requis techniques
 
@@ -56,9 +58,11 @@ Pour mener à bien ce projet, il est nécessaire de maîtriser :
 
 > ⚠️ **Réalisez toutes les fonctionnalités obligatoires avant de passer aux bonus.**
 
-### 1 . Système d'authentification
+### 1. Système d'authentification
 
-Le but de cette partie est d'ajouter le système d'authentification en utilisant Better Auth. Les utilisateur⋅ices doivent pouvoir créer un compte avec un email et un mot de passe, se connecter et se déconnecter.
+Le but de cette partie est d'ajouter le système d'authentification en utilisant Better Auth. Les utilisateur⋅ices doivent pouvoir créer un compte avec un email et un mot de passe, se connecter et se déconnecter. Un **nom d'utilisateur** (pseudo) sera également demandé à l'inscription, et c'est ce nom qui sera affiché publiquement — pas l'email.
+
+> 💡 Better Auth génère automatiquement le schéma de la table utilisateur. Demandez-vous si ce schéma par défaut contient bien toutes les informations dont vous avez besoin pour votre application...
 
 -   [ ] créer une page avec un formulaire d'inscription (nom d'utilisateur⋅ice, email, mot de passe)
 -   [ ] créer une page avec un formulaire de connexion (email et mot de passe)
@@ -67,29 +71,42 @@ Le but de cette partie est d'ajouter le système d'authentification en utilisant
 -   [ ] ajouter un bouton de déconnexion dans la barre de navigation lorsque l'utilisateur⋅ice est connecté⋅e, sinon mettre 2 liens vers signin et signup
 -   [ ] depuis les pages d'inscription et connexion, si l'utilisateur⋅ice est connecté⋅e, iel doit être redirigé⋅e sur la page d'accueil automatiquement
 
-### 2. Les commentaires
+### 2. Rattachement des projets aux utilisateur⋅ices
 
-Le but de cette partie est d'ajouter des fonctionnalités qui manipulent des données liées aux utilisateur⋅ices.
+Le but de cette partie est de lier les projets aux comptes utilisateur⋅ices.
+
+> 💡 Pour lier un projet à son auteur⋅ice, demandez-vous si votre schéma de base de données actuel contient toutes les informations nécessaires...
 
 -   [ ] Lorsqu'un⋅e utilisateur⋅ice propose un projet, faire en sorte qu'il soit lié à son compte en base de données
--   [ ] Afficher le nom de l'utilisateur⋅ice qui l’a proposé dans la liste des projets et sur la page de détail du projet
--   [ ] Permettre à n'importe quelle personne connectée de poster un commentaire sur un projet.
+-   [ ] Afficher le nom de l'utilisateur⋅ice qui l'a proposé dans la liste des projets et sur la page de détail du projet
 
-    -   [ ] Les commentaires devront être sauvegardés en base de données
-    -   [ ] Les commentaires devront avoir un message ainsi qu'une date de publication
-    -   [ ] Les commentaires seront affichés sous la page de détail de chaque projet, du plus récent au plus ancien, avec leur date, leur auteur⋅ice et le message
-    -   [ ] Dans la liste des projets, on affichera le nombre total de commentaires
-    -   [ ] Les utilisateur⋅ices pourront supprimer et modifier **leurs propres** commentaires
+> ℹ️ Si des projets ont déjà été créés avant l'ajout de l'authentification, il est tout à fait normal qu'ils ne soient pas rattachés à un utilisateur. Pas besoin de les supprimer.
 
-### 3. Le rôle admin
+### 3. Validation des formulaires avec Zod
 
-Dans cette partie, on va ajouter un rôle admin aux utilisateur⋅ices. Les fonctionnalités listées ci-dessous ne devront être accessibles qu’aux admin.
+Les données envoyées via les formulaires devront être validées côté serveur avec [Zod](https://zod.dev/). Installez-le avec `npm install zod` et créez un schéma de validation pour chaque formulaire.
 
--   [ ] Supprimer un commentaire de n'importe quel⋅le utilisateur⋅ice
+-   [ ] Valider les données du formulaire d'inscription :
+    -   Nom d'utilisateur : lettres (majuscules et minuscules), chiffres, tirets (`-`) et points (`.`) uniquement
+    -   Email : format email valide
+    -   Mot de passe : 8 caractères minimum
+-   [ ] Pour le formulaire de proposition de projet, identifiez vous-mêmes les validations pertinentes pour chaque champ
+
+### 4. Tests automatisés
+
+Vous devrez écrire une suite de tests automatisés en suivant la [documentation Next.js sur les tests](https://nextjs.org/docs/app/guides/testing), et les faire tourner automatiquement sur chaque Pull Request.
+
+-   [ ] Écrire un minimum de 5 tests avec [Vitest](https://vitest.dev/) ou [Jest](https://jestjs.io/)
+-   [ ] Mettre en place une CI avec **GitHub Actions** qui exécute les tests sur chaque Pull Request
+
+### 5. Le rôle admin
+
+Dans cette partie, on va ajouter un rôle admin aux utilisateur⋅ices. Les fonctionnalités listées ci-dessous ne devront être accessibles qu'aux admin.
+
 -   [ ] Créer une page qui liste **tous** les projets et qui permet de publier ou de désactiver la publication d'un projet (attention : si un⋅e utilisateur⋅ice n'est pas admin, iel devra être automatiquement redirigé⋅e vers l'accueil depuis cette page)
 -   [ ] Bannir un⋅e utilisateur⋅ice
 
-### 4. Mobile et accessibilité
+### 6. Mobile et accessibilité
 
 Attention, votre site devra être utilisable sur mobile avec un design adapté.
 
@@ -97,12 +114,15 @@ Les éléments utilisés devront également être accessibles (à minima avoir 1
 
 ## 💎 Bonus
 
+-   **Modifier/supprimer ses propres projets** : depuis la page d'un projet, un⋅e utilisateur⋅ice connecté⋅e pourra modifier ou supprimer les projets qu'iel a proposés
+-   **Ajouter un lien GitHub sur le profil utilisateur⋅ice** : permettre d'associer un lien vers un profil GitHub à un⋅e utilisateur⋅ice, pour que son nom affiché soit cliquable et redirige vers son GitHub
+-   **Confirmation de l'email et réinitialisation du mot de passe** : mettre en place la confirmation d'email à l'inscription et le reset de mot de passe, via un service d'envoi d'emails
+-   **Déploiement continu (CD)** : après la CI, déployer automatiquement sur Vercel à chaque merge sur `main` — voir la [doc Vercel pour GitHub](https://vercel.com/docs/deployments/git) et la [doc GitHub Actions](https://docs.github.com/fr/actions)
 -   Partage de projets sur les réseaux sociaux
 -   Page de profil
 -   Connexion et gestion de compte avec GitHub
--   Intégration d'une bibliothèque de validation (zod, valibot, arktype, etc.)
 -   Système de favoris
--   Ajouter un système d'upload d’image
+-   Ajouter un système d'upload d'image
 
 ## 🚀 Bonus ++
 
@@ -115,11 +135,11 @@ Les éléments utilisés devront également être accessibles (à minima avoir 1
 
 ### 🎤 Soutenance (20 minutes)
 
-L’évaluation se déroulera sous forme de soutenance. Chaque membre du groupe devra présenter une partie des fonctionnalités sur lesquelles iel a travaillé.
+L'évaluation se déroulera sous forme de soutenance. Chaque membre du groupe devra présenter une partie des fonctionnalités sur lesquelles iel a travaillé.
 
 Chaque personne devra être capable :
 
--   d’expliquer clairement son code à l’oral,
+-   d'expliquer clairement son code à l'oral,
 -   de réaliser une démonstration fonctionnelle,
 -   de naviguer aisément dans son code durant la présentation.
 
@@ -135,9 +155,9 @@ Le groupe devra préparer une **présentation complète du projet**, comprenant 
 -   une démo fluide et représentative,
 -   des slides clairs et synthétiques,
 -   une explication des **choix techniques** effectués,
--   une mise en avant de l’**organisation du travail en équipe** (répartition des tâches, workflow Git, communication, etc.).
+-   une mise en avant de l'**organisation du travail en équipe** (répartition des tâches, workflow Git avec branches et Pull Requests, revues de code, communication, etc.).
 
-L’objectif est de montrer votre compréhension globale du projet, autant sur le plan technique que sur le plan méthodologique.
+L'objectif est de montrer votre compréhension globale du projet, autant sur le plan technique que sur le plan méthodologique.
 
 > ⚠️ Attention à bien répartir le temps de parole entre les 4 membres du groupe
 
@@ -147,6 +167,8 @@ L’objectif est de montrer votre compréhension globale du projet, autant sur l
 -   [ ] Je sais utiliser les cookies pour sauvegarder une session utilisateur⋅ice
 -   [ ] Je sais charger des données en fonction d'un compte utilisateur⋅ice connecté⋅e
 -   [ ] Je sais protéger l'accès à certaines données si l'utilisateur⋅ice est connecté⋅e ou non
--   [ ] Je sais lier des données à un⋅e utilisateur⋅ice (commentaires, favoris)
+-   [ ] Je sais lier des données à un⋅e utilisateur⋅ice
 -   [ ] Je sais gérer plusieurs rôles utilisateur⋅ices (user, admin)
 -   [ ] Je sais effectuer des redirections entre les pages (par exemple, vers /auth/signin si l'utilisateur⋅ice n'est pas connecté⋅e)
+-   [ ] Je sais valider des données de formulaire côté serveur avec Zod
+-   [ ] Je sais écrire des tests automatisés et configurer une intégration continue (CI)
