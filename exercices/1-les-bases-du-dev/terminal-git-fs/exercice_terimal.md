@@ -13,6 +13,15 @@ Affiche le chemin absolu du dossier courant.
 /Users/ton-nom/ada
 ```
 
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+pwd
+```
+
+</details>
+
 ---
 
 ## Exercice 2 – Crée la base du projet
@@ -23,6 +32,16 @@ Crée un dossier `mon-projet` et vérifie qu'il apparaît bien dans le dossier c
 # Exemple attendu
 drwxr-xr-x  2 karlos  staff   64 25 déc 14:05 mon-projet
 ```
+
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+mkdir mon-projet
+ls -l
+```
+
+</details>
 
 ---
 
@@ -36,6 +55,17 @@ drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 css
 drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 images
 drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 js
 ```
+
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+cd mon-projet
+mkdir css js images
+ls -l
+```
+
+</details>
 
 ---
 
@@ -57,13 +87,33 @@ script.js
 mon-projet/images:
 ```
 
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+touch index.html css/style.css js/script.js
+ls -R
+```
+
+</details>
+
 ---
 
 ## Exercice 5 – Déplace-toi
 
 Va dans le dossier `css` et déplace-toi ensuite dans `js` sans repasser par la racine.
 
-*(indice : tu peux le faire en une seule commande)*
+_(indice : tu peux le faire en une seule commande)_
+
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+cd css
+cd ../js
+```
+
+</details>
 
 ---
 
@@ -75,6 +125,16 @@ Copie `index.html` dans le dossier `images`.
 # Exemple attendu dans images/
 -rw-r--r--  1 karlos  staff    0 25 déc 14:15 index.html
 ```
+
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+cp index.html images/
+ls -l images/
+```
+
+</details>
 
 ---
 
@@ -91,6 +151,16 @@ drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 js
 -rw-r--r--  1 karlos  staff    0 25 déc 14:05 index.html
 ```
 
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+cp -r css css-backup
+ls -l
+```
+
+</details>
+
 ---
 
 ## Exercice 8 – Supprime un fichier
@@ -102,6 +172,16 @@ Supprime le fichier `index.html` copié dans `images`.
 mon-projet/images:
 # (vide)
 ```
+
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+rm images/index.html
+ls images/
+```
+
+</details>
 
 ---
 
@@ -117,6 +197,16 @@ drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 js
 -rw-r--r--  1 karlos  staff    0 25 déc 14:05 index.html
 ```
 
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+rm -r css-backup
+ls -l
+```
+
+</details>
+
 ---
 
 ## Exercice 10 – Écris dans un fichier
@@ -127,9 +217,29 @@ Ouvre `css/style.css` et écris la ligne suivante à l'intérieur :
 body { margin: 0; padding: 0; }
 ```
 
-*(indice : tu peux utiliser `echo >>`, `cat >>` ou `nano` — à toi de choisir)*
+_(indice : tu peux utiliser `echo >>`, `cat >>` ou `nano` — à toi de choisir)_
 
 Vérifie ensuite que le fichier n'est plus vide avec `ls -l`.
+
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+# Option 1
+echo 'body { margin: 0; padding: 0; }' >> css/style.css
+
+# Option 2
+nano css/style.css
+
+# Option 3
+cat >> css/style.css
+body { margin: 0; padding: 0; }
+(Ctrl+D pour terminer)
+
+ls -l css/style.css
+```
+
+</details>
 
 ---
 
@@ -137,7 +247,7 @@ Vérifie ensuite que le fichier n'est plus vide avec `ls -l`.
 
 Renomme `css/style.css` en `css/main.css`.
 
-*(indice : la commande qui permet aussi de déplacer)*
+_(indice : la commande qui permet aussi de déplacer)_
 
 ```bash
 # Après modification
@@ -145,11 +255,30 @@ mon-projet/css:
 main.css
 ```
 
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+mv css/style.css css/main.css
+ls css/
+```
+
+</details>
+
 ---
 
 ## Exercice 12 – Vérification finale
 
 Affiche le contenu de `css/main.css` dans le terminal et vérifie que ta ligne CSS est bien là.
+
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+cat css/main.css
+```
+
+</details>
 
 ---
 
@@ -161,16 +290,49 @@ Affiche le contenu de `css/main.css` dans le terminal et vérifie que ta ligne C
 
 Écris trois lignes différentes dans `js/script.js`, dont une qui contient le mot `console`. Utilise `grep` pour afficher uniquement cette ligne.
 
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+echo 'console.log("bonjour")' >> js/script.js
+echo 'let x = 1' >> js/script.js
+echo 'let y = 2' >> js/script.js
+grep "console" js/script.js
+```
+
+</details>
+
 ---
 
 ## Exercice 14 – Historique
 
 Retrouve dans ton historique la commande exacte que tu as utilisée pour créer les trois dossiers `css`, `js` et `images`.
 
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+history | grep "mkdir"
+```
+
+</details>
+
 ---
 
 ## Exercice 15 – Arborescence complète
 
 Ajoute les dossiers `fonts` et `assets` à ton projet, crée un fichier `README.md` à la racine, écris une phrase dedans, et affiche toute l'arborescence avec `ls -R`.
+
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+mkdir fonts assets
+touch README.md
+echo "Mon premier projet web" >> README.md
+ls -R
+```
+
+</details>
 
 ---
