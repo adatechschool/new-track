@@ -284,8 +284,6 @@ cat css/main.css
 
 # Bonus
 
-⚠️ **Ne fais ces exercices que si tu as terminé et posté tous les autres sur GitHub** ⚠️
-
 ## Exercice 13 – Cherche dans un fichier
 
 Écris trois lignes différentes dans `js/script.js`, dont une qui contient le mot `console`. Utilise `grep` pour afficher uniquement cette ligne.
