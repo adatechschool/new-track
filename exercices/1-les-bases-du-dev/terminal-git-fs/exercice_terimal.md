@@ -1,246 +1,176 @@
-# Exercice
+# Exercices — Terminal : arborescence et fichiers
 
 ⚠️ **Tous les exercices doivent être exécutés via le terminal** ⚠️
+
+---
 
 ## Exercice 1 – Où es-tu ?
 
 Affiche le chemin absolu du dossier courant.
 
-Exemple attendu :
-
 ```bash
+# Exemple attendu
 /Users/ton-nom/ada
 ```
 
 ---
 
-## Exercice 2 – Que contient le dossier ?
+## Exercice 2 – Crée la base du projet
 
-Crée un fichier nommé `commande-terminal.md` et vérifie la liste des fichiers du dossier courant.
-
-Exemple attendu :
+Crée un dossier `mon-projet` et vérifie qu'il apparaît bien dans le dossier courant.
 
 ```bash
-total 0
-drwxr-xr-x  3 karlos  staff   96 25 déc 17:03 .
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:02 ..
--rw-r--r--  1 karlos  staff    0 25 déc 17:03 commande-terminal.md
+# Exemple attendu
+drwxr-xr-x  2 karlos  staff   64 25 déc 14:05 mon-projet
 ```
 
 ---
 
-## Exercice 3 – Crée des dossiers
+## Exercice 3 – Crée l'arborescence
 
-Crée deux dossiers vides appelés `exercices` et `projets` puis liste le contenu du répertoire.
-
-Exemple attendu :
+Va dans `mon-projet` et crée les dossiers `css`, `js` et `images`.
 
 ```bash
-total 0
-drwxr-xr-x  5 karlos  staff  160 25 déc 17:06 .
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:02 ..
--rw-r--r--  1 karlos  staff    0 25 déc 17:03 commande-terminal.md
-drwxr-xr-x  2 karlos  staff   64 25 déc 17:06 exercices
-drwxr-xr-x  2 karlos  staff   64 25 déc 17:06 projets
+# Exemple attendu
+drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 css
+drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 images
+drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 js
 ```
 
 ---
 
-## Exercice 4 – Déplace-toi
+## Exercice 4 – Crée les fichiers
 
-Va dans ton dossier `exercices` et déplace le fichier `commande-terminal.md` dans ce dossier.
-
-Si tu affiches le contenu de ton dossier `exercices`, tu devrais avoir ceci :
+Crée les fichiers `index.html`, `css/style.css` et `js/script.js`.
 
 ```bash
-drwxr-xr-x  3 karlos  staff   96 25 déc 17:10 .
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:10 ..
--rw-r--r--  1 karlos  staff    0 25 déc 17:03 commande-terminal.md
+# Exemple attendu avec ls -R
+mon-projet:
+css  images  js  index.html
+
+mon-projet/css:
+style.css
+
+mon-projet/js:
+script.js
+
+mon-projet/images:
 ```
 
 ---
 
-## Exercice 5 – Créer une copie (fichier)
+## Exercice 5 – Déplace-toi
 
-Maintenant que nous savons déplacer notre fichier, faisons une copie dans le dossier `projets`.
+Va dans le dossier `css` et déplace-toi ensuite dans `js` sans repasser par la racine.
 
-Nous devrions avoir ceci
+*(indice : tu peux le faire en une seule commande)*
+
+---
+
+## Exercice 6 – Copie un fichier
+
+Copie `index.html` dans le dossier `images`.
 
 ```bash
-/Users/karlos/ada/ada/exercices
-total 0
-drwxr-xr-x  3 karlos  staff   96 25 déc 17:10 .
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:10 ..
--rw-r--r--  1 karlos  staff    0 25 déc 17:03 commande-terminal.md
-
-/Users/karlos/ada/ada/projets
-total 0
-drwxr-xr-x  3 karlos  staff   96 25 déc 17:18 .
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:10 ..
--rw-r--r--  1 karlos  staff    0 25 déc 17:18 commande-terminal.md
+# Exemple attendu dans images/
+-rw-r--r--  1 karlos  staff    0 25 déc 14:15 index.html
 ```
 
 ---
 
-## Exercice 7 – Créer une copie (dossier)
+## Exercice 7 – Copie un dossier
 
-Nous savons copier un fichier, faisons maintenant la même chose avec un dossier. Copions le dossier `exercices` dans `projets`.
-
-Voici le résultat attendu :
+Copie le dossier `css` et crée un dossier `css-backup`.
 
 ```bash
-/Users/karlos/ada/ada/projets
-total 0
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:27 .
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:10 ..
--rw-r--r--  1 karlos  staff    0 25 déc 17:26 commande-terminal.md
-drwxr-xr-x  3 karlos  staff   96 25 déc 17:27 exercices
-
-/Users/karlos/ada/ada/projets/exercices
-total 0
-drwxr-xr-x  3 karlos  staff   96 25 déc 17:27 .
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:27 ..
--rw-r--r--  1 karlos  staff    0 25 déc 17:27 commande-terminal.md
+# Exemple attendu
+drwxr-xr-x  2 karlos  staff   64 25 déc 14:18 css
+drwxr-xr-x  2 karlos  staff   64 25 déc 14:18 css-backup
+drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 images
+drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 js
+-rw-r--r--  1 karlos  staff    0 25 déc 14:05 index.html
 ```
 
 ---
 
-## Exercice 8 - Supprimer un fichier
+## Exercice 8 – Supprime un fichier
 
-Supprimons le fichier `commande-terminal.md` se trouvant dans le dossier `projets`
+Supprime le fichier `index.html` copié dans `images`.
 
 ```bash
-# avant suppression
-/Users/karlos/ada/ada/projets/exercices
-total 0
-drwxr-xr-x  3 karlos  staff   96 25 déc 17:27 .
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:27 ..
--rw-r--r--  1 karlos  staff    0 25 déc 17:27 commande-terminal.md
-
-# après suppression
-/Users/karlos/ada/ada/projets/exercices
-total 0
-drwxr-xr-x  2 karlos  staff   64 25 déc 17:31 .
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:27 ..
+# Après suppression
+mon-projet/images:
+# (vide)
 ```
 
 ---
 
-## Exercice 9 - Supprimer un dossier et un fichier
+## Exercice 9 – Supprime un dossier
 
-Maintenant que nous avons supprimé le contenu du dossier `exercices`, nous allons le supprimer ainsi que le fichier `commande-terminal.md`.
-
-Nous devrions obtenir un résultat similaire à ceci :
+Supprime le dossier `css-backup`.
 
 ```bash
-# avant suppression
-/Users/karlos/ada/ada/projets
-total 0
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:27 .
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:10 ..
--rw-r--r--  1 karlos  staff    0 25 déc 17:26 commande-terminal.md
-drwxr-xr-x  2 karlos  staff   64 25 déc 17:31 exercices
-
-# après suppression
-/Users/karlos/ada/ada/projets
-total 0
-drwxr-xr-x  2 karlos  staff   64 25 déc 17:31 .
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:27 ..
+# Après suppression
+drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 css
+drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 images
+drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 js
+-rw-r--r--  1 karlos  staff    0 25 déc 14:05 index.html
 ```
 
 ---
 
-## Exercice 10 – Remplir le fichier
+## Exercice 10 – Écris dans un fichier
 
-Retourne dans le dossier `exercices` et ouvre le fichier `commande-terminal.md`. Écris les commandes directement dans le terminal.
+Ouvre `css/style.css` et écris la ligne suivante à l'intérieur :
 
-Nous devrions avoir ceci :
-
-```bash
-# avant intégration
-total 0
-drwxr-xr-x  3 karlos  staff   96 25 déc 17:44 .
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:10 ..
--rw-r--r--  1 karlos  staff    0 25 déc 17:44 commande-terminal.md
-
-# après intégration
-total 8
-drwxr-xr-x  3 karlos  staff   96 25 déc 17:45 .
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:10 ..
--rw-r--r--  1 karlos  staff   21 25 déc 17:45 commande-terminal.md
+```
+body { margin: 0; padding: 0; }
 ```
 
-## Exercice 11 – Renommer le fichier
+*(indice : tu peux utiliser `echo >>`, `cat >>` ou `nano` — à toi de choisir)*
 
-Changeons le nom du fichier, passons de `commande-terminal.md` à `instruction-terminal.md`.
+Vérifie ensuite que le fichier n'est plus vide avec `ls -l`.
 
-(indice : elle peut vous permettre de vous déplacer)
+---
+
+## Exercice 11 – Renomme un fichier
+
+Renomme `css/style.css` en `css/main.css`.
+
+*(indice : la commande qui permet aussi de déplacer)*
 
 ```bash
-# avant modification
-/Users/karlos/ada/ada/exercices
-total 8
-drwxr-xr-x  3 karlos  staff   96 25 déc 17:45 .
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:10 ..
--rw-r--r--  1 karlos  staff   21 25 déc 17:45 commande-terminal.md
-
-# après modification
-/Users/karlos/ada/ada/exercices
-total 8
-drwxr-xr-x  3 karlos  staff   96 25 déc 17:45 .
-drwxr-xr-x  4 karlos  staff  128 25 déc 17:10 ..
--rw-r--r--  1 karlos  staff   21 25 déc 17:45 instruction-terminal.md
+# Après modification
+mon-projet/css:
+main.css
 ```
 
-## Exercice 12 – Vérification
+---
 
-Nous allons vérifier le contenu du fichier `instruction-terminal.md`.
+## Exercice 12 – Vérification finale
+
+Affiche le contenu de `css/main.css` dans le terminal et vérifie que ta ligne CSS est bien là.
+
+---
 
 # Bonus
 
-⚠️ **Ne faites ces exercices que si vous avez terminé tous les autres exercices demandés auparavant et que vous les avez postés sur GitHub** ⚠️
+⚠️ **Ne fais ces exercices que si tu as terminé et posté tous les autres sur GitHub** ⚠️
 
-## Exercice 13 - Cat instruction
+## Exercice 13 – Cherche dans un fichier
 
-Nous allons récupérer les instructions de `cat` en ne prenant que la description pour ensuite les mettre dans un fichier `cat_instruction.txt`.
-
----
-
-Parfait, c’est très clair 👍
-Voici une **formulation propre, simple et cohérente** avec ton exemple :
+Écris trois lignes différentes dans `js/script.js`, dont une qui contient le mot `console`. Utilise `grep` pour afficher uniquement cette ligne.
 
 ---
 
-## Exercice 14 – Copy
+## Exercice 14 – Historique
 
-Nous allons copier le dossier `exercice` afin de créer un dossier `exercice_copy`, puis déplacer ce nouveau dossier avant de le supprimer.
-
-```bash
-# avant modification
-total 0
-drwxr-xr-x@ 3 zeceviccharles  staff   96 25 déc 19:26 .
-drwxr-xr-x@ 7 zeceviccharles  staff  224 25 déc 19:22 ..
-drwxr-xr-x@ 2 zeceviccharles  staff   64 25 déc 19:22 exercice
-
-# après modification
-total 0
-drwxr-xr-x@ 4 zeceviccharles  staff  128 25 déc 19:27 .
-drwxr-xr-x@ 7 zeceviccharles  staff  224 25 déc 19:22 ..
-drwxr-xr-x@ 2 zeceviccharles  staff   64 25 déc 19:22 exercice
-drwxr-xr-x@ 2 zeceviccharles  staff   64 25 déc 19:27 exercice_copy
-```
+Retrouve dans ton historique la commande exacte que tu as utilisée pour créer les trois dossiers `css`, `js` et `images`.
 
 ---
 
-## Exercice 15 - Cat en balise HTML
+## Exercice 15 – Arborescence complète
 
-Maintenant que nous avons les instructions de `cat`, nous allons créer un second fichier appelé `cat-balise`, qui contiendra les mêmes instructions mais dans un format différent.
+Ajoute les dossiers `fonts` et `assets` à ton projet, crée un fichier `README.md` à la racine, écris une phrase dedans, et affiche toute l'arborescence avec `ls -R`.
 
-Nous devrions obtenir ce résultat :
-![](./cat_demo.png)
-
-Pensez à utiliser la commande suivante :
-
-```bash
-npx live-server
-```
+---
