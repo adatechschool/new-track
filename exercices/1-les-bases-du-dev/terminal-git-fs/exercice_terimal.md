@@ -4,7 +4,7 @@
 
 ---
 
-## Exercice 1 – Où es-tu ?
+## 1 – Où es-tu ?
 
 Affiche le chemin absolu du dossier courant.
 
@@ -24,20 +24,20 @@ pwd
 
 ---
 
-## Exercice 2 – Crée la base du projet
+## 2 – Crée la base du projet
 
-Crée un dossier `mon-projet` et vérifie qu'il apparaît bien dans le dossier courant.
+Crée un dossier `ada` et vérifie qu'il apparaît bien dans le dossier courant.
 
 ```bash
 # Exemple attendu
-drwxr-xr-x  2 karlos  staff   64 25 déc 14:05 mon-projet
+drwxr-xr-x  2 votre-nom-dutilisateur  staff   la-date-de-creation ada
 ```
 
 <details>
   <summary>Spoiler</summary>
 
 ```bash
-mkdir mon-projet
+mkdir ada
 ls -l
 ```
 
@@ -45,23 +45,22 @@ ls -l
 
 ---
 
-## Exercice 3 – Crée l'arborescence
+## 3 – Crée l'arborescence
 
-Va dans `mon-projet` et crée les dossiers `css`, `js` et `images`.
+Va dans le dossier `ada` et crée les dossiers `exercice` et `projet`.
 
 ```bash
 # Exemple attendu
-drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 css
-drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 images
-drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 js
+drwxr-xr-x  2 votre-nom-dutilisateur  staff   la-date-de-creation exercice
+drwxr-xr-x  2 votre-nom-dutilisateur  staff   la-date-de-creation projet
 ```
 
 <details>
   <summary>Spoiler</summary>
 
 ```bash
-cd mon-projet
-mkdir css js images
+cd ada
+mkdir exercice projet
 ls -l
 ```
 
@@ -69,29 +68,26 @@ ls -l
 
 ---
 
-## Exercice 4 – Crée les fichiers
+## 4 – Crée un fichier
 
-Crée les fichiers `index.html`, `css/style.css` et `js/script.js`.
+Crée le fichier `command.txt`.
 
 ```bash
-# Exemple attendu avec ls -R
-mon-projet:
-css  images  js  index.html
+./exercice:
 
-mon-projet/css:
-style.css
-
-mon-projet/js:
-script.js
-
-mon-projet/images:
+./projet:
+command.txt
 ```
 
 <details>
   <summary>Spoiler</summary>
 
 ```bash
-touch index.html css/style.css js/script.js
+cd projet
+touch command.txt
+# tu peux utiliser la même commande pour créer plusieurs fichiers 
+# touch fichier1 fichier2 fichier3 
+# fait attention à l'espace, si tu fais `touch ficher 1`, tu vas créer deux fichiers
 ls -R
 ```
 
@@ -99,212 +95,157 @@ ls -R
 
 ---
 
-## Exercice 5 – Déplace-toi
+## 5 – Déplace-toi
 
-Va dans le dossier `css` et déplace-toi ensuite dans `js` sans repasser par la racine.
+Va dans le dossier `exercice` et déplace-toi vers le dossier `projet`.
 
-_(indice : tu peux le faire en une seule commande)_
+_(indice : .. permet de remonter d'un niveau)_
 
 <details>
   <summary>Spoiler</summary>
 
 ```bash
-cd css
-cd ../js
+cd ..
+cd projet
+# en une seule ligne 
+cd ../projet
 ```
 
 </details>
 
 ---
 
-## Exercice 6 – Copie un fichier
+## 6 – Déplacer  un fichier
 
-Copie `index.html` dans le dossier `images`.
-
-```bash
-# Exemple attendu dans images/
--rw-r--r--  1 karlos  staff    0 25 déc 14:15 index.html
-```
-
-<details>
-  <summary>Spoiler</summary>
-
-```bash
-cp index.html images/
-ls -l images/
-```
-
-</details>
-
----
-
-## Exercice 7 – Copie un dossier
-
-Copie le dossier `css` et crée un dossier `css-backup`.
-
-```bash
-# Exemple attendu
-drwxr-xr-x  2 karlos  staff   64 25 déc 14:18 css
-drwxr-xr-x  2 karlos  staff   64 25 déc 14:18 css-backup
-drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 images
-drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 js
--rw-r--r--  1 karlos  staff    0 25 déc 14:05 index.html
-```
-
-<details>
-  <summary>Spoiler</summary>
-
-```bash
-cp -r css css-backup
-ls -l
-```
-
-</details>
-
----
-
-## Exercice 8 – Supprime un fichier
-
-Supprime le fichier `index.html` copié dans `images`.
-
-```bash
-# Après suppression
-mon-projet/images:
-# (vide)
-```
-
-<details>
-  <summary>Spoiler</summary>
-
-```bash
-rm images/index.html
-ls images/
-```
-
-</details>
-
----
-
-## Exercice 9 – Supprime un dossier
-
-Supprime le dossier `css-backup`.
-
-```bash
-# Après suppression
-drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 css
-drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 images
-drwxr-xr-x  2 karlos  staff   64 25 déc 14:07 js
--rw-r--r--  1 karlos  staff    0 25 déc 14:05 index.html
-```
-
-<details>
-  <summary>Spoiler</summary>
-
-```bash
-rm -r css-backup
-ls -l
-```
-
-</details>
-
----
-
-## Exercice 10 – Écris dans un fichier
-
-Ouvre `css/style.css` et écris la ligne suivante à l'intérieur :
-
-```
-body { margin: 0; padding: 0; }
-```
-
-_(indice : tu peux utiliser `echo >>`, `cat >>` ou `nano` — à toi de choisir)_
+Dans le dossier `projet` nous avons encore `command.txt` , 
+revenez en arrière avec `..`puis déplacer le fichier `command.txt` vers le dossier `exercice`:
 
 Vérifie ensuite que le fichier n'est plus vide avec `ls -l`.
 
+
 <details>
   <summary>Spoiler</summary>
 
 ```bash
-# Option 1
-echo 'body { margin: 0; padding: 0; }' >> css/style.css
-
-# Option 2
-nano css/style.css
-
-# Option 3
-cat >> css/style.css
-body { margin: 0; padding: 0; }
-(Ctrl+D pour terminer)
-
-ls -l css/style.css
+mv projet/command.txt exercice
 ```
 
 </details>
 
 ---
 
-## Exercice 11 – Renomme un fichier
+## 7  – Écris dans un fichier
 
-Renomme `css/style.css` en `css/main.css`.
-
-_(indice : la commande qui permet aussi de déplacer)_
+Dans le dossier `exercice` écris la ligne suivante à l'intérieur :
 
 ```bash
-# Après modification
-mon-projet/css:
-main.css
+voici mes commandes shell
+```
+
+*(indice : tu peux utiliser `echo >>` )*
+
+Vérifie ensuite que le fichier n'est plus vide avec `ls -l`.
+
+```bash
+# avant l'utilisation de la command
+total 0
+-rw-r--r--  1 votre-nom-dutilisateur  staff   la-date-de-creation command.txt
+# après l'utilisation de la command
+total 8
+-rw-r--r--  1 votre-nom-dutilisateur  staff   la-date-de-creation command.txt
 ```
 
 <details>
   <summary>Spoiler</summary>
 
 ```bash
-mv css/style.css css/main.css
-ls css/
+echo 'voici mes commandes shell' >> command.txt
 ```
 
 </details>
 
 ---
 
-## Exercice 12 – Vérification finale
+## 8 – Renomme un fichier
 
-Affiche le contenu de `css/main.css` dans le terminal et vérifie que ta ligne CSS est bien là.
+Renomme `exercice/command.txt` en `exercice/command.md`.
+
+*(indice : la commande qui permet aussi de déplacer)*
+
+Vérifie ensuite que le fichier n'est plus vide avec `ls -l`.
+
+```bash
+# avant l'utilisation de la command
+total 0
+-rw-r--r--  1 votre-nom-dutilisateur  staff   la-date-de-creation command.txt
+# après l'utilisation de la command
+total 8
+-rw-r--r--  1 votre-nom-dutilisateur  staff   la-date-de-creation command.md
+```
 
 <details>
   <summary>Spoiler</summary>
 
 ```bash
-cat css/main.css
+mv exercice/command.txt exercice/command.md
 ```
 
 </details>
 
 ---
 
-# Bonus
+## 9 – Vérification finale
 
-## Exercice 13 – Cherche dans un fichier
-
-Écris trois lignes différentes dans `js/script.js`, dont une qui contient le mot `console`. Utilise `grep` pour afficher uniquement cette ligne.
+Affiche le contenu de `exercice/command.md` dans le terminal et vérifie que la phrase `voici mes commandes shell` est bien présent .
 
 <details>
   <summary>Spoiler</summary>
 
 ```bash
-echo 'console.log("bonjour")' >> js/script.js
-echo 'let x = 1' >> js/script.js
-echo 'let y = 2' >> js/script.js
-grep "console" js/script.js
+cat exercice/command.md
 ```
 
 </details>
 
 ---
 
-## Exercice 14 – Historique
+## 10 – Cherche dans un fichier
 
-Retrouve dans ton historique la commande exacte que tu as utilisée pour créer les trois dossiers `css`, `js` et `images`.
+Écris trois lignes différentes dans `exercice/command.md :`
+
+- créer un fichier : touch <nom du fichier>
+- créer un dossier : mkdir <nom du dossier>
+- donner la position actuelle : pwd
+
+Utilise `grep` pour afficher uniquement la ligne qui contient `pwd`.
+
+_(indice : tu peux utiliser `echo >>`)_
+
+Vérifie ensuite que le fichier n'est plus vide avec `ls -l`.
+
+(nous t’invitons à le faire pour toutes les commandes que tu as pu utiliser 😁)
+
+<details>
+  <summary>Spoiler</summary>
+
+```bash
+echo 'créer un fichier : touch <nom du fichier>' >> exercice/command.md
+echo 'donner la position actuelle : pwd' >> exercice/command.md
+echo 'créer un dossier : mkdir <nom du dossier>' >> exercice/command.md
+grep "pwd" exercice/command.md
+```
+
+</details>
+
+---
+
+### Bonus
+
+---
+
+## Exercice 11 – Historique
+
+Retrouve dans ton historique la commande exacte que tu as utilisée pour créer les dossiers exercice et projet.
 
 <details>
   <summary>Spoiler</summary>
@@ -317,20 +258,38 @@ history | grep "mkdir"
 
 ---
 
-## Exercice 15 – Arborescence complète
+## 12 – Arborescence complète
 
-Ajoute les dossiers `fonts` et `assets` à ton projet, crée un fichier `README.md` à la racine, écris une phrase dedans, et affiche toute l'arborescence avec `ls -R`.
+Créer un dossier  `mon_projet_web` contenu dans `exercice` . 
+
+Dans le dossier `mon_projet_web`, créer les dossiers `assets` `js` `css`.
+Ajout ensuite les fichier index.html à la racine
+
+`style.css` dans le dossier `css`
+
+`script.js` dans le dossier `js`
+
+Affiche toute l’arborescence avec la commande `ls -R` . Tu devrais obtenir le résultat suivant :
+
+```bash
+assets     css        index.html js
+
+./assets:
+
+./css:
+style.css
+
+./js:
+script.js
+```
 
 <details>
   <summary>Spoiler</summary>
 
 ```bash
-mkdir fonts assets
-touch README.md
-echo "Mon premier projet web" >> README.md
+mkdir assets css js
+touch css/style.css js/script.js index.html
 ls -R
 ```
 
 </details>
-
----
