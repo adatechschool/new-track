@@ -321,7 +321,7 @@ find . -name "style.css"
 
 ## 14 – Le détective du texte
 
-On cherche un fichier dans `exercice`, mais on ne se rappelle plus de son nom. Par contre, on sait qu'il contient le mot `"index"`.
+On cherche un fichier dans `exercice`, mais on ne se rappelle plus de son nom. Par contre, on sait qu'il contient le mot `"fichier"`.
 Utilise `grep` avec l'option de recherche récursive ` -r` pour trouver quelle ligne de quel fichier contient ce mot.
 
 ```bash
