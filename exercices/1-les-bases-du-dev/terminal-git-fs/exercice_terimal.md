@@ -308,10 +308,14 @@ Sans te déplacer de ton dossier courant, utilise la commande `find` pour locali
 
 *(indice : tu peux chercher par nom en utilisant l'option `-name`)*
 
+<details>
+  <summary>Spoiler</summary>
+  
 ```bash
 find . -name "style.css"
 
 ```
+</details>
 
 ---
 
@@ -337,6 +341,8 @@ grep -r "fichier" exercice/
 ```
 
 </details>
+
+---
 
 ## 15 – Le grand nettoyage de l'historique
 
