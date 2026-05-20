@@ -328,11 +328,15 @@ exercice/command.md:créer un fichier : touch <nom du fichier>
 
 *(indice : la syntaxe est `grep -r "mot_recherché" dossier/`)*
 
+<details>
+  <summary>Spoiler</summary>
+  
 ```bash
 grep -r "fichier" exercice/
 
 ```
 
+</details>
 ---
 
 ## 15 – Le grand nettoyage de l'historique
@@ -348,7 +352,11 @@ Tu as exécuté beaucoup de commandes aujourd'hui ! Affiche ton historique de co
 
 *(indice : utilise la barre verticale `|` (pipe) pour envoyer le résultat de `history` vers `grep`)*
 
+<details>
+  <summary>Spoiler</summary>
+  
 ```bash
 history | grep "touch"
 
 ```
+</details>
