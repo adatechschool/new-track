@@ -337,7 +337,6 @@ grep -r "fichier" exercice/
 ```
 
 </details>
----
 
 ## 15 – Le grand nettoyage de l'historique
 
