@@ -136,7 +136,7 @@ mv projet/command.txt exercice
 
 ## 7  – Écris dans un fichier
 
-Dans le dossier `exercice` écris la ligne suivante à l'intérieur :
+Dans le dossier `exercice` écris la ligne suivante à l'intérieur du fichier `command.txt` :
 
 ```bash
 voici mes commandes shell
