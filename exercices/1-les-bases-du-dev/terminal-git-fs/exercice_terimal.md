@@ -293,3 +293,62 @@ ls -R
 ```
 
 </details>
+
+---
+
+## 13 – Trouve le fichier caché
+
+Sans te déplacer de ton dossier courant, utilise la commande `find` pour localiser précisément où se trouve le fichier `style.css` que tu viens de créer.
+
+```bash
+# Exemple attendu
+./exercice/mon_projet_web/css/style.css
+
+```
+
+*(indice : tu peux chercher par nom en utilisant l'option `-name`)*
+
+```bash
+find . -name "style.css"
+
+```
+
+---
+
+## 14 – Le détective du texte
+
+On cherche un fichier dans `exercice`, mais on ne se rappelle plus de son nom. Par contre, on sait qu'il contient le mot `"index"`.
+Utilise `grep` avec l'option de recherche récursive ` -r` pour trouver quelle ligne de quel fichier contient ce mot.
+
+```bash
+# Exemple attendu
+exercice/command.md:créer un fichier : touch <nom du fichier>
+
+```
+
+*(indice : la syntaxe est `grep -r "mot_recherché" dossier/`)*
+
+```bash
+grep -r "fichier" exercice/
+
+```
+
+---
+
+## 15 – Le grand nettoyage de l'historique
+
+Tu as exécuté beaucoup de commandes aujourd'hui ! Affiche ton historique de commandes, mais filtre le résultat avec `grep` pour n'afficher **uniquement** les lignes qui contiennent le mot `touch`.
+
+```bash
+# Exemple attendu
+  512  touch command.txt
+  525  touch css/style.css js/script.js index.html
+
+```
+
+*(indice : utilise la barre verticale `|` (pipe) pour envoyer le résultat de `history` vers `grep`)*
+
+```bash
+history | grep "touch"
+
+```
