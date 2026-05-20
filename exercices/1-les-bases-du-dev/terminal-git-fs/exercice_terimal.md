@@ -120,7 +120,7 @@ cd ../projet
 Dans le dossier `projet` nous avons encore `command.txt` , 
 revenez en arrière avec `..`puis déplacer le fichier `command.txt` vers le dossier `exercice`:
 
-Vérifie ensuite que le fichier n'est plus vide avec `ls -l`.
+Vérifie ensuite que le dossier n'est plus vide avec `ls -l`.
 
 
 <details>
